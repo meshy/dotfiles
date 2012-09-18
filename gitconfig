@@ -1,0 +1,76 @@
+[user]
+  name = Charlie Denton
+  email = charlie@meshy.co.uk
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+  whitespace = blank-at-eol,cr-at-eol,tabwidth=4,tab-in-indent,space-before-tab
+  pager = 
+
+[alias]
+  a = add
+  aa = !git add . && git status
+  ap = add -p
+  amend = commit --amend
+  b = branch
+  c = commit
+  cm = commit -m 
+  co = checkout
+  cv = commit -v
+  d = diff
+  dc = diff --cached
+  df = diff --function-context
+  ds = !git diff && git status
+  dw = diff --color-words
+  ld = log ORIG_HEAD.. --stat --no-merges
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  s = status
+  ss = status -s
+  in = !git fetch && git log ..origin/master
+  writers = shortlog -sn
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = red
+
+[color "diff"]
+  frag = magenta bold
+  meta = yellow
+  new = green bold
+  old = red bold
+  whitespace = red reverse
+
+[color "status"]
+  added = green
+  changed = red
+  untracked = yellow
+
+[giggle]
+  main-window-maximized = true
+  main-window-geometry = 0x0+0+0
+  file-view-hpane-position = 389
+  main-window-view = FileView
+  history-view-vpane-position = 547
+  file-view-vpane-position = 1035
+
+[status]
+  relativePaths = true
+
+[github]
+  user = meshy
+
+[push]
+  default = current
+
+[merge]
+  conflictstyle = diff3

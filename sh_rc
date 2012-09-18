@@ -1,0 +1,63 @@
+export WORKON_HOME=~/venvs
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+setopt INTERACTIVECOMMENTS
+# Above command explicitly enables comments starting with `#` in zsh
+
+# Bash Directory browsing shortcuts
+alias k='tree'
+alias ltr='ls -ltr'
+alias r='screen -D -R'
+alias ls='ls --color'
+alias l='ls -lh'
+alias ll='ls -la'
+
+# Find in files
+alias ack='ack-grep'
+
+# Set up ToDo lists
+alias todo='python ~/projects/t/t.py --task-dir ~/Ubuntu\ One/tasks --list tasks'
+
+# Launch todo list at terminal start
+todo
+
+# Back and forward through commands with CTRL-left/right
+bindkey '5D' emacs-backward-word
+bindkey '5C' emacs-forward-word
+export WORDCHARS=''
+
+# Create a virtual environment.
+function mkvenv {
+  PWD=`pwd`
+  NAME=`basename $PWD`
+
+  mkvirtualenv $NAME
+
+  # make a .env in the virtualenv to aid activating
+  mkdir $PWD/.codeintel/
+  if [ ! -e venv ]; then
+    echo "{\"Python\": {\"python\": \"$PWD/venv/bin/python\"}}" > "$PWD/.codeintel/config"
+  fi
+  echo $PWD > "$WORKON_HOME/$NAME/.env"
+  echo "Saved $PWD into $WORKON_HOME/$NAME/.env"
+
+  # symlink the venv to the current dir
+  if [ ! -e venv ]; then
+    ln -s "$WORKON_HOME/$NAME" venv
+    echo "Symlinked $WORKON_HOME/$NAME to ./venv"
+  fi
+}
+
+# Add ~/bin to path, and alias hub to git
+PATH=~/bin:$PATH
+function git(){hub "$@"}
+
+# Map `p` to bpython
+alias p='bpython'
+
+# Map g to git
+alias g='git'
+
+# Make pip cache locally
+export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"

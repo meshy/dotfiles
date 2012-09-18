@@ -1,0 +1,34 @@
+[ui]
+username = Charlie Denton <charlie@meshy.co.uk>
+editor = s
+
+
+[extensions]
+color =
+fetch =
+hggit=
+pager =
+progress =
+purge =
+rebase =
+transplant =
+
+
+[color]
+status.added = blue
+status.deleted = cyan
+status.modified = green
+status.removed = red
+status.unknown = magenta
+
+
+[alias]
+lb = log -b .
+nudge = push --rev .
+p = record
+s = !hg status $($HG root) $HG_ARGS
+show = log --patch --git --rev
+
+
+[pager]
+pager = LESS='FSRX' less
