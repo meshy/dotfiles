@@ -17,7 +17,7 @@ alias ll='ls -la'
 alias ack='ack-grep'
 
 # Set up ToDo lists
-alias todo='python ~/projects/t/t.py --task-dir ~/Ubuntu\ One/tasks --list tasks'
+alias todo='python ~/personal/t/t.py --task-dir ~/.todo --list tasks'
 
 # Launch todo list at terminal start
 todo
