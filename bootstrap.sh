@@ -1,7 +1,7 @@
 #! bin/bash
 
 # Install packages
-# sudo apt-get install git python-dev build-essential libjpeg-dev libpng12-dev zsh gnome-shell synapse gparted gimp ubuntu-restricted-extras vlc ttf-mscorefonts-installer sqlite3 ruby quicksynergy postgresql-server-dev-all ack-grep sparkleshare
+# sudo apt-get install git python-dev build-essential libjpeg-dev libpng12-dev zsh gnome-shell synapse gparted gimp ubuntu-restricted-extras vlc ttf-mscorefonts-installer sqlite3 ruby quicksynergy postgresql-server-dev-all ack-grep sparkleshare ia32-libs
 
 # Install zsh
 # wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
