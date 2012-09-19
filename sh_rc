@@ -61,5 +61,3 @@ alias g='git'
 
 # Make pip cache locally
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
-
-ZSH_THEME="bira"
