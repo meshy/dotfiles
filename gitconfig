@@ -6,7 +6,7 @@
   editor = vim
   excludesfile = ~/.gitignore
   whitespace = blank-at-eol,cr-at-eol,tabwidth=4,tab-in-indent,space-before-tab
-  pager = 
+  pager =
 
 [alias]
   a = add
@@ -15,7 +15,7 @@
   amend = commit --amend
   b = branch
   c = commit
-  cm = commit -m 
+  cm = commit -m
   co = checkout
   cv = commit -v
   d = diff
@@ -27,6 +27,8 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
+  pl = pull
+  ps = push
   s = status
   ss = status -s
   in = !git fetch && git log ..origin/master
