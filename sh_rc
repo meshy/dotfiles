@@ -34,14 +34,12 @@ function mkvenv {
 
   mkvirtualenv $NAME -a $PWD
 
-  # make a .env in the virtualenv to aid activating
-  mkdir $PWD/.codeintel/
   if [ ! -e venv ]; then
+    # Set up SublimeCodeIntel
+    mkdir $PWD/.codeintel/
     echo "{\"Python\": {\"python\": \"$PWD/venv/bin/python\"}}" > "$PWD/.codeintel/config"
-  fi
 
-  # symlink the venv to the current dir
-  if [ ! -e venv ]; then
+    # symlink the venv to the current dir
     ln -s "$WORKON_HOME/$NAME" venv
     echo "Symlinked $WORKON_HOME/$NAME to ./venv"
   fi
