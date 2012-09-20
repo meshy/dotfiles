@@ -34,11 +34,13 @@ function mkvenv {
 
   mkvirtualenv $NAME -a $PWD
 
-  if [ ! -e venv ]; then
+  if [ ! -e .codeintel ]; then
     # Set up SublimeCodeIntel
     mkdir $PWD/.codeintel/
     echo "{\"Python\": {\"python\": \"$PWD/venv/bin/python\"}}" > "$PWD/.codeintel/config"
+  fi
 
+  if [ ! -e venv ]; then
     # symlink the venv to the current dir
     ln -s "$WORKON_HOME/$NAME" venv
     echo "Symlinked $WORKON_HOME/$NAME to ./venv"
