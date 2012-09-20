@@ -32,15 +32,13 @@ function mkvenv {
   PWD=`pwd`
   NAME=`basename $PWD`
 
-  mkvirtualenv $NAME
+  mkvirtualenv $NAME -a $PWD
 
   # make a .env in the virtualenv to aid activating
   mkdir $PWD/.codeintel/
   if [ ! -e venv ]; then
     echo "{\"Python\": {\"python\": \"$PWD/venv/bin/python\"}}" > "$PWD/.codeintel/config"
   fi
-  echo $PWD > "$WORKON_HOME/$NAME/.env"
-  echo "Saved $PWD into $WORKON_HOME/$NAME/.env"
 
   # symlink the venv to the current dir
   if [ ! -e venv ]; then
