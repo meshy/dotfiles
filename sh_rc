@@ -2,6 +2,7 @@ export WORKON_HOME=~/venvs
 
 source /usr/local/bin/virtualenvwrapper.sh
 
+
 setopt INTERACTIVECOMMENTS
 # Above command explicitly enables comments starting with `#` in zsh
 
