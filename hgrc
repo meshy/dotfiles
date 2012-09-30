@@ -6,7 +6,6 @@ editor = s
 [extensions]
 color =
 fetch =
-hggit=
 pager =
 progress =
 purge =
