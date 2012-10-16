@@ -14,10 +14,9 @@
   ap = add -p
   amend = commit --amend -v
   b = branch
-  c = commit
+  c = commit -v
   cm = commit -m
   co = checkout
-  cv = commit -v
   d = diff
   dc = diff --cached
   df = diff --function-context
