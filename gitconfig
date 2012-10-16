@@ -12,7 +12,7 @@
   a = add
   aa = !git add . && git status
   ap = add -p
-  amend = commit --amend
+  amend = commit --amend -v
   b = branch
   c = commit
   cm = commit -m
