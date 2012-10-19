@@ -75,3 +75,5 @@
 
 [merge]
   conflictstyle = diff3
+[ghi]
+	token = 8adaf2d5ae641f6aca00c964f8e64ab1c4bc6a65
