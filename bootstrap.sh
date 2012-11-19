@@ -12,11 +12,14 @@ mkdir personal
 git clone git@github.com:meshy/dotfiles.git
 cd ~
 
-# Install git dotfiles
+# Install git setup
 ln -s ~/personal/dotfiles/gitignore ~/.gitignore
 ln -s ~/personal/dotfiles/gitconfig ~/.gitconfig
 
-# Install mercurial dotfiles
+# Install gem setup
+ln -s ~/personal/dotfiles/gemrc ~/.gemrc
+
+# Install mercurial setup
 ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 
 # Install shell extras
