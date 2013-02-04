@@ -27,5 +27,3 @@ ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
-ln -s ~/personal/dotfiles/todo ~/.todo
-hg clone https://bitbucket.org/sjl/t ~/personal/t
