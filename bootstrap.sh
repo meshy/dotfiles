@@ -9,6 +9,7 @@
 # Do stuff from home folder
 cd ~
 mkdir personal
+cd personal
 git clone git@github.com:meshy/dotfiles.git
 cd ~
 
