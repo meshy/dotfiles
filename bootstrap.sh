@@ -1,5 +1,8 @@
 #! bin/bash
 
+# Remove crap
+sudo apt-get remove unity-lens-shopping unity-scope-musicstores
+
 # Install packages
 # sudo apt-get install git python-dev build-essential libjpeg-dev libpng12-dev zsh gnome-shell synapse gparted gimp ubuntu-restricted-extras vlc ttf-mscorefonts-installer sqlite ruby quicksynergy postgresql-server-dev-all ack-grep sparkleshare ia32-libs memcached libmemcached-dev
 
