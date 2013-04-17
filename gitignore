@@ -16,5 +16,4 @@ venv
 .codeintel
 *.egg-info
 dist
-source
 data.db
