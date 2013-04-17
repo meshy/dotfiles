@@ -63,3 +63,6 @@ alias i='ghi'
 
 # Make pip cache locally
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
+
+# No pycs
+export PYTHONDONTWRITEBYTECODE=1
