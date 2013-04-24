@@ -33,7 +33,7 @@ function mkvenv {
   PWD=`pwd`
   NAME=`basename $PWD`
 
-  mkvirtualenv $NAME -a $PWD
+  mkvirtualenv $NAME --distribute -a $PWD
 
   # Set up SublimeCodeIntel
   if [ ! -e .codeintel ]; then
