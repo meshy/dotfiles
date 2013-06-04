@@ -4,7 +4,7 @@
 sudo apt-get remove unity-lens-shopping unity-scope-musicstores
 
 # Install packages
-sudo apt-get install git tig python-dev build-essential libjpeg-dev libpng12-dev zsh gnome-shell synapse gparted gimp ubuntu-restricted-extras vlc ttf-mscorefonts-installer sqlite ruby quicksynergy postgresql-server-dev-all ack-grep sparkleshare ia32-libs memcached libmemcached-dev nautilus-open-terminal libxml2-dev libxslt-dev
+sudo apt-get install git tig python-dev python3-dev build-essential libjpeg-dev libpng12-dev zsh gnome-shell synapse gparted gimp ubuntu-restricted-extras vlc ttf-mscorefonts-installer sqlite ruby quicksynergy postgresql-server-dev-all ack-grep sparkleshare ia32-libs memcached libmemcached-dev nautilus-open-terminal libxml2-dev libxslt-dev
 
 # Install zsh
 # wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
