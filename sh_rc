@@ -17,12 +17,6 @@ alias ll='ls -la'
 # Find in files
 alias ack='ack-grep'
 
-# Set up ToDo lists
-alias todo='python ~/personal/t/t.py --task-dir ~/.todo --list tasks'
-
-# Launch todo list at terminal start
-todo
-
 # Back and forward through commands with CTRL-left/right
 bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
