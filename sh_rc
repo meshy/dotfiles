@@ -43,7 +43,9 @@ function mkvenv {
 }
 
 # Add ~/bin to path, and alias hub to git
-PATH=~/bin:$PATH
+export GEM_HOME=$HOME/.gem/ruby/2.0.0
+
+PATH=~/bin:$GEM_HOME/bin:$PATH
 function git(){hub "$@"}
 
 # Map `p` to bpython
