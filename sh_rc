@@ -1,6 +1,6 @@
 export WORKON_HOME=~/venvs
 
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 
 setopt INTERACTIVECOMMENTS
@@ -13,9 +13,6 @@ alias r='screen -D -R'
 alias ls='ls --color'
 alias l='ls -lh'
 alias ll='ls -la'
-
-# Find in files
-alias ack='ack-grep'
 
 # Back and forward through commands with CTRL-left/right
 bindkey '5D' emacs-backward-word
@@ -57,5 +54,7 @@ alias g='git'
 # Make pip cache locally
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
 
-# No pycs
-export PYTHONDONTWRITEBYTECODE=1
+export EDITOR="vim"
+
+unsetopt correct_all
+alias t=tree -I "*.pyc"
