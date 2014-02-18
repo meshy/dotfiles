@@ -51,6 +51,10 @@ alias p='bpython'
 # Map g to git
 alias g='git'
 
+# Testing
+alias m="make test"
+alias mf="make testfast"
+
 # Make pip cache locally
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
 
