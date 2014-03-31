@@ -62,3 +62,5 @@ export EDITOR="vim"
 
 unsetopt correct_all
 alias t=tree -I "*.pyc"
+
+alias pipr="pip install -r requirements.txt"
