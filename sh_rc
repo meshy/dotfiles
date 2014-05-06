@@ -1,5 +1,7 @@
 export WORKON_HOME=~/venvs
 
+export VIRTUALENVWRAPPER_PYTHON=`which python2`
+
 source /usr/bin/virtualenvwrapper.sh
 
 
@@ -38,6 +40,8 @@ function mkvenv {
     echo "Symlinked $WORKON_HOME/$NAME to ./venv"
   fi
 }
+
+source /home/charlie/.rvm/scripts/rvm
 
 # Add ~/bin to path, and alias hub to git
 export GEM_HOME=$HOME/.gem/ruby/2.0.0
