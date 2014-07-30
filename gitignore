@@ -4,6 +4,7 @@
 *.pyc
 *.log
 *.orig
+.coverage
 .idea
 .svn
 .hg
