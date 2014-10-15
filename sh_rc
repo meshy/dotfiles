@@ -57,6 +57,8 @@ export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
 
 export EDITOR="vim"
 
+alias s='subl3'
+
 unsetopt correct_all
 alias t=tree -I "*.pyc"
 
