@@ -1,12 +1,49 @@
-export WORKON_HOME=~/venvs
-
-export VIRTUALENVWRAPPER_PYTHON=`which python2`
-
-source /usr/bin/virtualenvwrapper.sh
-
-
 setopt INTERACTIVECOMMENTS
 # Above command explicitly enables comments starting with `#` in zsh
+
+############
+# SETTINGS #
+############
+
+# Make pip cache locally
+export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
+
+export EDITOR="vim"
+
+# Disable zsh autocorrect
+unsetopt correct_all
+
+# Back and forward through commands with CTRL-left/right
+bindkey '5D' emacs-backward-word
+bindkey '5C' emacs-forward-word
+export WORDCHARS=''
+
+# Virtualenvwrapper
+export WORKON_HOME=~/venvs
+export VIRTUALENVWRAPPER_PYTHON=`which python2`
+source /usr/bin/virtualenvwrapper.sh
+
+# Ruby
+source /home/charlie/.rvm/scripts/rvm
+# Add ~/bin to path
+export GEM_HOME=$HOME/.gem/ruby/2.0.0
+PATH=~/bin:$GEM_HOME/bin:$PATH
+
+
+###########
+# ALIASES #
+###########
+
+alias g='git'
+alias m="make test"
+alias mf="make testfast"
+alias m2="make test VERBOSITY=2"
+alias pipr="pip install -r requirements.txt"
+alias s='subl3'
+alias t=tree -I "*.pyc"
+
+# Alias hub to git, passing all args.
+function git(){hub "$@"}
 
 # Bash Directory browsing shortcuts
 alias k='tree'
@@ -16,10 +53,9 @@ alias ls='ls --color'
 alias l='ls -lh'
 alias ll='ls -la'
 
-# Back and forward through commands with CTRL-left/right
-bindkey '5D' emacs-backward-word
-bindkey '5C' emacs-forward-word
-export WORDCHARS=''
+#############
+# FUNCTIONS #
+#############
 
 # Create a virtual environment.
 function mkvenv3 {
@@ -32,34 +68,3 @@ function mkvenv2 {
     name=${1:-$defaultname}
     mkvirtualenv $name -a `pwd` -p `which python2`
 }
-
-source /home/charlie/.rvm/scripts/rvm
-
-# Add ~/bin to path, and alias hub to git
-export GEM_HOME=$HOME/.gem/ruby/2.0.0
-
-PATH=~/bin:$GEM_HOME/bin:$PATH
-function git(){hub "$@"}
-
-# Map `p` to bpython
-alias p='bpython'
-
-# Map g to git
-alias g='git'
-
-# Testing
-alias m="make test"
-alias mf="make testfast"
-alias m2="make test VERBOSITY=2"
-
-# Make pip cache locally
-export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
-
-export EDITOR="vim"
-
-alias s='subl3'
-
-unsetopt correct_all
-alias t=tree -I "*.pyc"
-
-alias pipr="pip install -r requirements.txt"
