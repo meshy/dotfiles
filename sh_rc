@@ -22,23 +22,15 @@ bindkey '5C' emacs-forward-word
 export WORDCHARS=''
 
 # Create a virtual environment.
-function mkvenv {
-  PWD=`pwd`
-  NAME=`basename $PWD`
-
-  mkvirtualenv $NAME --distribute -a $PWD
-
-  # Set up SublimeCodeIntel
-  if [ ! -e .codeintel ]; then
-    mkdir $PWD/.codeintel/
-    echo "{\"Python\": {\"python\": \"$PWD/venv/bin/python\"}}" > "$PWD/.codeintel/config"
-  fi
-
-  # Symlink the venv to the current dir
-  if [ ! -e venv ]; then
-    ln -s "$WORKON_HOME/$NAME" venv
-    echo "Symlinked $WORKON_HOME/$NAME to ./venv"
-  fi
+function mkvenv3 {
+    defaultname=`basename $PWD`
+    name=${1:-$defaultname}
+    mkvirtualenv $name -a `pwd` -p `which python3`
+}
+function mkvenv2 {
+    defaultname=`basename $PWD`
+    name=${1:-$defaultname}
+    mkvirtualenv $name -a `pwd` -p `which python2`
 }
 
 source /home/charlie/.rvm/scripts/rvm
