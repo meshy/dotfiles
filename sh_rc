@@ -34,6 +34,7 @@ PATH=~/bin:$GEM_HOME/bin:$PATH
 # ALIASES #
 ###########
 
+alias f='flake8 .'
 alias g='git'
 alias m="make test"
 alias mf="make testfast"
