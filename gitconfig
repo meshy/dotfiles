@@ -77,3 +77,5 @@
   conflictstyle = diff3
 [include]
     path = .ghi
+[commit]
+	gpgsign = true
