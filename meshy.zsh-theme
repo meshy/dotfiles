@@ -13,5 +13,7 @@ ${open_hook}${user_host} ${current_dir}  ${git_branch}
 ${close_hook}%B$%b "
 RPS1="${return_code}"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}✘"
+ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}✔"
