@@ -69,3 +69,9 @@ function mkvenv2 {
     name=${1:-$defaultname}
     mkvirtualenv $name -a `pwd` -p `which python2`
 }
+
+#######
+# FUN #
+#######
+
+fortune
