@@ -14,6 +14,7 @@ local_settings.py
 .sass-cache
 venv
 .codeintel
+.tox
 *.egg-info
 dist
 data.db
