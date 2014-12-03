@@ -5,6 +5,7 @@ set noerrorbells
 set novisualbell
 
 " Add line numbers
+set relativenumber
 set number
 
 " Indentation with four spaces
