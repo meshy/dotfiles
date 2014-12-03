@@ -8,6 +8,10 @@ set novisualbell
 set relativenumber
 set number
 
+" Complain about trailing whitespace
+set list
+set list listchars=tab:→\ ,trail:·
+
 " Indentation with four spaces
 set tabstop=4
 set shiftwidth=4
