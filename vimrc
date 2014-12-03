@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " Remove visual bell stuff
 set noerrorbells
 set novisualbell
