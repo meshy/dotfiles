@@ -1,9 +1,5 @@
 #! bin/bash
 
-
-# Install zsh
-# wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-
 # Do stuff from home folder
 cd ~
 mkdir personal
@@ -20,6 +16,17 @@ ln -s ~/personal/dotfiles/gemrc ~/.gemrc
 
 # Install mercurial setup
 ln -s ~/personal/dotfiles/hgrc ~/.hgrc
+
+# Install vim
+ln -s ~/personal/dotfiles/vimrc ~/.vimrc
+
+# Install oh-my-zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+
+# Replace the default theme with my custom one
+mkdr -p $ZSH_CUSTOM/themes
+ln -s ~/personal/dotfiles/meshy.zsh-theme $ZSH_CUSTOM/themes/meshy.zsh-theme
+perl -pi -e s,robbyrussel,meshy,g ~/.zshrc
 
 # Install shell extras
 ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
