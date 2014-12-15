@@ -42,7 +42,7 @@ alias m2="make test VERBOSITY=2"
 alias pipr="pip install -r requirements.txt"
 alias s='subl3'
 alias t=tree -I "*.pyc"
-alias v='gvim'
+alias v='vim'
 
 # Alias hub to git, passing all args.
 function git(){hub "$@"}
