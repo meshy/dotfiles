@@ -30,3 +30,6 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" Recognise markdown files with the extension '.md'
+au BufRead,BufNewFile *.md set filetype=markdown
