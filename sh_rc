@@ -26,6 +26,9 @@ source /usr/bin/virtualenvwrapper.sh
 # Ruby
 eval "$(rbenv init -)"
 
+# Heroku
+PATH="/usr/local/heroku/bin:$PATH"
+
 ###########
 # ALIASES #
 ###########
