@@ -20,7 +20,7 @@ export WORDCHARS=''
 
 # Virtualenvwrapper
 export WORKON_HOME=~/venvs
-export VIRTUALENVWRAPPER_PYTHON=`which python2`
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
 source /usr/bin/virtualenvwrapper.sh
 
 # Ruby
