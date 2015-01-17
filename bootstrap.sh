@@ -5,6 +5,8 @@
 
 yaourt -S postgresql python-virtualenvwrapper hub git fortune-mod oh-my-zsh-git rbenv --noconfirm
 
+systemctl enable postgresql.service
+
 # Symlink gnupg and ssh
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
 ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
