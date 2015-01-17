@@ -24,11 +24,7 @@ export VIRTUALENVWRAPPER_PYTHON=`which python2`
 source /usr/bin/virtualenvwrapper.sh
 
 # Ruby
-source /home/charlie/.rvm/scripts/rvm
-# Add ~/bin to path
-export GEM_HOME=$HOME/.gem/ruby/2.0.0
-PATH=~/bin:$GEM_HOME/bin:$PATH
-
+eval "$(rbenv init -)"
 
 ###########
 # ALIASES #
