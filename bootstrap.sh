@@ -1,4 +1,11 @@
 #! bin/bash
+############################
+# Dev setup for Arch linux #
+############################
+
+# Symlink gnupg and ssh
+ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
+ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 
 # Do stuff from home folder
 cd ~
