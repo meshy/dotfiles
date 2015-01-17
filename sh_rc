@@ -51,6 +51,9 @@ alias ls='ls --color'
 alias l='ls -lh'
 alias ll='ls -la'
 
+# How meta is this?!
+alias cddotfiles='cd ~/personal/dotfiles'
+
 #############
 # FUNCTIONS #
 #############
