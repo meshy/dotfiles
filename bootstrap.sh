@@ -11,8 +11,8 @@ ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 
 # Do stuff from home folder
 cd ~
-mkdir personal
-cd personal
+mkdir ~/personal
+cd ~/personal
 git clone git@github.com:meshy/dotfiles.git
 cd ~
 
@@ -38,3 +38,4 @@ perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
+mkdir ~/code
