@@ -4,6 +4,7 @@
 ############################
 
 sudo pacman -S python-virtualenvwrapper
+yaourt -S oh-my-zsh-git --noconfirm
 
 # Symlink gnupg and ssh
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
@@ -28,9 +29,6 @@ ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 
 # Install vim
 ln -s ~/personal/dotfiles/vimrc ~/.vimrc
-
-# Install oh-my-zsh
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 # Replace the default theme with my custom one
 mkdir -p $ZSH_CUSTOM/themes
