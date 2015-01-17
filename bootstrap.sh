@@ -3,6 +3,8 @@
 # Dev setup for Arch linux #
 ############################
 
+sudo pacman -S python-virtualenvwrapper
+
 # Symlink gnupg and ssh
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
 ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
