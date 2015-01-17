@@ -3,7 +3,7 @@
 # Dev setup for Arch linux #
 ############################
 
-yaourt -S python-virtualenvwrapper hub git oh-my-zsh-git rbenv --noconfirm
+yaourt -S python-virtualenvwrapper hub git fortune-mod oh-my-zsh-git rbenv --noconfirm
 
 # Symlink gnupg and ssh
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
