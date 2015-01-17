@@ -5,7 +5,10 @@
 
 yaourt -S postgresql python-virtualenvwrapper hub git fortune-mod oh-my-zsh-git rbenv --noconfirm
 
+# Set up postgres clusters, and enable service
+sudo -u postgres initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
 systemctl enable postgresql.service
+systemctl start postgresql.service
 
 # Symlink gnupg and ssh
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
