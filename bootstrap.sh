@@ -3,8 +3,7 @@
 # Dev setup for Arch linux #
 ############################
 
-sudo pacman -S python-virtualenvwrapper
-yaourt -S oh-my-zsh-git --noconfirm
+yaourt -S python-virtualenvwrapper oh-my-zsh-git rbenv --noconfirm
 
 # Symlink gnupg and ssh
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
