@@ -31,7 +31,7 @@ ln -s ~/personal/dotfiles/vimrc ~/.vimrc
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 # Replace the default theme with my custom one
-mkdr -p $ZSH_CUSTOM/themes
+mkdir -p $ZSH_CUSTOM/themes
 ln -s ~/personal/dotfiles/meshy.zsh-theme $ZSH_CUSTOM/themes/meshy.zsh-theme
 perl -pi -e s,robbyrussel,meshy,g ~/.zshrc
 
