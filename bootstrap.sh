@@ -3,7 +3,14 @@
 # Dev setup for Arch linux #
 ############################
 
-yaourt -S postgresql python-virtualenvwrapper hub git fortune-mod oh-my-zsh-git rbenv ruby-build --noconfirm
+yaourt -S \
+    postgresql \
+    python-virtualenvwrapper \
+    hub git \
+    fortune-mod \
+    oh-my-zsh-git \
+    rbenv ruby-build \
+    --noconfirm
 
 # Set up postgres clusters, and enable service
 sudo -u postgres initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
