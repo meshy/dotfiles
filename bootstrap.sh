@@ -11,6 +11,7 @@ yaourt -S \
     fortune-mod \
     oh-my-zsh-git \
     rbenv ruby-build \
+    vim sublime-text-dev \
     --noconfirm
 
 # Set up postgres clusters, and enable service
