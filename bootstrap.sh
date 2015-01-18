@@ -11,6 +11,7 @@ yaourt -S \
     fortune-mod \
     oh-my-zsh-git \
     rbenv ruby-build \
+    libmemcached \
     vim sublime-text-dev \
     --noconfirm
 
