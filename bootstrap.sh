@@ -4,6 +4,7 @@
 ############################
 
 yaourt -S \
+    clisp \
     postgresql \
     python-virtualenvwrapper \
     hub git \
