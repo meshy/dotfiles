@@ -11,9 +11,12 @@ yaourt -S \
     fortune-mod \
     oh-my-zsh-git \
     rbenv ruby-build \
-    libmemcached \
+    libmemcached freetype2 \
     vim sublime-text-dev \
     --noconfirm
+
+# Put headers in the right place for `pip install pillow`.
+sudo ln -s /usr/include/freetype2 /usr/include/freetype
 
 # Set up postgres clusters, and enable service
 sudo -u postgres initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
