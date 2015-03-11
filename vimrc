@@ -21,6 +21,9 @@ set expandtab
 " Glorious technicolour!
 syntax on
 
+" Visual feedback on autocompleted commands
+set wmnu
+
 " Disable arrow keys, because sanity is for the weak.
 nnoremap <up> <nop>
 nnoremap <down> <nop>
