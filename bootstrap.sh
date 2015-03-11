@@ -1,9 +1,36 @@
 #! bin/bash
+############################
+# Dev setup for Arch linux #
+############################
+
+yaourt -S \
+    clisp \
+    postgresql \
+    python-virtualenvwrapper \
+    hub git \
+    fortune-mod \
+    oh-my-zsh-git \
+    rbenv ruby-build \
+    libmemcached freetype2 \
+    vim sublime-text-dev \
+    --noconfirm
+
+# Put headers in the right place for `pip install pillow`.
+sudo ln -s /usr/include/freetype2 /usr/include/freetype
+
+# Set up postgres clusters, and enable service
+sudo -u postgres initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
+systemctl enable postgresql.service
+systemctl start postgresql.service
+
+# Symlink gnupg and ssh
+ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
+ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 
 # Do stuff from home folder
 cd ~
-mkdir personal
-cd personal
+mkdir ~/personal
+cd ~/personal
 git clone git@github.com:meshy/dotfiles.git
 cd ~
 
@@ -20,15 +47,13 @@ ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 # Install vim
 ln -s ~/personal/dotfiles/vimrc ~/.vimrc
 
-# Install oh-my-zsh
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-
 # Replace the default theme with my custom one
-mkdr -p $ZSH_CUSTOM/themes
+mkdir -p $ZSH_CUSTOM/themes
 ln -s ~/personal/dotfiles/meshy.zsh-theme $ZSH_CUSTOM/themes/meshy.zsh-theme
-perl -pi -e s,robbyrussel,meshy,g ~/.zshrc
+perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 
 # Install shell extras
 ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
+mkdir ~/code

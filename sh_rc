@@ -20,15 +20,14 @@ export WORDCHARS=''
 
 # Virtualenvwrapper
 export WORKON_HOME=~/venvs
-export VIRTUALENVWRAPPER_PYTHON=`which python2`
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
 source /usr/bin/virtualenvwrapper.sh
 
 # Ruby
-source /home/charlie/.rvm/scripts/rvm
-# Add ~/bin to path
-export GEM_HOME=$HOME/.gem/ruby/2.0.0
-PATH=~/bin:$GEM_HOME/bin:$PATH
+eval "$(rbenv init -)"
 
+# Heroku
+PATH="/usr/local/heroku/bin:$PATH"
 
 ###########
 # ALIASES #
@@ -54,6 +53,9 @@ alias r='screen -D -R'
 alias ls='ls --color'
 alias l='ls -lh'
 alias ll='ls -la'
+
+# How meta is this?!
+alias cddotfiles='cd ~/personal/dotfiles'
 
 #############
 # FUNCTIONS #
