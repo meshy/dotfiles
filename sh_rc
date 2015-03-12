@@ -38,7 +38,6 @@ alias g='git'
 alias m="make test"
 alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
-alias pipr="pip install -r requirements.txt"
 alias s='subl3'
 alias t=tree -I "*.pyc"
 alias v='vim'
@@ -66,12 +65,23 @@ function mkvenv3 {
     defaultname=`basename $PWD`
     name=${1:-$defaultname}
     mkvirtualenv $name -a `pwd` -p `which python3`
+    pip install wheel
 }
 function mkvenv2 {
     defaultname=`basename $PWD`
     name=${1:-$defaultname}
     mkvirtualenv $name -a `pwd` -p `which python2`
+    pip install wheel
 }
+
+# Install requirements with pip
+function pp {
+    defaultfile='requirements.txt'
+    requirementsfile=${1:-$defaultfile}
+    pip wheel -r $requirementsfile
+    pip install -r $requirementsfile
+}
+
 
 #######
 # FUN #
