@@ -7,7 +7,7 @@ yaourt -S \
     clisp \
     postgresql \
     python-virtualenvwrapper \
-    hub git \
+    git hub-bin \
     fortune-mod \
     oh-my-zsh-git \
     rbenv ruby-build \

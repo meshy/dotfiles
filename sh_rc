@@ -43,7 +43,7 @@ alias t=tree -I "*.pyc"
 alias v='vim'
 
 # Alias hub to git, passing all args.
-function git(){hub "$@"}
+alias git=hub
 
 # Bash Directory browsing shortcuts
 alias k='tree'
