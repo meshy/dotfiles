@@ -27,6 +27,7 @@
   ls = ls-files
   pl = pull
   ps = push
+  pr = pull-request
   s = status
   ss = status -s
   in = !git fetch && git log ..origin/master
