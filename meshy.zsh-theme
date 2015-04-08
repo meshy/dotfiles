@@ -4,8 +4,8 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
-local open_hook='%{$fg[magenta]%}╭─%{$reset_color%}'
-local close_hook='%{$fg[magenta]%}╰─%{$reset_color%}'
+local open_hook='%{$fg[magenta]%}☷☳☱☵%{$reset_color%}'
+local close_hook='%{$fg[magenta]%}☴☰☲☶ %{$reset_color%}'
 local key_exists='$(if [ -e ~/.ssh/id_rsa ]; then echo "%{$fg[green]%}☰";else echo "%{$fg[red]%}☷";fi)'
 
 PROMPT="
