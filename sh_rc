@@ -41,6 +41,7 @@ alias m2="make test VERBOSITY=2"
 alias s='subl3'
 alias t=tree -I "*.pyc"
 alias v='vim'
+alias wo='workon'
 
 # Alias hub to git, passing all args.
 alias git=hub
@@ -54,7 +55,7 @@ alias l='ls -lh'
 alias ll='ls -la'
 
 # How meta is this?!
-alias cddotfiles='cd ~/personal/dotfiles'
+alias cdd='cd ~/personal/dotfiles'
 
 #############
 # FUNCTIONS #
