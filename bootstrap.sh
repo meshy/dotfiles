@@ -34,6 +34,10 @@ cd ~/personal
 git clone git@github.com:meshy/dotfiles.git
 cd ~
 
+# Install pip config
+mkdir -p ~/.config/pip
+ln -s ~/personal/dotfiles/pip/pip.conf ~/.config/pip/pip.conf
+
 # Install git setup
 ln -s ~/personal/dotfiles/gitignore ~/.gitignore
 ln -s ~/personal/dotfiles/gitconfig ~/.gitconfig
