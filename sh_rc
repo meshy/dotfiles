@@ -81,7 +81,6 @@ function mkvenv2 {
 function pp {
     defaultfile='requirements.txt'
     requirementsfile=${1:-$defaultfile}
-    pip wheel -r $requirementsfile
     pip install -r $requirementsfile
 }
 
