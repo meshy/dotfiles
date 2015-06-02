@@ -5,9 +5,6 @@ setopt INTERACTIVECOMMENTS
 # SETTINGS #
 ############
 
-# Make pip cache locally
-export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache/"
-
 export EDITOR="vim"
 
 # Disable zsh autocorrect
