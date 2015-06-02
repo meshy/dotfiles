@@ -79,3 +79,5 @@
     path = .ghi
 [commit]
 	gpgsign = true
+[init]
+	templatedir = /home/charlie/personal/dotfiles/git_template

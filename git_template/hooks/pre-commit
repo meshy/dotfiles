@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ ! -e ~/.ssh/id_rsa ]
+  then
+    echo "Plug in your GPG key"
+    exit 1
+fi
