@@ -38,10 +38,12 @@ alias g='git'
 alias m="make test"
 alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
+alias pi="pip install"
 alias s='subl3'
 alias t=tree -I "*.pyc"
 alias v='vim'
 alias wo='workon'
+alias fig='docker-compose'
 
 # Alias hub to git, passing all args.
 alias git=hub
