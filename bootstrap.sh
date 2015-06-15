@@ -12,7 +12,7 @@ yaourt -S \
     oh-my-zsh-git \
     rbenv ruby-build \
     libmemcached freetype2 \
-    vim sublime-text-dev \
+    vim sublime-text-dev editorconfig-core-c\
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
@@ -50,6 +50,9 @@ ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 
 # Install vim
 ln -s ~/personal/dotfiles/vimrc ~/.vimrc
+
+# Install editorconfig
+ln -s ~/personal/dotfiles/editorconfig ~/.editorconfig
 
 # Replace the default theme with my custom one
 mkdir -p $ZSH_CUSTOM/themes
