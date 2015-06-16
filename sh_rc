@@ -87,3 +87,5 @@ function pp {
 #######
 
 fortune
+echo
+cal
