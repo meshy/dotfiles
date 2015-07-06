@@ -27,12 +27,9 @@ systemctl start postgresql.service
 ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
 ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 
-# Do stuff from home folder
-cd ~
-mkdir ~/personal
-cd ~/personal
-git clone git@github.com:meshy/dotfiles.git
-cd ~
+# Download dotfiles
+mkdir -p ~/personal
+git -C ~/personal clone git@github.com:meshy/dotfiles.git
 
 # Install pip config
 mkdir -p ~/.config/pip
@@ -65,4 +62,4 @@ perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
-mkdir ~/code
+mkdir -p ~/code
