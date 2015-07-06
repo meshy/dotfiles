@@ -1,5 +1,9 @@
 set encoding=utf-8
 
+" Load pathogen package manager
+execute pathogen#infect()
+filetype plugin indent on
+
 " Remove visual bell stuff
 set noerrorbells
 set novisualbell

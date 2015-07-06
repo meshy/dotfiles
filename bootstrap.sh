@@ -12,7 +12,7 @@ yaourt -S \
     oh-my-zsh-git \
     rbenv ruby-build \
     libmemcached freetype2 \
-    vim sublime-text-dev editorconfig-core-c\
+    vim vim-pathogen sublime-text-dev editorconfig-core-c \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
@@ -50,6 +50,8 @@ ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 
 # Install vim
 ln -s ~/personal/dotfiles/vimrc ~/.vimrc
+ln -s ~/personal/dotfiles/vim ~/.vim
+git -C ~/personal/dotfiles/ submodule update --init --recursive
 
 # Install editorconfig
 ln -s ~/personal/dotfiles/editorconfig ~/.editorconfig
