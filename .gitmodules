@@ -1,3 +1,6 @@
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/khuno.vim"]
+	path = vim/bundle/khuno.vim
+	url = https://github.com/alfredodeza/khuno.vim
