@@ -4,3 +4,6 @@
 [submodule "vim/bundle/khuno.vim"]
 	path = vim/bundle/khuno.vim
 	url = https://github.com/alfredodeza/khuno.vim
+[submodule "vim/bundle/vim-pathogen"]
+	path = vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen

@@ -12,7 +12,7 @@ yaourt -S \
     oh-my-zsh-git \
     rbenv ruby-build \
     libmemcached freetype2 \
-    vim vim-pathogen sublime-text-dev editorconfig-core-c \
+    vim sublime-text-dev editorconfig-core-c \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.

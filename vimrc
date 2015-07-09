@@ -1,4 +1,5 @@
 set encoding=utf-8
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 " Load pathogen package manager
 execute pathogen#infect()
