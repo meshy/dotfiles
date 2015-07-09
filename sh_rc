@@ -38,7 +38,8 @@ alias m2="make test VERBOSITY=2"
 alias pi="pip install"
 alias s='subl3'
 alias t=tree -I "*.pyc"
-alias v='vim'
+alias vim='nvim'
+alias v='nvim'
 alias wo='workon'
 alias fig='docker-compose'
 

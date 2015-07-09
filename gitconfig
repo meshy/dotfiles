@@ -3,7 +3,7 @@
   email = charlie@meshy.co.uk
 
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = ~/.gitignore
   whitespace = blank-at-eol,cr-at-eol,tabwidth=4,tab-in-indent,space-before-tab
   pager =
