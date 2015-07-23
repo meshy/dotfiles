@@ -5,9 +5,11 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 filetype plugin indent on
 
-" Remove visual bell stuff
+" Display errors nicely (and silently)
 set noerrorbells
 set novisualbell
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=red
 
 " Add line numbers
 set relativenumber
