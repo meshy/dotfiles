@@ -36,7 +36,7 @@ alias m="make test"
 alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
 alias pi="pip install"
-alias s='subl3'
+alias s='nvim'
 alias t=tree -I "*.pyc"
 alias vim='nvim'
 alias v='nvim'
