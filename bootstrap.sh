@@ -4,7 +4,7 @@
 ############################
 
 yaourt -S \
-    clisp \
+    clojure leiningen \
     postgresql \
     python-virtualenvwrapper \
     git hub-bin \
