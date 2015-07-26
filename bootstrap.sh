@@ -12,6 +12,7 @@ yaourt -S \
     oh-my-zsh-git \
     rbenv ruby-build \
     libmemcached freetype2 \
+    pygmentize python-pygments \
     vim neovim-git sublime-text-dev editorconfig-core-c \
     --noconfirm
 
