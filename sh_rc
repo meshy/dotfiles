@@ -42,7 +42,7 @@ alias vim='nvim'
 alias v='nvim'
 alias wo='workon'
 alias fig='docker-compose'
-alias dog='pygmentize -g'
+alias dog='pygmentize'
 
 # Alias hub to git, passing all args.
 alias git=hub
