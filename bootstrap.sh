@@ -11,7 +11,7 @@ yaourt -S \
     fortune-mod \
     oh-my-zsh-git \
     rbenv ruby-build \
-    libmemcached freetype2 \
+    libmemcached freetype2 ttf-luculent \
     pygmentize python-pygments \
     vim neovim-git sublime-text-dev editorconfig-core-c \
     --noconfirm
