@@ -43,3 +43,6 @@ inoremap <right> <nop>
 
 " Recognise markdown files with the extension '.md'
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Set up vim-airline
+set laststatus=2
