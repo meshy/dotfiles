@@ -31,7 +31,8 @@ syntax on
 " Visual feedback on autocompleted commands
 set wmnu
 
-" Disable arrow keys, because sanity is for the weak.
+" Disable mouse and arrow keys, because sanity is for the weak.
+set mouse=
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
