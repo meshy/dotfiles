@@ -7,11 +7,11 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-[{Makefile,**.go}]
+[{Makefile,*.go}]
 indent_style = tab
 
 [**.go]
 indent_size = 8
 
-[{*.yml,*.clj{,s}}]
+[*.{yml,clj,cljs}]
 indent_size = 2
