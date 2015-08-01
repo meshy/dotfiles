@@ -4,6 +4,7 @@
 ############################
 
 yaourt -S \
+    terminator xcalib \
     clojure leiningen \
     postgresql \
     python-virtualenvwrapper \
@@ -66,3 +67,21 @@ ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
 mkdir -p ~/code
+
+# Configure gnome keyboard shortcuts
+# See http://askubuntu.com/a/597414/30904
+MEDIA_KEYS="org.gnome.settings-daemon.plugins.media-keys"
+KEY_BINDING=$MEDIA_KEYS".custom-keybinding"
+KEY_BINDING_PATH="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
+CUSTOM_0=$KEY_BINDING_PATH"/custom0/"
+CUSTOM_1=$KEY_BINDING_PATH"/custom1/"
+
+gsettings set $MEDIA_KEYS custom-keybindings "['$CUSTOM_0', '$CUSTOM_1']"
+
+gsettings set $KEY_BINDING:$CUSTOM_0 name 'Terminator'
+gsettings set $KEY_BINDING:$CUSTOM_0 command 'terminator'
+gsettings set $KEY_BINDING:$CUSTOM_0 binding '<Primary><Alt>t'
+
+gsettings set $KEY_BINDING:$CUSTOM_1 name 'Invert colours'
+gsettings set $KEY_BINDING:$CUSTOM_1 command 'xcalib -invert -alter'
+gsettings set $KEY_BINDING:$CUSTOM_1 binding '<Primary><Alt>i'
