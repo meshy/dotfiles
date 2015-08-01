@@ -66,6 +66,7 @@ perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
+# Make a directory to store code projects
 mkdir -p ~/code
 
 # Configure gnome keyboard shortcuts
