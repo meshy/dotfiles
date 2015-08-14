@@ -37,7 +37,7 @@ alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
 alias pi="pip install"
 alias s='nvim'
-alias t='tree -I "__pycache__" -I "*.pyc" -C'
+alias t='tree -I "__pycache__|*.pyc" -C'
 alias vim='nvim'
 alias v='nvim'
 alias wo='workon'
