@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-vala"]
 	path = vim/bundle/vim-vala
 	url = https://github.com/rainux/vim-vala
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
