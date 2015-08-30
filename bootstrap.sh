@@ -12,7 +12,7 @@ yaourt -S \
     git hub-bin \
     fortune-mod \
     rbenv ruby-build \
-    libmemcached freetype2 ttf-luculent \
+    libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
     vim neovim-git editorconfig-core-c \
     --noconfirm
