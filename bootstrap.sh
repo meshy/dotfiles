@@ -15,7 +15,7 @@ yaourt -S \
     rbenv ruby-build \
     libmemcached freetype2 ttf-luculent \
     pygmentize python-pygments \
-    vim neovim-git sublime-text-dev editorconfig-core-c \
+    vim neovim-git editorconfig-core-c \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
