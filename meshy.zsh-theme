@@ -131,8 +131,16 @@ prompt_pure_preprompt_render() {
 		preprompt+="%F{red} SSH/GPG key!%f"
 	fi
 
+	local venvprompt=
+	if [ ! -z $VIRTUAL_ENV ]; then
+		venvprompt="%F{cyan}$(basename $VIRTUAL_ENV)%f"
+	fi
+
 	# if executing through precmd, do not perform fancy terminal editing
 	if [[ "$1" == "precmd" ]]; then
+		if [ ! -z $venvprompt ]; then
+			print -Pn "\n${venvprompt}"
+		fi
 		print -P "\n${preprompt}"
 	else
 		# only redraw if preprompt has changed
