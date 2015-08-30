@@ -10,6 +10,9 @@ export EDITOR="vim"
 # Disable zsh autocorrect
 unsetopt correct_all
 
+# Enable timestamps in history
+setopt extendedhistory
+
 # Back and forward through commands with CTRL-left/right
 bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
