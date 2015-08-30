@@ -7,7 +7,7 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-[{Makefile,*.{go,vala}}]
+[{Makefile,*.{go,vala,zsh-theme}}]
 indent_style = tab
 
 [**.go]
