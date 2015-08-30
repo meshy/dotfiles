@@ -4,6 +4,7 @@
 ############################
 
 yaourt -S \
+    libreoffice-fresh libreoffice-fresh-en-GB \
     terminator xcalib \
     clojure leiningen \
     postgresql \
