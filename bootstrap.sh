@@ -11,7 +11,6 @@ yaourt -S \
     python-virtualenvwrapper \
     git hub-bin \
     fortune-mod \
-    oh-my-zsh-git \
     rbenv ruby-build \
     libmemcached freetype2 ttf-luculent \
     pygmentize python-pygments \
@@ -58,9 +57,11 @@ git -C ~/personal/dotfiles/ submodule update --init --recursive
 # Install editorconfig
 ln -s ~/personal/dotfiles/editorconfig ~/.editorconfig
 
-# Replace the default theme with my custom one
+# Install oh-my-zsh, and replace the default theme with custom one
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mkdir -p $ZSH_CUSTOM/themes
-ln -s ~/personal/dotfiles/meshy.zsh-theme $ZSH_CUSTOM/themes/meshy.zsh-theme
+ln -s ~/personal/dotfiles/meshy.zsh-theme $ZSH_CUSTOM/meshy.zsh-theme
+ln -s ~/personal/dotfiles/async.zsh $ZSH_CUSTOM/async.zsh
 perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 
 # Install shell extras
