@@ -126,6 +126,11 @@ prompt_pure_preprompt_render() {
 	# execution time
 	preprompt+="%F{yellow}${prompt_pure_cmd_exec_time}%f"
 
+	# zsh key inserted?
+	if [ ! -e ~/.ssh/id_rsa ]; then
+		preprompt+="%F{red} SSH/GPG key!%f"
+	fi
+
 	# if executing through precmd, do not perform fancy terminal editing
 	if [[ "$1" == "precmd" ]]; then
 		print -P "\n${preprompt}"
