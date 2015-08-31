@@ -5,7 +5,7 @@
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
-    terminator xcalib \
+    terminator xcalib zsh-syntax-highlighting \
     clojure leiningen \
     postgresql \
     python-virtualenvwrapper \

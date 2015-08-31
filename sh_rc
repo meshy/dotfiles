@@ -91,6 +91,8 @@ function pp {
     pi -r $requirementsfile
 }
 
+# Syntax highlighting needs to be at the end
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #######
 # FUN #
