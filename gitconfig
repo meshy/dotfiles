@@ -71,6 +71,9 @@
 [github]
   user = meshy
 
+[push]
+  default = simple
+
 [merge]
   conflictstyle = diff3
 
