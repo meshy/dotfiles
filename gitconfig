@@ -72,7 +72,7 @@
   user = meshy
 
 [push]
-  default = simple
+  default = current
 
 [merge]
   conflictstyle = diff3
