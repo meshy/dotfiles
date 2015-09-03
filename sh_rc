@@ -47,6 +47,7 @@ alias v='nvim'
 alias wo='workon'
 alias fig='docker-compose'
 alias dog='pygmentize -g'
+alias reload='source ~/.zshrc'
 
 # Alias hub to git, passing all args.
 alias git=hub
