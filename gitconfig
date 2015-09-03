@@ -64,6 +64,8 @@
   main-window-view = FileView
   history-view-vpane-position = 547
   file-view-vpane-position = 1035
+[diff]
+  algorithm = patience
 
 [status]
   relativePaths = true
