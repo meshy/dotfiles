@@ -76,4 +76,4 @@
   gpgsign = true
 
 [init]
-  templatedir = /home/charlie/personal/dotfiles/git_template
+  templatedir = ~/personal/dotfiles/git_template
