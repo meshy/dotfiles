@@ -53,3 +53,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
+
+" Search ctags with CtrlP
+nnoremap <leader>. :CtrlPTag<cr>
