@@ -14,7 +14,6 @@ hi SpellBad cterm=underline ctermfg=red
 " Display search results nicely
 hi Search ctermbg=DarkGrey
 
-
 " Add line numbers
 set relativenumber
 set number
