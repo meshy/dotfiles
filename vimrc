@@ -45,8 +45,9 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-" Recognise markdown files with the extension '.md'
+" Recognise files with unusual file extensions
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufNewFile,BufRead *.ejs set filetype=html
 
 " Set up vim-airline
 set laststatus=2
