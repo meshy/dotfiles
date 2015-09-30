@@ -14,7 +14,6 @@ hi SpellBad cterm=underline ctermfg=red
 " Display search results nicely
 hi Search ctermbg=DarkGrey
 
-
 " Add line numbers
 set relativenumber
 set number
@@ -46,10 +45,14 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-" Recognise markdown files with the extension '.md'
+" Recognise files with unusual file extensions
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufNewFile,BufRead *.ejs set filetype=html
 
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
+
+" Search ctags with CtrlP
+nnoremap <leader>. :CtrlPTag<cr>
