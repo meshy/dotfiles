@@ -22,7 +22,7 @@ export WORDCHARS=''
 export WORKON_HOME=~/venvs
 export VIRTUALENVWRAPPER_PYTHON=`which python3`
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-source /usr/bin/virtualenvwrapper.sh
+source `which virtualenvwrapper.sh`
 
 # Ruby
 eval "$(rbenv init -)"
