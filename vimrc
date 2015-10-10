@@ -56,3 +56,5 @@ let g:airline_theme='powerlineish'
 
 " Search ctags with CtrlP
 nnoremap <leader>. :CtrlPTag<cr>
+" Use `ag` to make CtrlP indexing faster
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
