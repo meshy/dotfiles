@@ -7,7 +7,7 @@ yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
     terminator xcalib zsh-syntax-highlighting \
     clojure leiningen \
-    postgresql \
+    postgresql openssh tree \
     python-virtualenvwrapper \
     git hub-bin \
     fortune-mod \
@@ -21,7 +21,7 @@ yaourt -S \
 sudo ln -s /usr/include/freetype2 /usr/include/freetype
 
 # Set up postgres clusters, and enable service
-sudo -u postgres initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
+sudo -u postgres initdb --locale en_GB.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
 systemctl enable postgresql.service
 systemctl start postgresql.service
 
