@@ -48,10 +48,9 @@ ln -s ~/personal/dotfiles/gemrc ~/.gemrc
 ln -s ~/personal/dotfiles/hgrc ~/.hgrc
 
 # Install vim
-ln -s ~/personal/dotfiles/vimrc ~/.vimrc
+ln -s ~/personal/dotfiles/vim/init.vim ~/.vimrc
 ln -s ~/personal/dotfiles/vim ~/.vim
-ln -s ~/personal/dotfiles/vimrc ~/.nvimrc
-ln -s ~/personal/dotfiles/vim ~/.nvim
+ln -s ~/personal/dotfiles/vim ~/.config/nvim
 git -C ~/personal/dotfiles/ submodule update --init --recursive
 
 # Install editorconfig
