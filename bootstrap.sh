@@ -11,7 +11,7 @@ yaourt -S \
     python-virtualenvwrapper \
     git hub-bin \
     fortune-mod \
-    rbenv ruby-build \
+    rbenv ruby-build bower \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
     vim neovim-git editorconfig-core-c ctags \
