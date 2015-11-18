@@ -7,11 +7,11 @@ yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
     terminator xcalib zsh-syntax-highlighting \
     clojure leiningen \
-    postgresql openssh tree \
+    postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
     git hub-bin \
     fortune-mod \
-    rbenv ruby-build bower \
+    rbenv ruby-build bower heroku-toolbelt \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
     vim neovim-git editorconfig-core-c ctags \
