@@ -27,6 +27,7 @@
   ls = ls-files
   merged = branch --merged
   pl = pull
+  plp = pull --prune
   ps = push
   pr = pull-request
   s = status
