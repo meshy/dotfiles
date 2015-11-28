@@ -72,13 +72,13 @@ function mkvenv3 {
     defaultname=`basename $PWD`
     name=${1:-$defaultname}
     mkvirtualenv $name -a `pwd` -p `which python3`
-    pip install wheel
+    pip install -U pip setuptools wheel
 }
 function mkvenv2 {
     defaultname=`basename $PWD`
     name=${1:-$defaultname}
     mkvirtualenv $name -a `pwd` -p `which python2`
-    pip install wheel
+    pip install -U pip setuptools wheel
 }
 
 # Install requirements with pip
