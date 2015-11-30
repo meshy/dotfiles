@@ -30,6 +30,7 @@ set expandtab
 
 " Glorious technicolour!
 syntax on
+let g:rainbow_active = 1
 
 " Visual feedback on autocompleted commands
 set wmnu
