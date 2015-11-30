@@ -56,6 +56,10 @@ git -C ~/personal/dotfiles/ submodule update --init --recursive
 # Install editorconfig
 ln -s ~/personal/dotfiles/editorconfig ~/.editorconfig
 
+# Install leiningen (clojure)
+mkdir -p ~/.lein
+ln -s ~/personal/dotfiles/lein_profiles.clj ~/.lein/profiles.clj
+
 # Install oh-my-zsh, and replace the default theme with custom one
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mkdir -p $ZSH_CUSTOM/themes
