@@ -31,6 +31,19 @@ set expandtab
 " Glorious technicolour!
 syntax on
 let g:rainbow_active = 1
+let g:rainbow_conf = {
+    \   'ctermfgs': ['blue', 'green', 'yellow', 'cyan', 'magenta'],
+    \   'separately': {
+    \       '*': {},
+    \       'htmldjango': {
+    \           'parentheses': [
+    \               'start="{{" end="}}"',
+    \               'start="{%" end="%}"',
+    \               'start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end="</\z1>" fold'
+    \           ],
+    \       }
+    \   }
+    \}
 
 " Visual feedback on autocompleted commands
 set wmnu
