@@ -1,9 +1,21 @@
 set encoding=utf-8
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-" Load pathogen package manager
-execute pathogen#infect()
+" Load package manager
 filetype plugin indent on
+call plug#begin('~/.vim/plugged')
+Plug 'editorconfig/editorconfig-vim'
+Plug 'alfredodeza/khuno.vim'
+Plug 'tpope/vim-git'
+Plug 'bling/vim-airline'
+Plug 'rainux/vim-vala'
+Plug 'kien/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'wavded/vim-stylus'
+Plug 'ervandew/supertab'
+Plug 'luochen1990/rainbow'
+call plug#end()
 
 " Display errors nicely (and silently)
 set noerrorbells
