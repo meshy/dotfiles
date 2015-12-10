@@ -16,6 +16,7 @@ Plug 'wavded/vim-stylus'
 Plug 'ervandew/supertab'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 " Display errors nicely (and silently)
@@ -57,6 +58,7 @@ let g:rainbow_conf = {
     \       }
     \   }
     \}
+let g:SignatureMarkTextHLDynamic = 1
 
 " Visual feedback on autocompleted commands
 set wmnu
