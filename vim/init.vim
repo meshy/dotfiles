@@ -15,6 +15,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'wavded/vim-stylus'
 Plug 'ervandew/supertab'
 Plug 'luochen1990/rainbow'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 " Display errors nicely (and silently)
