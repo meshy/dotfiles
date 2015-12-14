@@ -33,42 +33,14 @@ ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 mkdir -p ~/personal
 git -C ~/personal clone git@github.com:meshy/dotfiles.git
 
-# Install pip config
-mkdir -p ~/.config/pip
-ln -s ~/personal/dotfiles/pip/pip.conf ~/.config/pip/pip.conf
-
-# Install git setup
-ln -s ~/personal/dotfiles/gitignore ~/.gitignore
-ln -s ~/personal/dotfiles/gitconfig ~/.gitconfig
-
-# Install gem setup
-ln -s ~/personal/dotfiles/gemrc ~/.gemrc
-
-# Install mercurial setup
-ln -s ~/personal/dotfiles/hgrc ~/.hgrc
-
-# Install vim
-ln -s ~/personal/dotfiles/vim/init.vim ~/.vimrc
-ln -s ~/personal/dotfiles/vim ~/.vim
-ln -s ~/personal/dotfiles/vim ~/.config/nvim
-git -C ~/personal/dotfiles/ submodule update --init --recursive
-
-# Install editorconfig
-ln -s ~/personal/dotfiles/editorconfig ~/.editorconfig
-
-# Install leiningen (clojure)
-mkdir -p ~/.lein
-ln -s ~/personal/dotfiles/lein_profiles.clj ~/.lein/profiles.clj
-
 # Install oh-my-zsh, and replace the default theme with custom one
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-mkdir -p $ZSH_CUSTOM/themes
-ln -s ~/personal/dotfiles/meshy.zsh-theme $ZSH_CUSTOM/meshy.zsh-theme
-ln -s ~/personal/dotfiles/async.zsh $ZSH_CUSTOM/async.zsh
 perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 
+# Install softlinks
+./install
+
 # Install shell extras
-ln -s ~/personal/dotfiles/sh_rc ~/.sh_rc
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
 # Make a directory to store code projects
