@@ -17,6 +17,7 @@ Plug 'ervandew/supertab'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'kshenoy/vim-signature'
+Plug 'rking/ag.vim'
 call plug#end()
 
 " Display errors nicely (and silently)
