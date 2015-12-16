@@ -1,0 +1,27 @@
+- clean: ['~']
+
+- link:
+    ~/.sh_rc: sh_rc
+    ~/.config/pip/pip.conf:
+        create: true
+        path: pip/pip.conf
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.gemrc: gemrc
+    ~/.hgrc: hgrc
+    ~/.vim: vim
+    ~/.vimrc: vim/init.vim
+    ~/.config/nvim: vim
+    ~/.editorconfig: editorconfig
+    ~/.lein/profiles.clj:
+        create: true
+        path: lein_profiles.clj
+    ~/.oh-my-zsh/custom/meshy.zsh-theme:
+        create: true
+        path: meshy.zsh-theme
+    ~/.oh-my-zsh/custom/async.zsh:
+        create: true
+        path: async.zsh
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

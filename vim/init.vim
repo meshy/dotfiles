@@ -9,10 +9,12 @@ Plug 'alfredodeza/khuno.vim'
 Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
+Plug 'kshenoy/vim-signature'
 Plug 'kien/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'rainux/vim-vala'
+Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'wavded/vim-stylus'
@@ -57,6 +59,7 @@ let g:rainbow_conf = {
     \       }
     \   }
     \}
+let g:SignatureMarkTextHLDynamic = 1
 
 " Visual feedback on autocompleted commands
 set wmnu
