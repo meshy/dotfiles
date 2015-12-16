@@ -4,18 +4,18 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Load package manager
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
-Plug 'editorconfig/editorconfig-vim'
-Plug 'alfredodeza/khuno.vim'
-Plug 'tpope/vim-git'
-Plug 'bling/vim-airline'
-Plug 'rainux/vim-vala'
-Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'wavded/vim-stylus'
+Plug 'alfredodeza/khuno.vim'
+Plug 'bling/vim-airline'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
+Plug 'kien/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
+Plug 'rainux/vim-vala'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'wavded/vim-stylus'
 call plug#end()
 
 " Display errors nicely (and silently)
