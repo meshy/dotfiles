@@ -17,6 +17,8 @@ Plug 'rainux/vim-vala'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 Plug 'wavded/vim-stylus'
 call plug#end()
 
