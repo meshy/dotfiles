@@ -32,13 +32,14 @@ ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 # Download dotfiles
 mkdir -p ~/personal
 git -C ~/personal clone git@github.com:meshy/dotfiles.git
+git -C ~/personal/dotfiles/ submodule update --init --recursive
 
 # Install oh-my-zsh, and replace the default theme with custom one
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 
 # Install softlinks
-./install
+~/personal/dotfiles/install
 
 # Install shell extras
 echo 'source ~/.sh_rc' >> ~/.zshrc
