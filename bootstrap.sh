@@ -9,7 +9,7 @@ yaourt -S \
     clojure leiningen \
     postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
-    git hub-bin \
+    git hub-bin tig-git \
     fortune-mod \
     cloc \
     rbenv ruby-build bower heroku-toolbelt \
