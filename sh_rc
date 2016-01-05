@@ -83,7 +83,7 @@ function mkvenv2 {
 
 # Install requirements with pip
 function pi {
-    pip install "$@" --no-index
+    pip install "$@"
 }
 
 function pp {
