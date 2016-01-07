@@ -11,7 +11,7 @@ yaourt -S \
     python-virtualenvwrapper \
     git hub-bin tig-git \
     fortune-mod \
-    cloc \
+    cloc cheat-git \
     rbenv ruby-build bower heroku-toolbelt \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
