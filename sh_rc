@@ -87,10 +87,6 @@ function mkvenv2 {
 }
 
 # Install requirements with pip
-function pi {
-    pip install "$@"
-}
-
 function pp {
     defaultfile='requirements.txt'
     requirementsfile=${1:-$defaultfile}
