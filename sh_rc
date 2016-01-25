@@ -34,6 +34,7 @@ PATH="/usr/local/heroku/bin:$PATH"
 # ALIASES #
 ###########
 
+alias ccat='pygmentize -g'
 alias f='flake8 .'
 alias g='git'
 alias m="make test"
@@ -46,7 +47,6 @@ alias vim='nvim'
 alias v='nvim'
 alias wo='workon'
 alias fig='docker-compose'
-alias dog='pygmentize -g'
 alias reload='source ~/.zshrc'
 
 # Alias hub to git, passing all args.
