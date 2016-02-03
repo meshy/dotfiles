@@ -13,6 +13,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'kien/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
+Plug 'morhetz/gruvbox'
 Plug 'pearofducks/ansible-vim'
 Plug 'rainux/vim-vala'
 Plug 'rking/ag.vim'
@@ -48,6 +49,9 @@ set expandtab
 
 " Glorious technicolour!
 syntax on
+colorscheme gruvbox
+set background=dark
+set cursorline
 let g:rainbow_active = 1
 let g:rainbow_conf = {
     \   'ctermfgs': ['blue', 'green', 'yellow', 'cyan', 'magenta'],
@@ -85,7 +89,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+let g:airline_theme='gruvbox'
 
 " Search ctags with CtrlP
 nnoremap <leader>. :CtrlPTag<cr>
