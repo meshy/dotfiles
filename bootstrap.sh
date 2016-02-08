@@ -15,7 +15,7 @@ yaourt -S \
     rbenv ruby-build bower heroku-client \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
-    vim neovim-git editorconfig-core-c ctags xsel \
+    vim neovim editorconfig-core-c ctags xsel \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
