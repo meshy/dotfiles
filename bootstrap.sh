@@ -2,6 +2,7 @@
 ############################
 # Dev setup for Arch linux #
 ############################
+yaourt -Syyuu
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
