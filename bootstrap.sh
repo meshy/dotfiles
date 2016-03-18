@@ -4,6 +4,8 @@
 ############################
 yaourt -Syyuu
 
+yaourt -R libreoffice-still --noconfirm
+
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
     terminator xcalib zsh-syntax-highlighting \
