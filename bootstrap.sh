@@ -13,7 +13,7 @@ yaourt -S \
     git hub-bin tig-git \
     fortune-mod \
     cloc cheat-git \
-    rbenv ruby-build bower heroku-client \
+    rbenv ruby-build bower heroku-toolbelt \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
     vim neovim editorconfig-core-c ctags xsel \
