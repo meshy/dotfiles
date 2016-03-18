@@ -2,6 +2,13 @@
 ############################
 # Dev setup for Arch linux #
 ############################
+
+# Symlink gnupg and ssh
+mv ~/.ssh ~/.ssh.old
+mv ~/.gnupg ~/.gnupg.old
+ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
+ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
+
 yaourt -Syyuu
 
 yaourt -R libreoffice-still --noconfirm
@@ -28,10 +35,6 @@ sudo ln -s /usr/include/freetype2 /usr/include/freetype
 sudo -u postgres initdb --locale en_GB.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
 systemctl enable postgresql.service
 systemctl start postgresql.service
-
-# Symlink gnupg and ssh
-ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
-ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
 
 # Download dotfiles
 mkdir -p ~/personal
