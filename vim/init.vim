@@ -22,6 +22,7 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'wavded/vim-stylus'
+Plug 'wookiehangover/jshint.vim'
 call plug#end()
 
 " Display errors nicely (and silently)
