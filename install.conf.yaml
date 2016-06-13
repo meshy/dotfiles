@@ -2,6 +2,7 @@
 
 - link:
     ~/.sh_rc: sh_rc
+    ~/.isort.cfg: isort.cfg
     ~/.config/pip/pip.conf:
         create: true
         path: pip/pip.conf
