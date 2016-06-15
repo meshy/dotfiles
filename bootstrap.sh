@@ -19,7 +19,7 @@ yaourt -S \
     clojure leiningen \
     postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
-    git hub-bin tig-git \
+    git hub-bin tig-git diff-so-fancy \
     fortune-mod \
     cloc cheat-git \
     rbenv ruby-build bower heroku-toolbelt \
