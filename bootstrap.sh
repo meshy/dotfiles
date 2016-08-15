@@ -26,6 +26,7 @@ yaourt -S \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
+    python-isort \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
