@@ -6,6 +6,7 @@ setopt INTERACTIVECOMMENTS
 ############
 
 export EDITOR="nvim"
+export MANPAGER="most"
 
 # Disable zsh autocorrect
 unsetopt correct_all
