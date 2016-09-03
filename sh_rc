@@ -25,11 +25,13 @@ export VIRTUALENVWRAPPER_PYTHON=`which python3`
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 source `which virtualenvwrapper.sh`
 
+# Go
+export GOPATH=~/code/go
 # Ruby
 eval "$(rbenv init -)"
 
-# Heroku
-PATH="/usr/local/heroku/bin:$PATH"
+# PATH
+PATH="/usr/local/heroku/bin:$PATH:$GOPATH/bin"
 
 ###########
 # ALIASES #

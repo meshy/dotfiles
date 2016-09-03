@@ -22,6 +22,7 @@ yaourt -S \
     git hub-bin tig-git diff-so-fancy \
     fortune-mod \
     cloc cheat-git \
+    go \
     rbenv ruby-build bower heroku-toolbelt \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \
