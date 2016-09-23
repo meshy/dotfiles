@@ -16,12 +16,12 @@ yaourt -R libreoffice-still --noconfirm
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
     terminator xcalib zsh-syntax-highlighting most \
-    clojure leiningen \
     postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
     git hub-bin tig-git diff-so-fancy \
     fortune-mod \
     cloc cheat-git \
+    clojure leiningen \
     go \
     rbenv ruby-build bower heroku-toolbelt \
     libmemcached freetype2 ttf-fantasque-sans \
