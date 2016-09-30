@@ -70,6 +70,9 @@ alias rgb="gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 
 # How meta is this?!
 alias cdd='cd ~/personal/dotfiles'
 
+# Weather on the moon...
+alias moon='curl wttr.in/moon'
+
 #############
 # FUNCTIONS #
 #############
@@ -94,6 +97,13 @@ function pp {
     requirementsfile=${1:-$defaultfile}
     pi -r $requirementsfile
 }
+
+# Check the weather!
+function weather {
+    defaultcity='oxford'
+    curl wttr.in/${1:-$defaultcity}
+}
+
 
 # Syntax highlighting needs to be at the end
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
