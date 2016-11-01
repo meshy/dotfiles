@@ -1,5 +1,4 @@
 set encoding=utf-8
-runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 " Load package manager
 filetype plugin indent on
