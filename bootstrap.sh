@@ -20,6 +20,7 @@ yaourt -S \
     python-virtualenvwrapper \
     git hub-bin tig-git diff-so-fancy \
     fortune-mod \
+    sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     clojure leiningen \
     go \
