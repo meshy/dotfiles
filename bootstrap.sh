@@ -18,7 +18,7 @@ yaourt -S \
     terminator xcalib zsh-syntax-highlighting most \
     postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
-    git hub-bin tig-git diff-so-fancy git-extras \
+    git hub-git tig diff-so-fancy git-extras \
     fortune-mod \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
@@ -29,6 +29,7 @@ yaourt -S \
     pygmentize python-pygments \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
     python-isort \
+    pv \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
