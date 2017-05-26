@@ -61,6 +61,7 @@
 [diff]
   algorithm = patience
   compactionHeuristic = true
+  indentHeuristic = true
 
 [status]
   relativePaths = true
