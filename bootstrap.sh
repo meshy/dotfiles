@@ -6,8 +6,8 @@
 # Symlink gnupg and ssh
 mv ~/.ssh ~/.ssh.old
 mv ~/.gnupg ~/.gnupg.old
-ln -s /run/media/`whoami`/HoopyEncrypted/.ssh ~
-ln -s /run/media/`whoami`/HoopyEncrypted/.gnupg ~
+ln -s /run/media/`whoami`/TunnelEncrypted/.ssh ~
+ln -s /run/media/`whoami`/TunnelEncrypted/.gnupg ~
 
 yaourt -Syyuu
 
