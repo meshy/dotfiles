@@ -97,3 +97,6 @@ let g:airline_theme='gruvbox'
 nnoremap <leader>. :CtrlPTag<cr>
 " Use `ag` to make CtrlP indexing faster
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" Don't insert two spaces after a full stop when wrapping lines.  It's silly.
+set nojoinspaces
