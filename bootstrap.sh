@@ -15,7 +15,7 @@ yaourt -R libreoffice-still --noconfirm
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
-    terminator xcalib zsh-syntax-highlighting most \
+    tilix xcalib zsh-syntax-highlighting most \
     postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
     git hub-git tig diff-so-fancy git-extras \
@@ -68,8 +68,8 @@ CUSTOM_1=$KEY_BINDING_PATH"/custom1/"
 
 gsettings set $MEDIA_KEYS custom-keybindings "['$CUSTOM_0', '$CUSTOM_1']"
 
-gsettings set $KEY_BINDING:$CUSTOM_0 name 'Terminator'
-gsettings set $KEY_BINDING:$CUSTOM_0 command 'terminator'
+gsettings set $KEY_BINDING:$CUSTOM_0 name 'Tilix'
+gsettings set $KEY_BINDING:$CUSTOM_0 command 'tilix'
 gsettings set $KEY_BINDING:$CUSTOM_0 binding '<Primary><Alt>t'
 
 gsettings set $KEY_BINDING:$CUSTOM_1 name 'Invert colours'
