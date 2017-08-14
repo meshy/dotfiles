@@ -1,6 +1,12 @@
 setopt INTERACTIVECOMMENTS
 # Above command explicitly enables comments starting with `#` in zsh
 
+# Hack for tilix
+# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte.sh
+fi
+
 ############
 # SETTINGS #
 ############
