@@ -18,7 +18,7 @@ yaourt -S \
     tilix xcalib zsh-syntax-highlighting most \
     postgresql openssh tree the_silver_searcher \
     python-virtualenvwrapper \
-    git hub-git tig diff-so-fancy git-extras \
+    git hub-git tig git-extras \
     fortune-mod \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
