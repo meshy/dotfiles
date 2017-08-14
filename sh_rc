@@ -82,6 +82,9 @@ alias moon='curl wttr.in/moon'
 # Dictionary/Thesaurus
 alias dict="sdcv -c"
 
+# Work around the infernal ghostscript
+alias gs="git status"
+
 #############
 # FUNCTIONS #
 #############
