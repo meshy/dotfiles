@@ -14,7 +14,6 @@ Plug 'kshenoy/vim-signature'
 Plug 'kien/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
-Plug 'morhetz/gruvbox'
 Plug 'pearofducks/ansible-vim'
 Plug 'rainux/vim-vala'
 Plug 'rking/ag.vim'
@@ -33,7 +32,7 @@ hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
 
 " Display search results nicely
-hi Search ctermbg=DarkGrey
+hi Search ctermbg=Black
 
 " Add line numbers
 set relativenumber
@@ -51,7 +50,6 @@ set expandtab
 
 " Glorious technicolour!
 syntax on
-colorscheme gruvbox
 set background=dark
 set cursorline
 let g:rainbow_active = 1
@@ -91,7 +89,6 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
 
 " Search ctags with CtrlP
 nnoremap <leader>. :CtrlPTag<cr>
