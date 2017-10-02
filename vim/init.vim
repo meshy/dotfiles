@@ -32,7 +32,7 @@ hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
 
 " Display search results nicely
-hi Search ctermbg=Black
+hi Search ctermbg=red ctermfg=white
 
 " Add line numbers
 set relativenumber
