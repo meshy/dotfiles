@@ -36,6 +36,14 @@ export GOPATH=~/code/go
 # Ruby
 eval "$(rbenv init -)"
 
+# fzf (fuzzy finder)
+# CTRL-R overrides history search.
+# CTRL-T dumps the searched path into the current command
+# ALT-C changes directory. This is a PITA.
+export FZF_DEFAULT_COMMAND='ag -g ""'
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
 # PATH
 PATH="/usr/local/heroku/bin:$PATH:$GOPATH/bin"
 
@@ -84,6 +92,9 @@ alias dict="sdcv -c"
 
 # Work around the infernal ghostscript
 alias gs="git status"
+
+# Open a file in vim with CTRL-P
+bindkey -s ^p '^Uvim $(fzf)^M'
 
 #############
 # FUNCTIONS #

@@ -10,8 +10,8 @@ Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'fisadev/vim-isort'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'kshenoy/vim-signature'
-Plug 'kien/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'pearofducks/ansible-vim'
@@ -90,10 +90,8 @@ au BufNewFile,BufRead *.ejs set filetype=html
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-" Search ctags with CtrlP
-nnoremap <leader>. :CtrlPTag<cr>
-" Use `ag` to make CtrlP indexing faster
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" Set up fuzzy search on CTRL-P (with fzf)
+nmap <C-p> :FZF<CR>
 
 " Don't insert two spaces after a full stop when wrapping lines.  It's silly.
 set nojoinspaces
