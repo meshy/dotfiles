@@ -91,7 +91,7 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 " Set up fuzzy search on CTRL-P (with fzf)
-nmap <C-p> :FZF<CR>
+nnoremap <C-p> :FZF<CR>
 
 " Don't insert two spaces after a full stop when wrapping lines.  It's silly.
 set nojoinspaces
