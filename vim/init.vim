@@ -3,7 +3,6 @@ set encoding=utf-8
 " Load package manager
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
-Plug 'spf13/vim-autoclose'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
