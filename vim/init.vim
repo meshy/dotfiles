@@ -5,7 +5,6 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug 'spf13/vim-autoclose'
 Plug 'airblade/vim-gitgutter'
-Plug 'alfredodeza/khuno.vim'
 Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
@@ -14,15 +13,13 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'kshenoy/vim-signature'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
-Plug 'pearofducks/ansible-vim'
 Plug 'rainux/vim-vala'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'wavded/vim-stylus'
-Plug 'wookiehangover/jshint.vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Display errors nicely (and silently)
@@ -89,6 +86,14 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+" Set up ALE (linting)
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'python': ['flake8', 'isort'],
+\}
 
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
