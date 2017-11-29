@@ -15,7 +15,7 @@ yaourt -R libreoffice-still --noconfirm
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
-    tilix xcalib zsh-syntax-highlighting most \
+    tilix-bin xcalib zsh-syntax-highlighting most \
     postgresql openssh tree the_silver_searcher fzf \
     python-virtualenvwrapper \
     git hub-git tig git-extras \
