@@ -19,7 +19,7 @@ yaourt -S \
     postgresql openssh tree the_silver_searcher fzf \
     python-virtualenvwrapper \
     git hub-git tig git-extras \
-    fortune-mod \
+    fortune-mod lolcat \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     clojure leiningen \
