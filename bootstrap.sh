@@ -24,6 +24,7 @@ yaourt -S \
     cloc cheat-git \
     clojure leiningen \
     go \
+    rust \
     rbenv ruby-build bower heroku-toolbelt \
     libmemcached freetype2 ttf-fantasque-sans \
     pygmentize python-pygments \

@@ -45,7 +45,7 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
 # PATH
-PATH="/usr/local/heroku/bin:$PATH:$GOPATH/bin"
+PATH="$HOME/.cargo/bin:/usr/local/heroku/bin:$PATH:$GOPATH/bin"
 
 ###########
 # ALIASES #
