@@ -12,7 +12,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'kshenoy/vim-signature'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
-Plug 'rainux/vim-vala'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
