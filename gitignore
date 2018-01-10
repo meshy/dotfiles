@@ -22,3 +22,4 @@ dist
 data.db
 bower_components
 node_modules
+.ipynb_checkpoints
