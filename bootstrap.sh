@@ -15,7 +15,7 @@ yaourt -R libreoffice-still --noconfirm
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
-    gnome-shell-extension-topicons-plus \
+    gnome-shell-extension-topicons-plus materia-theme chrome-gnome-shell-git \
     tilix-bin xcalib zsh-syntax-highlighting most \
     postgresql openssh tree the_silver_searcher fzf \
     python-virtualenvwrapper \
@@ -82,3 +82,5 @@ gsettings set $KEY_BINDING:$CUSTOM_1 binding '<Primary><Alt>i'
 # Disable bluetooth
 systemctl stop bluetooth
 systemctl disable bluetooth
+
+echo "Don't forget to install the gTile extension https://github.com/gTile/gTile"
