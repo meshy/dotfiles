@@ -124,7 +124,7 @@ function pp {
 # Check the weather!
 function weather {
     defaultcity='oxford'
-    curl wttr.in/${1:-$defaultcity}
+    curl wttr.in/${1:-$defaultcity}\?m
 }
 
 
