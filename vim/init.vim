@@ -10,7 +10,6 @@ Plug 'ervandew/supertab'
 Plug 'fisadev/vim-isort'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'kshenoy/vim-signature'
-Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
@@ -47,20 +46,6 @@ set expandtab
 syntax on
 set background=dark
 set cursorline
-let g:rainbow_active = 1
-let g:rainbow_conf = {
-    \   'ctermfgs': ['blue', 'green', 'yellow', 'cyan', 'magenta'],
-    \   'separately': {
-    \       '*': {},
-    \       'htmldjango': {
-    \           'parentheses': [
-    \               'start="{{" end="}}"',
-    \               'start="{%" end="%}"',
-    \               'start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end="</\z1>" fold'
-    \           ],
-    \       }
-    \   }
-    \}
 let g:SignatureMarkTextHLDynamic = 1
 
 " Visual feedback on autocompleted commands
