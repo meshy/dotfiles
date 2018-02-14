@@ -127,6 +127,15 @@ function weather {
     curl wttr.in/${1:-$defaultcity}\?m
 }
 
+function mkmodule {
+    if [[ $# -eq 0 ]] ; then
+        echo 'Module path required: `mkmodule path/to/module`'
+    else
+        mkdir $1
+        touch $1/__init__.py
+    fi
+}
+
 
 # Syntax highlighting needs to be at the end
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
