@@ -31,6 +31,7 @@ yaourt -S \
     pygmentize python-pygments \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
     python-isort \
+    peek \
     pv \
     --noconfirm
 
