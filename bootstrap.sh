@@ -28,7 +28,8 @@ yaourt -S \
     go \
     rust \
     rbenv ruby-build bower heroku-toolbelt \
-    libmemcached freetype2 ttf-fantasque-sans \
+    libmemcached freetype2 \
+    ttf-fantasque-sans noto-fonts-emoji \
     pygmentize python-pygments \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
     python-isort \
