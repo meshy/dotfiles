@@ -15,7 +15,8 @@ yaourt -R libreoffice-still --noconfirm
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
-    gnome-shell-extension-topicons-plus materia-theme chrome-gnome-shell-git \
+    gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
+    materia-theme pop-icon-theme \
     tilix-bin xcalib zsh-syntax-highlighting most \
     postgresql openssh tree the_silver_searcher fzf \
     python-virtualenvwrapper \
