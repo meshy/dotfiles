@@ -9,6 +9,7 @@ mv ~/.gnupg ~/.gnupg.old
 $STICK_PATH=/run/media/`whoami`/TunnelEncrypted
 ln -s $STICK_PATH/.ssh ~
 ln -s $STICK_PATH/.gnupg ~
+git clone $STICK_PATH/password-store ~/.password-store
 
 yaourt -Syyuu
 
@@ -36,6 +37,7 @@ yaourt -S \
     python-isort \
     peek \
     pv \
+    pass \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
