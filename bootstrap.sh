@@ -6,8 +6,9 @@
 # Symlink gnupg and ssh
 mv ~/.ssh ~/.ssh.old
 mv ~/.gnupg ~/.gnupg.old
-ln -s /run/media/`whoami`/TunnelEncrypted/.ssh ~
-ln -s /run/media/`whoami`/TunnelEncrypted/.gnupg ~
+$STICK_PATH=/run/media/`whoami`/TunnelEncrypted
+ln -s $STICK_PATH/.ssh ~
+ln -s $STICK_PATH/.gnupg ~
 
 yaourt -Syyuu
 
