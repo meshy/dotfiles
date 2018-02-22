@@ -15,6 +15,7 @@
     ~/.config/nvim: vim
     ~/.editorconfig: editorconfig
     ~/.offlineimaprc: email/offlineimaprc
+    ~/.notmuch-config: email/notmuch-config
     ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
     ~/.config/systemd/user/offlineimap.service:
         create: true

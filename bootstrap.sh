@@ -47,7 +47,7 @@ yaourt -S \
     pv \
     pass \
     `# Email` \
-    offlineimap \
+    offlineimap notmuch-runtime \
     `# Random tools` \
     peek \
     --noconfirm
