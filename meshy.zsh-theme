@@ -42,6 +42,21 @@ prompt_pure_human_time_to_var() {
 	typeset -g "${var}"="${human}"
 }
 
+fuzzy_time() {
+	local human='' total_seconds=$1 var=$2
+	local days=$(( total_seconds / 60 / 60 / 24 ))
+	local hours=$(( total_seconds / 60 / 60 % 24 ))
+	local minutes=$(( total_seconds / 60 % 60 ))
+	local seconds=$(( total_seconds % 60 ))
+	(( seconds > 0 )) && human="${seconds}s"
+	(( minutes > 0 )) && human="${minutes}m"
+	(( hours > 0 )) && human="${hours}h"
+	(( days > 0 )) && human="${days}d"
+
+	# store human readable time in variable as specified by caller
+	typeset -g "${var}"="${human}"
+}
+
 # stores (into prompt_pure_cmd_exec_time) the exec time of the last command if set threshold was exceeded
 prompt_pure_check_cmd_exec_time() {
 	integer elapsed
@@ -129,6 +144,20 @@ prompt_pure_preprompt_render() {
 	# zsh key inserted?
 	if [ ! -e ~/.ssh/id_rsa ]; then
 		preprompt+="%F{red} SSH/GPG key!%f"
+	fi
+
+	# time since last updated emails
+	seconds_since_update=$(( $(date +%s) - $(date +%s -r ~/.offlineimap) ))
+	hours_since_update=$(( ${seconds_since_update} / 3600 ))
+	fuzzy_time seconds_since_update "since_email_sync"
+	if (( $hours_since_update > 0 )); then
+		preprompt+=" %F{blue}${since_email_sync}📬%f"
+	fi
+
+	# unread emails
+	unread_emails=$(notmuch count tag:unread)
+	if [ $unread_emails != 0 ]; then
+		preprompt+="  %F{blue}${unread_emails}📨%f"
 	fi
 
 	local venvprompt=
