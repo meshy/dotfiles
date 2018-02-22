@@ -14,6 +14,11 @@
     ~/.vimrc: vim/init.vim
     ~/.config/nvim: vim
     ~/.editorconfig: editorconfig
+    ~/.offlineimaprc: email/offlineimaprc
+    ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
+    ~/.config/systemd/user/offlineimap.service:
+        create: true
+        path: email/offlineimap.service
     ~/.lein/profiles.clj:
         create: true
         path: lein_profiles.clj

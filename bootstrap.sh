@@ -46,6 +46,8 @@ yaourt -S \
     `# Passwords` \
     pv \
     pass \
+    `# Email` \
+    offlineimap \
     `# Random tools` \
     peek \
     --noconfirm
@@ -75,6 +77,10 @@ echo 'source ~/.sh_rc' >> ~/.zshrc
 
 # Make a directory to store code projects
 mkdir -p ~/code
+
+# Install email syncing service
+systemctl enable offlineimap.service --user
+systemctl start offlineimap.service --user
 
 # Configure gnome keyboard shortcuts
 # See http://askubuntu.com/a/597414/30904
