@@ -20,6 +20,7 @@
     ~/.config/systemd/user/offlineimap.service:
         create: true
         path: email/offlineimap.service
+    ~/.mutt: email/mutt
     ~/.lein/profiles.clj:
         create: true
         path: lein_profiles.clj

@@ -1,0 +1,11 @@
+set realname = 'Charlie Denton'
+set folder = ~/.mail/charleswdenton-gmail.com
+set spoolfile = +INBOX
+mailboxes +INBOX +Sent
+
+# Do not differentiate between "unread" and "new".
+unset mark_old
+
+source ~/.mutt/colors.muttrc
+source ~/.mutt/index.muttrc
+source ~/.mutt/sidebar.muttrc
