@@ -1,4 +1,7 @@
 set realname = 'Charlie Denton'
+set from = 'charleswdenton@gmail.com
+set use_envelope_from
+set sendmail = "/usr/bin/msmtp"
 set folder = ~/.mail/charleswdenton-gmail.com
 set spoolfile = +INBOX
 mailboxes +INBOX +Sent

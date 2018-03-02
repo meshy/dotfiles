@@ -47,7 +47,7 @@ yaourt -S \
     pv \
     pass \
     `# Email` \
-    neomutt urlview offlineimap notmuch-runtime \
+    neomutt urlview msmtp offlineimap notmuch-runtime \
     `# Random tools` \
     peek \
     --noconfirm
