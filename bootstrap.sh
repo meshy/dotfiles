@@ -36,6 +36,7 @@ yaourt -S \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
     python-isort \
     shellcheck \
+    yamllint \
     peek \
     pv \
     pass \

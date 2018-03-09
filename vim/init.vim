@@ -78,6 +78,7 @@ let g:ale_linters = {
 \   'bash': ['shellcheck'],
 \   'javascript': ['eslint'],
 \   'python': ['flake8', 'isort'],
+\   'yaml': ['yamllint'],
 \}
 
 " Set up fuzzy search on CTRL-P (with fzf)
