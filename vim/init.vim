@@ -75,6 +75,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_linters = {
+\   'bash': ['shellcheck'],
 \   'javascript': ['eslint'],
 \   'python': ['flake8', 'isort'],
 \}
