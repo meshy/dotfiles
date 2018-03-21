@@ -17,29 +17,37 @@ yaourt -R libreoffice-still --noconfirm
 
 yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
+    `# Theming` \
     gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
     materia-theme pop-icon-theme \
+    ttf-fantasque-sans noto-fonts-emoji \
+    `# Terminal` \
     tilix-bin xcalib zsh-syntax-highlighting most \
-    postgresql openssh tree the_silver_searcher fzf \
+    openssh tree the_silver_searcher fzf \
     python-virtualenvwrapper \
     git hub-git tig git-extras \
     fortune-mod lolcat \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
+    pygmentize python-pygments \
+    `# Languages` \
     clojure leiningen \
     go \
     rust \
     rbenv ruby-build bower heroku-toolbelt \
-    libmemcached freetype2 \
-    ttf-fantasque-sans noto-fonts-emoji \
-    pygmentize python-pygments \
+    `# Services` \
+    postgresql libmemcached freetype2 \
+    `# Editing text`
     vim neovim python-neovim editorconfig-core-c ctags xsel \
+    `# Linting`
     python-isort \
     shellcheck \
     yamllint \
-    peek \
+    `# Passwords` \
     pv \
     pass \
+    `# Random tools` \
+    peek \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
