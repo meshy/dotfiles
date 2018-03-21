@@ -94,8 +94,5 @@ gsettings set $KEY_BINDING:$CUSTOM_1 name 'Invert colours'
 gsettings set $KEY_BINDING:$CUSTOM_1 command 'xcalib -invert -alter'
 gsettings set $KEY_BINDING:$CUSTOM_1 binding '<Primary><Alt>i'
 
-# Disable bluetooth
-systemctl stop bluetooth
-systemctl disable bluetooth
 
 echo "Don't forget to install the gTile extension https://github.com/gTile/gTile"
