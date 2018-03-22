@@ -44,6 +44,7 @@ yaourt -S \
     shellcheck \
     yamllint \
     `# Passwords` \
+    bitwarden \
     pv \
     pass \
     `# Email` \
