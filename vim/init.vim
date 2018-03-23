@@ -48,8 +48,14 @@ set expandtab
 set termguicolors
 colorscheme base16-materia
 syntax on
-set cursorline
 let g:SignatureMarkTextHLDynamic = 1
+
+" Highlight cursor position
+set cursorline
+set cursorcolumn
+
+" Add rulers to highlight overly long lines
+set colorcolumn=80,100
 
 " Visual feedback on autocompleted commands
 set wmnu
