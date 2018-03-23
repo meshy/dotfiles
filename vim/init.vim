@@ -101,3 +101,9 @@ set nojoinspaces
 
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
+
+" Make moving between buffers simpler:
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
