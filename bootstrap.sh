@@ -67,7 +67,7 @@ mkdir -p ~/personal
 git clone git@github.com:meshy/dotfiles.git $DOTFILES_DIR
 git -C $DOTFILES_DIR submodule update --init --recursive
 
-# Install oh-my-zsh, and replace the default theme with custom one
+# Install oh-my-zsh, and replace the default prompt with custom one
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 perl -pi -e s,robbyrussell,meshy,g ~/.zshrc
 
