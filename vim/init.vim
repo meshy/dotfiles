@@ -92,5 +92,9 @@ let g:ale_linters = {
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
 
+" Ignore case if search pattern is all lowercase, case-sensitive otherwise.
+set ignorecase
+set smartcase
+
 " Don't insert two spaces after a full stop when wrapping lines.  It's silly.
 set nojoinspaces
