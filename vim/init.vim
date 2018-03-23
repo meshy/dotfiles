@@ -5,6 +5,7 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug '13k/vim-nginx'
 Plug 'airblade/vim-gitgutter'
+Plug 'chriskempson/base16-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'fisadev/vim-isort'
@@ -44,8 +45,9 @@ set softtabstop=4
 set expandtab
 
 " Glorious technicolour!
+set termguicolors
+colorscheme base16-materia
 syntax on
-set background=dark
 set cursorline
 let g:SignatureMarkTextHLDynamic = 1
 
