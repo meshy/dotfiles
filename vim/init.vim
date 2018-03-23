@@ -5,7 +5,6 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug '13k/vim-nginx'
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'fisadev/vim-isort'
@@ -17,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 call plug#end()
 
