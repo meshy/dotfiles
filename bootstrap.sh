@@ -77,6 +77,9 @@ $DOTFILES_DIR/install
 # Install shell extras
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
+# Set terminal theme for tilix
+dconf load /com/gexperts/Tilix/ < $DOTFILES_DIR/tilix.conf
+
 # Make a directory to store code projects
 mkdir -p ~/code
 
