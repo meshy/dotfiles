@@ -25,11 +25,9 @@ bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
 export WORDCHARS=''
 
-# Virtualenvwrapper
+# PEW replaces virtualenvwrapper
+export PIPENV_SHELL_FANCY=1
 export WORKON_HOME=~/venvs
-export VIRTUALENVWRAPPER_PYTHON=`which python3`
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-source `which virtualenvwrapper.sh`
 
 # Go
 export GOPATH=~/code/go
@@ -62,7 +60,7 @@ alias pi="pip install"
 alias t='tree -I "__pycache__|*.pyc" -C --dirsfirst'
 alias vim='nvim'
 alias v='nvim'
-alias wo='workon'
+alias wo='pew workon'
 alias fig='docker-compose'
 alias reload='source ~/.zshrc'
 
@@ -103,16 +101,24 @@ bindkey -s ^p '^Uvim $(fzf)^M'
 
 # Create a virtual environment.
 function mkvenv3 {
-    defaultname=`basename $PWD`
-    name=${1:-$defaultname}
-    mkvirtualenv $name -a `pwd` -p `which python3`
-    pip install -U pip setuptools wheel neovim ipython
+    # Create a venv.
+    pipenv install --three
+    # Work-around for https://github.com/pypa/pipenv/pull/1861
+    echo $(pwd) > $(pipenv --venv)/.project
+    # pip instead of pipenv because these shouldn't be stored in the Pipfile.
+    pipenv run pip install neovim ipython
+    # Activate the env.
+    pipenv shell
 }
 function mkvenv2 {
-    defaultname=`basename $PWD`
-    name=${1:-$defaultname}
-    mkvirtualenv $name -a `pwd` -p `which python2`
-    pip install -U pip setuptools wheel neovim ipython
+    # Create a venv.
+    pipenv install --two
+    # Work-around for https://github.com/pypa/pipenv/pull/1861
+    echo $(pwd) > $(pipenv --venv)/.project
+    # pip instead of pipenv because these shouldn't be stored in the Pipfile.
+    pipenv run pip install neovim ipython
+    # Activate the env.
+    pipenv shell
 }
 
 # Install requirements with pip
