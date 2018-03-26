@@ -24,6 +24,7 @@ yaourt -S \
     `# Terminal` \
     tilix-bin xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
+    python-virtualenvwrapper \
     git hub-git tig git-extras \
     fortune-mod lolcat \
     sdcv stardict-oald stardict-thesaurus-ee \
@@ -33,7 +34,6 @@ yaourt -S \
     clojure leiningen \
     go \
     rust \
-    python-pipenv \
     rbenv ruby-build bower heroku-toolbelt \
     `# Services` \
     postgresql libmemcached freetype2 \

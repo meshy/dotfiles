@@ -25,8 +25,11 @@ bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
 export WORDCHARS=''
 
-# PEW replaces virtualenvwrapper
+# Virtualenvwrapper
 export WORKON_HOME=~/venvs
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+source `which virtualenvwrapper.sh`
 
 # Go
 export GOPATH=~/code/go
@@ -59,7 +62,7 @@ alias pi="pip install"
 alias t='tree -I "__pycache__|*.pyc" -C --dirsfirst'
 alias vim='nvim'
 alias v='nvim'
-alias wo='pew workon'
+alias wo='workon'
 alias fig='docker-compose'
 alias reload='source ~/.zshrc'
 
@@ -102,12 +105,14 @@ bindkey -s ^p '^Uvim $(fzf)^M'
 function mkvenv3 {
     defaultname=`basename $PWD`
     name=${1:-$defaultname}
-    pew new $name -a `pwd` -p `which python3` -i pip -i setuptools -i wheel -i neovim -i ipython
+    mkvirtualenv $name -a `pwd` -p `which python3`
+    pip install -U pip setuptools wheel neovim ipython
 }
 function mkvenv2 {
     defaultname=`basename $PWD`
     name=${1:-$defaultname}
-    pew new $name -a `pwd` -p `which python2` -i pip -i setuptools -i wheel -i neovim -i ipython
+    mkvirtualenv $name -a `pwd` -p `which python2`
+    pip install -U pip setuptools wheel neovim ipython
 }
 
 # Install requirements with pip
