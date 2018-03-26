@@ -1,5 +1,7 @@
 set realname = 'Charlie Denton'
 set from = 'charleswdenton@gmail.com
+set reverse_name
+alternates ^charlie@meshy.CO.UK$ ^charleswdenton@gmail.COM$
 set use_envelope_from
 set sendmail = "/usr/bin/msmtp"
 set folder = ~/.mail/charleswdenton-gmail.com
