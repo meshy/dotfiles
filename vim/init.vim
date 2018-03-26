@@ -18,6 +18,7 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 call plug#end()
 
@@ -78,6 +79,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
+let g:airline_theme="base16"
 
 " Set up ALE (linting)
 let g:airline#extensions#ale#enabled = 1
