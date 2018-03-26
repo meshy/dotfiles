@@ -31,8 +31,21 @@ export WORKON_HOME=~/venvs
 
 # Go
 export GOPATH=~/code/go
-# Ruby
-eval "$(rbenv init -)"
+
+# PATH
+if [[ ! "$PATH" == *$GOPATH/bin* ]]; then
+    # Ruby
+    eval "$(rbenv init -)"
+
+    # Rust
+    PATH="$HOME/.cargo/bin:$PATH"
+
+    # Heroku
+    PATH="/usr/local/heroku/bin:$PATH:$GOPATH/bin"
+
+    # Go
+    # PATH="$PATH:$GOPATH/bin"
+fi
 
 # fzf (fuzzy finder)
 # CTRL-R overrides history search.
@@ -41,9 +54,6 @@ eval "$(rbenv init -)"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-
-# PATH
-PATH="$HOME/.cargo/bin:/usr/local/heroku/bin:$PATH:$GOPATH/bin"
 
 ###########
 # ALIASES #
