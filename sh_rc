@@ -97,7 +97,7 @@ alias cdd='cd ~/personal/dotfiles'
 alias moon='curl wttr.in/moon'
 
 # Dictionary/Thesaurus
-alias dict="sdcv -c"
+alias dict="sdcv --color"
 
 # Work around the infernal ghostscript
 alias gs="git status"
