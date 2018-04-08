@@ -33,7 +33,7 @@ export WORKON_HOME=~/venvs
 export GOPATH=~/code/go
 
 # PATH
-if [[ ! "$PATH" == *$GOPATH/bin* ]]; then
+if [[ "$SHLVL" == "1" ]]; then
     # Ruby
     eval "$(rbenv init -)"
 
