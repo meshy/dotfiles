@@ -162,7 +162,7 @@ prompt_pure_preprompt_render() {
 
 	local venvprompt=
 	if [ ! -z $VIRTUAL_ENV ]; then
-		venvprompt="%F{cyan}$(basename $VIRTUAL_ENV)%f"
+		venvprompt="$((SHLVL - 1)) %F{cyan}$(basename $VIRTUAL_ENV)%f"
 	fi
 
 	# if executing through precmd, do not perform fancy terminal editing
