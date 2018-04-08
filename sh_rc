@@ -161,7 +161,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # FUN #
 #######
 
-fortune | lolcat
+
+if [[ "$SHLVL" == "1" ]]; then
+    fortune | lolcat
+fi
 
 # Default to ~/code/ directory
 # Skip if already not in ~
