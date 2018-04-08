@@ -41,10 +41,10 @@ if [[ ! "$PATH" == *$GOPATH/bin* ]]; then
     PATH="$HOME/.cargo/bin:$PATH"
 
     # Heroku
-    PATH="/usr/local/heroku/bin:$PATH:$GOPATH/bin"
+    PATH="/usr/local/heroku/bin:$PATH"
 
     # Go
-    # PATH="$PATH:$GOPATH/bin"
+    PATH="$PATH:$GOPATH/bin"
 fi
 
 # fzf (fuzzy finder)
