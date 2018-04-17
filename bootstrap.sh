@@ -19,7 +19,7 @@ yaourt -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
     `# Theming` \
     gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
-    materia-theme pop-icon-theme \
+    materia-theme pop-icon-theme xcursor-oxygen \
     ttf-fantasque-sans noto-fonts-emoji \
     `# Terminal` \
     tilix-bin xcalib zsh-syntax-highlighting most \
