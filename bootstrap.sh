@@ -38,9 +38,9 @@ yaourt -S \
     `# Services` \
     postgresql libmemcached freetype2 \
     stubby \
-    `# Editing text`
+    `# Editing text` \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
-    `# Linting`
+    `# Linting` \
     python-isort \
     shellcheck \
     yamllint \
