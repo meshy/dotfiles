@@ -63,9 +63,6 @@
   compactionHeuristic = true
   indentHeuristic = true
 
-[status]
-  relativePaths = true
-
 [github]
   user = meshy
 
