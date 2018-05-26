@@ -163,7 +163,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 
 if [[ "$SHLVL" == "1" ]]; then
-    fortune | lolcat
+    echo -n 'Todo:'
+    task next
 fi
 
 # Default to ~/code/ directory

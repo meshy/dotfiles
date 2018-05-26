@@ -25,10 +25,10 @@ yaourt -S \
     tilix-bin xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
     git hub-git tig git-extras \
-    fortune-mod lolcat \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     pygmentize python-pygments \
+    task \
     `# Languages` \
     clojure leiningen \
     go \
