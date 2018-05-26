@@ -52,6 +52,7 @@ yaourt -S \
     neomutt urlview msmtp offlineimap notmuch-runtime \
     `# Random tools` \
     peek \
+    bind-tools \
     --noconfirm
 
 # Put headers in the right place for `pip install pillow`.
