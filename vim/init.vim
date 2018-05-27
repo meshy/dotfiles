@@ -25,6 +25,12 @@ Plug 'vimjas/vim-python-pep8-indent'
 Plug 'w0rp/ale'
 call plug#end()
 
+" Get rid of that daft cow
+let g:startify_custom_header = [
+\ '   ┌─────┐',
+\ '   │ Vim │',
+\ '   ╘═════╛']
+
 " Display errors nicely (and silently)
 set noerrorbells
 set novisualbell
