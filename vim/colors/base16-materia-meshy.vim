@@ -156,7 +156,7 @@ call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("FoldColumn",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
 call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
-call <sid>hi("Italic",        "", "", "", "", "none", "")
+call <sid>hi("Italic",        "", "", "", "", "italic", "")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("MatchParen",    "", s:gui03, "", s:cterm03,  "", "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "", "")
@@ -194,7 +194,7 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", ""
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Character",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "italic", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
@@ -274,7 +274,8 @@ call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "
 
 " HTML highlighting
 call <sid>hi("htmlBold",    s:gui0A, "", s:cterm0A, "", "", "")
-call <sid>hi("htmlItalic",  s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("htmlItalic",  s:gui0E, "", s:cterm0E, "", "italic", "")
+call <sid>hi("htmlArg",     s:gui0E, "", s:cterm0E, "", "italic", "")
 call <sid>hi("htmlEndTag",  s:gui05, "", s:cterm05, "", "", "")
 call <sid>hi("htmlTag",     s:gui05, "", s:cterm05, "", "", "")
 
