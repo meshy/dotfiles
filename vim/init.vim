@@ -56,7 +56,7 @@ set expandtab
 
 " Glorious technicolour!
 set termguicolors
-colorscheme base16-materia
+colorscheme base16-materia-meshy
 syntax on
 let g:SignatureMarkTextHLDynamic = 1
 
