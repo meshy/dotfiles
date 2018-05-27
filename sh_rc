@@ -105,6 +105,9 @@ alias dict="sdcv --color"
 # Work around the infernal ghostscript
 alias gs="git status"
 
+# Display an image in the terminal. Only works in kitty.
+alias img="kitty icat"
+
 # Open a file in vim with CTRL-P
 bindkey -s ^p '^Uvim $(fzf)^M'
 
