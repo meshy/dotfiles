@@ -22,7 +22,7 @@ yaourt -S \
     materia-theme pop-icon-theme xcursor-oxygen \
     ttf-fantasque-sans noto-fonts-emoji \
     `# Terminal` \
-    tilix-bin xcalib zsh-syntax-highlighting most \
+    kitty xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
     git hub-git tig git-extras \
     sdcv stardict-oald stardict-thesaurus-ee \
@@ -85,9 +85,6 @@ $DOTFILES_DIR/install
 # Install shell extras
 echo 'source ~/.sh_rc' >> ~/.zshrc
 
-# Set terminal theme for tilix
-dconf load /com/gexperts/Tilix/ < $DOTFILES_DIR/tilix.conf
-
 # Make a directory to store code projects
 mkdir -p ~/code
 
@@ -105,8 +102,8 @@ CUSTOM_1=$KEY_BINDING_PATH"/custom1/"
 
 gsettings set $MEDIA_KEYS custom-keybindings "['$CUSTOM_0', '$CUSTOM_1']"
 
-gsettings set $KEY_BINDING:$CUSTOM_0 name 'Tilix'
-gsettings set $KEY_BINDING:$CUSTOM_0 command 'tilix'
+gsettings set $KEY_BINDING:$CUSTOM_0 name 'Open terminal'
+gsettings set $KEY_BINDING:$CUSTOM_0 command 'kitty'
 gsettings set $KEY_BINDING:$CUSTOM_0 binding '<Primary><Alt>t'
 
 gsettings set $KEY_BINDING:$CUSTOM_1 name 'Invert colours'

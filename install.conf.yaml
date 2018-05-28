@@ -12,6 +12,7 @@
     ~/.hgrc: hgrc
     ~/.vim: vim
     ~/.vimrc: vim/init.vim
+    ~/.config/kitty: kitty
     ~/.config/nvim: vim
     ~/.editorconfig: editorconfig
     ~/.msmtprc: email/msmtprc
