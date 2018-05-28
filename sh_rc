@@ -163,7 +163,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 
 if [[ "$SHLVL" == "1" ]]; then
-    echo -n 'Todo:'
+    echo -n 'Todo: '
     task next
 fi
 
