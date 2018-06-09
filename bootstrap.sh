@@ -89,6 +89,9 @@ echo 'source ~/.sh_rc' >> ~/.zshrc
 # Make a directory to store code projects
 mkdir -p ~/code
 
+# Install "alex" to lint for considerate writing
+sudo npm install alex --global
+
 # Install email syncing service
 systemctl enable offlineimap.service --user
 systemctl start offlineimap.service --user
