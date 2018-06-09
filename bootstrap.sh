@@ -35,6 +35,7 @@ yaourt -S \
     rust \
     python-pipenv \
     rbenv ruby-build bower heroku-toolbelt \
+    nodejs npm yarn \
     `# Services` \
     postgresql libmemcached freetype2 \
     stubby \
