@@ -16,7 +16,10 @@ indent_style = tab
 [**.go]
 indent_size = 8
 
-[**.{json,yml,clj,cljs}]
+[Vagrantfile]
+indent_size = 2
+
+[**.{json,yml,clj,cljs,rb}]
 indent_size = 2
 
 [*.diff]
