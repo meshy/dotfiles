@@ -115,7 +115,7 @@ bindkey -s ^p '^Uvim $(fzf)^M'
 # Create a virtual environment.
 function mkvenv3 {
     # Create a venv.
-    pipenv install --three
+    pipenv install --three --keep-outdated
     # Work-around for https://github.com/pypa/pipenv/pull/1861
     echo $(pwd) > $(pipenv --venv)/.project
     # pip instead of pipenv because these shouldn't be stored in the Pipfile.
@@ -125,7 +125,7 @@ function mkvenv3 {
 }
 function mkvenv2 {
     # Create a venv.
-    pipenv install --two
+    pipenv install --two --keep-outdated
     # Work-around for https://github.com/pypa/pipenv/pull/1861
     echo $(pwd) > $(pipenv --venv)/.project
     # pip instead of pipenv because these shouldn't be stored in the Pipfile.
