@@ -27,9 +27,9 @@ call plug#end()
 
 " Get rid of that daft cow
 let g:startify_custom_header = [
-\ '   ┌─────┐',
-\ '   │ Vim │',
-\ '   ╘═════╛']
+\ '   ┌────────┐',
+\ '   │ NeoVim │',
+\ '   ╘════════╛']
 
 " Display errors nicely (and silently)
 set noerrorbells
