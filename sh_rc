@@ -90,6 +90,8 @@ alias ta='task add'
 alias vbgr="gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 'vbgr'"
 alias vrgb="gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 'vbgr'"
 alias rgb="gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 'rgb'"
+alias desk="vbgr"
+alias laptop="rgb"
 
 # How meta is this?!
 alias cdd='cd ~/personal/dotfiles'
