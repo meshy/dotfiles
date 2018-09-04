@@ -32,6 +32,7 @@
   pr = pull-request
   s = status
   ss = status -s
+  t = !gitree -m
   in = !git fetch && git log ..origin/master
   writers = shortlog -sn
 
