@@ -27,7 +27,7 @@ yaourt -S \
     git hub-git tig git-extras \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
-    pygmentize python-pygments \
+    bat \
     task \
     `# Languages` \
     clojure leiningen \
