@@ -17,6 +17,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'kalekundert/vim-coiled-snake'
 Plug 'Konfekt/FastFold'
 Plug 'kshenoy/vim-signature'
+Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
@@ -114,6 +115,9 @@ let g:splitjoin_trailing_comma = 1
 
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
+
+" Add a shortcut for tagbar.
+nmap <F8> :TagbarToggle<CR>
 
 " Ignore case if search pattern is all lowercase, case-sensitive otherwise.
 set ignorecase
