@@ -122,7 +122,7 @@ function mkvenv3 {
     # Work-around for https://github.com/pypa/pipenv/pull/1861
     echo $(pwd) > $(pipenv --venv)/.project
     # pip instead of pipenv because these shouldn't be stored in the Pipfile.
-    pipenv run pip install neovim ipython
+    pipenv run pip install neovim ipython flake8 flake8-commas isort
     # Activate the env.
     pipenv shell
 }
@@ -132,7 +132,7 @@ function mkvenv2 {
     # Work-around for https://github.com/pypa/pipenv/pull/1861
     echo $(pwd) > $(pipenv --venv)/.project
     # pip instead of pipenv because these shouldn't be stored in the Pipfile.
-    pipenv run pip install neovim ipython
+    pipenv run pip install neovim ipython flake8 flake8-commas isort
     # Activate the env.
     pipenv shell
 }
