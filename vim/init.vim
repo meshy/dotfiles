@@ -91,6 +91,7 @@ inoremap <right> <nop>
 " Recognise files with unusual file extensions
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.html set filetype=htmldjango
 
 " Set up vim-airline
 set laststatus=2
