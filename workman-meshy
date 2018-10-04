@@ -4,13 +4,27 @@
 //     www.meshy.co.uk
 
 partial alphanumeric_keys
-xkb_symbols "workman" {
+xkb_symbols "workman-meshy-gb" {
 
-    name[Group1]= "English (Workman, international with dead keys)";
+    name[Group1]= "English (Workman Meshy GB)";
 
     include "us(intl)"
 
-    // Alphanumeric section
+    // Numbers
+    key <AE02> { [          2,   quotedbl,    twosuperior,  oneeighth ] };
+    key <AE03> { [          3,   sterling,  threesuperior,   sterling ] };
+    key <AE04> { [          4,     dollar,       EuroSign, onequarter ] };
+    // End numeric section
+
+    // Symbols
+    key <TLDE> { [      grave,    notsign,            bar,        bar ] };
+    key <BKSL> { [ numbersign, asciitilde,     dead_grave, dead_breve ] };
+    key <LSGT> { [  backslash,        bar,            bar,  brokenbar ] };
+    key <AC11> { [ apostrophe,        at, dead_circumflex, dead_caron ] };
+    key <AD10> { [  semicolon,      colon,      paragraph,     degree ] };
+    // End symbols
+
+    // Letters
     key <AD01> { [     q,          Q,    adiaeresis,       Adiaeresis ] };
     key <AD02> { [     d,          D,           eth,              ETH ] };
     key <AD03> { [     r,          R,    registered,       registered ] };
@@ -20,7 +34,6 @@ xkb_symbols "workman" {
     key <AD07> { [     f,          F,             f,                F ] };
     key <AD08> { [     u,          U,        uacute,           Uacute ] };
     key <AD09> { [     p,          P,    odiaeresis,       Odiaeresis ] };
-    key <AD10> { [ semicolon,  colon,     paragraph,           degree ] };
 
     key <AC01> { [     a,          A,        aacute,           Aacute ] };
     key <AC02> { [     s,          S,        ssharp,          section ] };
@@ -40,7 +53,7 @@ xkb_symbols "workman" {
     key <AB05> { [     v,          V,             v,                V ] };
     key <AB06> { [     k,          K,            oe,               OE ] };
     key <AB07> { [     l,          L,        oslash,         Ooblique ] };
-    // End alphanumeric section
+    // End letters
 
     include "level3(ralt_switch)"
 };
