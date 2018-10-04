@@ -1,6 +1,7 @@
-// Workman Keyboard Layout symbols for xkb on X.Org Server 7.x
-// 09-06-2010 OJ Bucao. http://www.workmanlayout.com
-
+// The Workman Keyboard Layout created by OJ Bucao.
+//     www.workmanlayout.org
+// Customised by Charlie Denton.
+//     www.meshy.co.uk
 
 partial alphanumeric_keys
 xkb_symbols "workman" {
