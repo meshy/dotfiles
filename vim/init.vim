@@ -110,6 +110,9 @@ let g:ale_linters = {
 \   'python': ['flake8', 'isort'],
 \   'yaml': ['yamllint'],
 \}
+" CTRL-j and -k for next and prev lint error.
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " Line breaking (splitjoin)
 let g:splitjoin_python_brackets_on_separate_lines = 1
