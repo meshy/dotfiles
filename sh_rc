@@ -108,6 +108,9 @@ alias gs="git status"
 # Display an image in the terminal. Only works in kitty.
 alias img="kitty icat"
 
+# Fix consequences of strange TERM when using kitty to ssh.
+alias ksh="kitty +kitten ssh"
+
 # Open a file in vim with CTRL-P
 bindkey -s ^p '^Uvim $(fzf)^M'
 
