@@ -3,24 +3,16 @@
 // Customised by Charlie Denton.
 //     www.meshy.co.uk
 //
-// To get this working, I added it into /usr/share/X11/xkb/symbols/gb, and
-// updated the variation definitions in /usr/share/X11/xkb/rules/
-//
-// Specifically, I added the workman variation to:
-//
-// - base.lst
-// - base.xml
-// - evdev.lst
-// - evdev.xml
+// To get this working, I replaced the US Workman definition in
+// /usr/share/X11/xkb/symbols/us.
 //
 // I might have had to reboot to get the changes. I can't remember.
 
 partial alphanumeric_keys
 xkb_symbols "workman" {
 
-    name[Group1]= "English (Workman Meshy GB)";
-
     include "us(intl)"
+    name[Group1]= "English (Workman)";
 
     // Numbers
     key <AE02> { [          2,   quotedbl,    twosuperior,  oneeighth ] };
