@@ -23,6 +23,7 @@ folderfilter = lambda foldername: foldername in [
 remoteuser = charleswdenton@gmail.com
 remotepasseval = get_password('charleswdenton-gmail.com')
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl_version = tls1_2
 type = Gmail
 max_connections = 1
 nametrans = lambda folder: {'Sent Mail': 'Sent'}.get(folder, folder)
