@@ -25,6 +25,7 @@ yaourt -S \
     kitty xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
     git hub-git tig git-extras gitree \
+    python-pew \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     bat \
@@ -33,7 +34,6 @@ yaourt -S \
     clojure leiningen \
     go \
     rust \
-    python-pipenv \
     rbenv ruby-build bower heroku-toolbelt \
     nodejs npm yarn \
     `# Services` \

@@ -19,8 +19,7 @@ bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
 export WORDCHARS=''
 
-# PEW replaces virtualenvwrapper
-export PIPENV_SHELL_FANCY=1
+# Pew (replaces virtualenvwrapper)
 export WORKON_HOME=~/venvs
 
 # Go
@@ -119,26 +118,30 @@ bindkey -s ^p '^Uvim $(fzf)^M'
 #############
 
 # Create a virtual environment.
+function _mkvenv {
+    name=${1}
+    _python=${2}
+    pew new $name \
+        -a $(pwd) \
+        -p $_python \
+        -i pip \
+        -i setuptools \
+        -i wheel \
+        -i neovim \
+        -i flake8 \
+        -i flake8-commas \
+        -i isort \
+        -i ${3:-ipython}
+}
 function mkvenv3 {
-    # Create a venv.
-    pipenv install --three --keep-outdated
-    # Work-around for https://github.com/pypa/pipenv/pull/1861
-    echo $(pwd) > $(pipenv --venv)/.project
-    # pip instead of pipenv because these shouldn't be stored in the Pipfile.
-    pipenv run pip install neovim ipython flake8 flake8-commas isort
-    # Activate the env.
-    pipenv shell
+    defaultname=`basename $PWD`
+    _mkvenv ${1:-$defaultname} $(which python3)
 }
 function mkvenv2 {
-    # Create a venv.
-    pipenv install --two --keep-outdated
-    # Work-around for https://github.com/pypa/pipenv/pull/1861
-    echo $(pwd) > $(pipenv --venv)/.project
-    # pip instead of pipenv because these shouldn't be stored in the Pipfile.
-    pipenv run pip install neovim ipython flake8 flake8-commas isort
-    # Activate the env.
-    pipenv shell
+    defaultname=`basename $PWD`
+    _mkvenv ${1:-$defaultname} $(which python2) "ipython<6"
 }
+
 
 # Install requirements with pip
 function pp {
