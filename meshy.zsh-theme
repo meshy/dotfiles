@@ -169,6 +169,7 @@ prompt_pure_preprompt_render() {
 	if [[ "$1" == "precmd" ]]; then
 		if [ ! -z $venvprompt ]; then
 			print -Pn "\n${venvprompt}"
+			print -Pn "  %F{green}${$(python --version 2>&1 /dev/null)%.*}%f"
 		fi
 		print -P "\n${preprompt}"
 	else
