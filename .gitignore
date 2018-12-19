@@ -28,4 +28,5 @@ pip-log.txt
 
 # Vim gubbins
 vim/.netrwhist
+vim/black
 vim/plugged

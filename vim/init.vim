@@ -5,6 +5,7 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug '13k/vim-nginx'
 Plug 'airblade/vim-gitgutter'
+Plug 'ambv/black'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/whitespaste.vim'
 Plug 'chriskempson/base16-vim'
@@ -117,6 +118,10 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " Line breaking (splitjoin)
 let g:splitjoin_python_brackets_on_separate_lines = 1
 let g:splitjoin_trailing_comma = 1
+
+"  Black (python formatting)
+let g:black_skip_string_normalization = 1
+
 
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
