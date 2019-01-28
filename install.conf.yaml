@@ -1,11 +1,12 @@
+---
 - clean: ['~']
 
 - link:
     ~/.sh_rc: sh_rc
     ~/.isort.cfg: isort.cfg
     ~/.config/pip/pip.conf:
-        create: true
-        path: pip/pip.conf
+      create: true
+      path: pip/pip.conf
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.gemrc: gemrc
@@ -20,18 +21,18 @@
     ~/.notmuch-config: email/notmuch-config
     ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
     ~/.config/systemd/user/offlineimap.service:
-        create: true
-        path: email/offlineimap.service
+      create: true
+      path: email/offlineimap.service
     ~/.mutt: email/mutt
     ~/.lein/profiles.clj:
-        create: true
-        path: lein_profiles.clj
+      create: true
+      path: lein_profiles.clj
     ~/.oh-my-zsh/custom/meshy.zsh-theme:
-        create: true
-        path: meshy.zsh-theme
+      create: true
+      path: meshy.zsh-theme
     ~/.oh-my-zsh/custom/async.zsh:
-        create: true
-        path: async.zsh
+      create: true
+      path: async.zsh
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
