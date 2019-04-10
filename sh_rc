@@ -25,6 +25,9 @@ export WORKON_HOME=~/venvs
 # Go
 export GOPATH=~/code/go
 
+# Python (avoid pyc files)
+export PYTHONDONTWRITEBYTECODE=1
+
 # PATH
 if [[ "$SHLVL" == "1" ]]; then
     # Python (pip install --user)
