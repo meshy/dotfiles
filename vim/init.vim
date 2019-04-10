@@ -17,7 +17,6 @@ Plug 'jeetsukumaran/vim-indentwise'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'kalekundert/vim-coiled-snake'
-Plug 'Konfekt/FastFold'
 Plug 'kshenoy/vim-signature'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
@@ -138,6 +137,12 @@ set nojoinspaces
 
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
+
+" Folding
+" Open files with all folds open.
+set foldlevel=99
+" Toggle folding with space.
+nnoremap <space> za
 
 " Make moving between buffers simpler:
 map <C-h> <C-w>h
