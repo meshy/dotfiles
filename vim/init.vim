@@ -121,7 +121,7 @@ let g:splitjoin_trailing_comma = 1
 
 "  Black (python formatting)
 let g:black_skip_string_normalization = 1
-
+command B :Black
 
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
