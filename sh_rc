@@ -117,6 +117,11 @@ bindkey -s ^p '^Uvim $(fzf)^M'
 # FUNCTIONS #
 #############
 
+function af {
+    defaultpath=.
+    find ${2:-$defaultpath} | grep ${1}
+}
+
 # Create a virtual environment.
 function _mkvenv {
     name=${1}
