@@ -50,7 +50,7 @@ fi
 # CTRL-R overrides history search.
 # CTRL-T dumps the searched path into the current command
 # ALT-C changes directory. This is a PITA.
-export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --filename-pattern ""'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
@@ -58,6 +58,7 @@ source /usr/share/fzf/completion.zsh
 # ALIASES #
 ###########
 
+alias ag='ag --hidden --ignore-dir=".git"'
 alias ccat='bat'
 alias f='flake8 . --exclude=node_modules'
 alias e='neomutt && notmuch new'
