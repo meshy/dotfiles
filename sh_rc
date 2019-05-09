@@ -72,6 +72,7 @@ alias open='xdg-open'
 alias pi="pip install"
 alias t='tree -I "__pycache__|*.pyc" -C --dirsfirst'
 alias vim='nvim'
+alias vi='nvim'
 alias v='nvim'
 alias wo='pew workon'
 alias fig='docker-compose'
