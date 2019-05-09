@@ -45,6 +45,7 @@ yaourt -S \
     python-isort \
     shellcheck \
     yamllint \
+    python-pre-commit \
     `# Passwords` \
     bitwarden \
     pv \
