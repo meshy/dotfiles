@@ -15,6 +15,7 @@
   amend = commit --amend -v
   b = branch
   c = commit -v
+  cd = diff --cached
   co = checkout
   d = diff
   dc = diff --cached
