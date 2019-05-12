@@ -1,0 +1,11 @@
+# Use GPGME for encrypted / signed mail.
+set crypt_use_gpgme
+
+# Sign everything sent.
+set crypt_autosign = yes
+
+# Reply to encrypted mails with encryption.
+set crypt_replyencrypt = yes
+
+# Add "p" shortcut to change encryption options when sending.
+bind compose p pgp-menu
