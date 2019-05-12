@@ -92,6 +92,10 @@ inoremap <right> <nop>
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.html set filetype=htmldjango
+au BufNewFile,BufRead *.wsgi set ft=python
+au BufNewFile,BufRead *.wsgi.j2 set ft=python
+au BufNewFile,BufRead *.py.j2 set ft=python
+au BufNewFile,BufRead *.muttrc set ft=muttrc
 
 " Set up vim-airline
 set laststatus=2
