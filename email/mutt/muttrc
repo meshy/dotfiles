@@ -15,3 +15,4 @@ source ~/.mutt/colors.muttrc
 source ~/.mutt/index.muttrc
 source ~/.mutt/sidebar.muttrc
 source ~/.mutt/reading.muttrc
+source ~/.mutt/sending.muttrc
