@@ -3,3 +3,6 @@ alternative_order text/plain text/html
 
 # Use mailcap (elinks) to view HTML as plain text.
 auto_view text/html
+
+# Don't automatically go to next email when at the bottom of the page.
+set pager_stop=yes
