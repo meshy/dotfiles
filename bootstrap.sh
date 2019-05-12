@@ -51,7 +51,7 @@ yaourt -S \
     pv \
     pass \
     `# Email` \
-    neomutt urlview msmtp offlineimap notmuch-runtime \
+    neomutt urlview msmtp offlineimap notmuch-runtime elinks \
     `# Virtualisation` \
     docker docker-compose \
     `# Random tools` \

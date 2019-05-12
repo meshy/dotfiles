@@ -16,6 +16,7 @@
     ~/.config/kitty: kitty
     ~/.config/nvim: vim
     ~/.editorconfig: editorconfig
+    ~/.mailcap: email/mailcap
     ~/.msmtprc: email/msmtprc
     ~/.offlineimaprc: email/offlineimaprc
     ~/.notmuch-config: email/notmuch-config
