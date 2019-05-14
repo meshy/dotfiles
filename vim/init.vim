@@ -77,21 +77,11 @@ set colorcolumn=80,100
 " Visual feedback on autocompleted commands
 set wmnu
 
-" Disable mouse and arrow keys, because sanity is for the weak.
-set mouse=
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
 " Recognise files with unusual file extensions
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.html set filetype=htmldjango
+au BufNewFile,BufRead *.sh.j2 set ft=sh
 au BufNewFile,BufRead *.wsgi set ft=python
 au BufNewFile,BufRead *.wsgi.j2 set ft=python
 au BufNewFile,BufRead *.py.j2 set ft=python
