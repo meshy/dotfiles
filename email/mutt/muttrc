@@ -6,6 +6,7 @@ set use_envelope_from
 set sendmail = "/usr/bin/msmtp"
 set folder = ~/.mail/charleswdenton-gmail.com
 set spoolfile = +INBOX
+set record = +Sent
 mailboxes +INBOX +Sent
 
 # Do not differentiate between "unread" and "new".
