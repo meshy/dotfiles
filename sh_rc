@@ -141,7 +141,6 @@ function _mkvenv {
         -i wheel \
         -i neovim \
         -i flake8 \
-        -i flake8-commas \
         -i isort \
         -i ${3:-ipython}
 }
