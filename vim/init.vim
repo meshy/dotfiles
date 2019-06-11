@@ -77,6 +77,17 @@ set colorcolumn=80,100
 " Visual feedback on autocompleted commands
 set wmnu
 
+" Disable mouse and arrow keys, because sanity is for the weak.
+set mouse=
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
 " Recognise files with unusual file extensions
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufNewFile,BufRead *.ejs set filetype=html
