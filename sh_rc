@@ -126,7 +126,7 @@ bindkey -s ^p '^Uvim $(fzf)^M'
 
 function af {
     defaultpath=.
-    find ${2:-$defaultpath} | grep ${1}
+    find ${2:-$defaultpath} ! -iwholename '*.git*' | grep ${1}
 }
 
 # Create a virtual environment.
