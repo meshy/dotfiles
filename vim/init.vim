@@ -75,7 +75,7 @@ set cursorline
 set cursorcolumn
 
 " Add rulers to highlight overly long lines
-set colorcolumn=80,100
+set colorcolumn=80,88,100
 
 " Visual feedback on autocompleted commands
 set wmnu
