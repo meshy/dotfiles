@@ -18,6 +18,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'kalekundert/vim-coiled-snake'
 Plug 'kshenoy/vim-signature'
+Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
 Plug 'rking/ag.vim'
@@ -66,6 +67,8 @@ set termguicolors
 colorscheme base16-materia-meshy
 syntax on
 let g:SignatureMarkTextHLDynamic = 1
+let g:rainbow_active = 1
+let g:rainbow_conf = {'separately': {'htmldjango': 0}}
 
 " Highlight cursor position
 set cursorline
