@@ -135,8 +135,8 @@ function vag {
     search_term=$@
     _files=$(ag --hidden --files-with-matches --ignore-dir=".git" $search_term | sort | xargs)
     if [[ $_files != "" ]]; then
-        echo "nvim $_files"
-        nvim $(echo $_files)
+        echo "nvim $_files +/${search_term}"
+        nvim $(echo $_files) +/${search_term}
     else
         echo "No results."
     fi
