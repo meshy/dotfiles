@@ -50,7 +50,7 @@ fi
 # CTRL-R overrides history search.
 # CTRL-T dumps the searched path into the current command
 # ALT-C changes directory. This is a PITA.
-export FZF_DEFAULT_COMMAND='ag --hidden --filename-pattern ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore-dir=".git" --filename-pattern ""'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
