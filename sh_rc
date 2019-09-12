@@ -132,7 +132,8 @@ function af {
 
 # Open search results in vim
 function vag {
-    _files=$(ag --hidden --files-with-matches --ignore-dir=".git" $@ | sort | xargs)
+    search_term=$@
+    _files=$(ag --hidden --files-with-matches --ignore-dir=".git" $search_term | sort | xargs)
     if [[ $_files != "" ]]; then
         echo "nvim $_files"
         nvim $(echo $_files)
