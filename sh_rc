@@ -130,6 +130,17 @@ function af {
     find ${2:-$defaultpath} ! -iwholename '*.git*' | grep ${1}
 }
 
+# Open search results in vim
+function vag {
+    _files=$(ag --hidden --files-with-matches --ignore-dir=".git" $@ | sort | xargs)
+    if [[ $_files != "" ]]; then
+        echo "nvim $_files"
+        nvim $(echo $_files)
+    else
+        echo "No results."
+    fi
+}
+
 # Create a virtual environment.
 function _mkvenv {
     name=${1}
