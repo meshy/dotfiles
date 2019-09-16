@@ -64,26 +64,11 @@ let g:SignatureMarkTextHLDynamic = 1
 let g:rainbow_active = 1
 let g:rainbow_conf = {'separately': {'htmldjango': 0}}
 
-" Highlight cursor position
-set cursorline
-set cursorcolumn
-
 " Add rulers to highlight overly long lines
 set colorcolumn=80,88,100
 
 " Visual feedback on autocompleted commands
 set wmnu
-
-" Disable mouse and arrow keys, because sanity is for the weak.
-set mouse=
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 
 " Recognise files with unusual file extensions
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -145,12 +130,6 @@ nnoremap ; :
 set foldlevel=99
 " Toggle folding with space.
 nnoremap <space> za
-
-" Make moving between buffers simpler:
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
 
 " Security. https://securitytracker.com/id/1009014
 set modelines=0
