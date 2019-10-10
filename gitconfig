@@ -65,6 +65,7 @@
   compactionHeuristic = true
   indentHeuristic = true
   renameLimit = 3000
+  noprefix = true
 
 [github]
   user = meshy
