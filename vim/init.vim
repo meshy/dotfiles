@@ -5,12 +5,10 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug '13k/vim-nginx'
 Plug 'airblade/vim-gitgutter'
-Plug 'ambv/black'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
-Plug 'fisadev/vim-isort'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'jeetsukumaran/vim-indentwise'
 Plug 'junegunn/fzf'
@@ -21,6 +19,7 @@ Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
 Plug 'rking/ag.vim'
+Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
@@ -70,8 +69,17 @@ let g:splitjoin_python_brackets_on_separate_lines = 1
 let g:splitjoin_trailing_comma = 1
 
 "  Black (python formatting)
-let g:black_skip_string_normalization = 1
-command B :Black
+let g:neoformat_python_black = {
+            \ 'exe': 'black',
+            \ 'stdin': 1,
+            \ 'args': ['--skip-string-normalization', '-q', '-'],
+            \ }
+
+let g:neoformat_enabled_python = ['isort', 'black']
+let g:neoformat_enabled_sql = ['sqlfmt']
+let g:neoformat_enabled_html = ['html-beautify']
+let g:neoformat_run_all_formatters = 1
+command F :Neoformat
 
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
