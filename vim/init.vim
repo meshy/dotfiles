@@ -18,6 +18,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'rking/ag.vim'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-fugitive'
