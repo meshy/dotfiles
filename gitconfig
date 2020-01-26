@@ -54,6 +54,10 @@
   new = green bold
   old = red bold
   whitespace = red reverse
+  newMoved = green dim
+  oldMoved = yellow dim
+  newMovedAlternative = blue dim
+  oldMovedAlternative = red dim
 
 [color "status"]
   added = green
@@ -66,6 +70,7 @@
   indentHeuristic = true
   renameLimit = 3000
   noprefix = true
+  colorMoved = zebra
 
 [github]
   user = meshy
