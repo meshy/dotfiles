@@ -7,6 +7,8 @@ Plug '13k/vim-nginx'
 Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'chriskempson/base16-vim'
+Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'davidhalter/jedi-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'Glench/Vim-Jinja2-Syntax'
@@ -21,6 +23,7 @@ Plug 'mhinz/vim-startify'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'rking/ag.vim'
 Plug 'sbdchd/neoformat'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
@@ -81,6 +84,15 @@ let g:neoformat_enabled_sql = ['sqlfmt']
 let g:neoformat_enabled_html = ['html-beautify']
 let g:neoformat_run_all_formatters = 1
 command F :Neoformat
+
+" Use deoplete for tab completion.
+let g:deoplete#enable_at_startup = 1
+" Leave jedi completion to deoplete.
+let g:jedi#completions_enabled = 0
+" Make supertab play nice with deoplete's default ordering.
+let g:SuperTabDefaultCompletionType = "<c-n>"
+" Avoid jedi's annoying popup at the top of the screen.
+autocmd FileType python setlocal completeopt-=preview
 
 " Set up fuzzy search on CTRL-P (with fzf)
 nnoremap <C-p> :FZF<CR>
