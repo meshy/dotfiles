@@ -85,9 +85,6 @@ nmap <F8> :TagbarToggle<CR>
 set ignorecase
 set smartcase
 
-" Don't insert two spaces after a full stop when wrapping lines.  It's silly.
-set nojoinspaces
-
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
 
