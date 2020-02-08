@@ -71,10 +71,6 @@ let g:neoformat_enabled_html = ['html-beautify']
 let g:neoformat_run_all_formatters = 1
 command F :Neoformat
 
-" Ignore case if search pattern is all lowercase, case-sensitive otherwise.
-set ignorecase
-set smartcase
-
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
 
