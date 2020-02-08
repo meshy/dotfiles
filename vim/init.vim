@@ -58,10 +58,6 @@ let g:ale_linters = {
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-" Line breaking (splitjoin)
-let g:splitjoin_python_brackets_on_separate_lines = 1
-let g:splitjoin_trailing_comma = 1
-
 "  Black (python formatting)
 let g:neoformat_python_black = {
             \ 'exe': 'black',
@@ -74,12 +70,6 @@ let g:neoformat_enabled_sql = ['sqlfmt']
 let g:neoformat_enabled_html = ['html-beautify']
 let g:neoformat_run_all_formatters = 1
 command F :Neoformat
-
-" Set up fuzzy search on CTRL-P (with fzf)
-nnoremap <C-p> :FZF<CR>
-
-" Add a shortcut for tagbar.
-nmap <F8> :TagbarToggle<CR>
 
 " Ignore case if search pattern is all lowercase, case-sensitive otherwise.
 set ignorecase
