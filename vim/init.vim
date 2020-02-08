@@ -100,11 +100,5 @@ set nojoinspaces
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
 
-" Folding
-" Open files with all folds open.
-set foldlevel=99
-" Toggle folding with space.
-nnoremap <space> za
-
 " Security. https://securitytracker.com/id/1009014
 set modelines=0
