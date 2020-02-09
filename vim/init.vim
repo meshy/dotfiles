@@ -36,12 +36,6 @@ Plug 'vimjas/vim-python-pep8-indent'
 Plug 'w0rp/ale'
 call plug#end()
 
-" Indentation with four spaces
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
 " Set up ALE (linting)
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1

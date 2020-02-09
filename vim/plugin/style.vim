@@ -1,3 +1,9 @@
+" Indentation with four spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
 " Display errors nicely (and silently)
 set noerrorbells
 set novisualbell
