@@ -24,6 +24,7 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'rking/ag.vim'
 Plug 'sbdchd/neoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
