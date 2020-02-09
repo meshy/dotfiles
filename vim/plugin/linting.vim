@@ -20,6 +20,11 @@ let g:neoformat_python_black = {
 
 let g:neoformat_enabled_python = ['isort', 'black']
 let g:neoformat_enabled_sql = ['sqlfmt']
+let g:neoformat_sql_sqlfmt = {
+            \ 'exe': 'sqlfmt',
+            \ 'args': ['--align full', '--use-spaces'],
+            \ 'stdin': 1,
+            \ }
 let g:neoformat_enabled_html = ['html-beautify']
 let g:neoformat_run_all_formatters = 1
 command F :Neoformat
