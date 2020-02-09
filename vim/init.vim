@@ -48,10 +48,6 @@ let g:ale_linters = {
 \   'python': ['flake8', 'isort'],
 \   'yaml': ['yamllint'],
 \}
-" CTRL-j and -k for next and prev lint error.
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-
 "  Black (python formatting)
 let g:neoformat_python_black = {
             \ 'exe': 'black',
