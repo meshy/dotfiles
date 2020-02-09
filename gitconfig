@@ -86,3 +86,5 @@
 
 [init]
   templatedir = ~/personal/dotfiles/git_template
+[advice]
+  statusHints = true
