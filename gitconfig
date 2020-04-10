@@ -31,6 +31,7 @@
   plp = pull --prune
   ps = push
   pr = pull-request
+  recent = for-each-ref --sort=committerdate --format='%(committerdate:short): %(refname:short)' refs/heads/
   s = status
   ss = status -s
   t = !gitree -m
