@@ -144,26 +144,26 @@ function vag {
 
 # Create a virtual environment.
 function _mkvenv {
-    name=${1}
-    _python=${2}
+    name="${1}"
+    _python="${2}"
     pew new $name \
-        -a $(pwd) \
-        -p $_python \
+        -a "$(pwd)" \
+        -p "$_python" \
         -i pip \
         -i setuptools \
         -i wheel \
         -i neovim \
         -i flake8 \
         -i isort \
-        -i ${3:-ipython}
+        -i "${3:-ipython}"
 }
 function mkvenv3 {
     defaultname=`basename $PWD`
-    _mkvenv ${1:-$defaultname} $(which python3)
+    _mkvenv "${1:-$defaultname}" "$(which python3)"
 }
 function mkvenv2 {
     defaultname=`basename $PWD`
-    _mkvenv ${1:-$defaultname} $(which python2) "ipython<6"
+    _mkvenv "${1:-$defaultname}" "$(which python2)" "ipython<6"
 }
 
 
