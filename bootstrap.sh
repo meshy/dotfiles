@@ -41,9 +41,8 @@ yay -S \
     `# SAAS` \
     heroku-cli aws-cli \
     `# Editing text` \
-    vim neovim python-neovim editorconfig-core-c ctags xsel \
+    vim neovim editorconfig-core-c ctags xsel \
     `# Linting` \
-    python-isort \
     shellcheck \
     yamllint \
     python-pre-commit \
