@@ -21,7 +21,8 @@ yay -S \
     materia-theme pop-icon-theme xcursor-oxygen \
     ttf-fantasque-sans noto-fonts-emoji \
     `# Terminal` \
-    kitty xcalib zsh-syntax-highlighting most \
+    tilix \
+    xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
     git hub tig git-extras gitree \
     sdcv stardict-oald stardict-thesaurus-ee \
