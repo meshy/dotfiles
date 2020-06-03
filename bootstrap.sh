@@ -34,10 +34,12 @@ yay -S \
     clojure leiningen \
     go \
     rust \
-    rbenv ruby-build bower heroku-toolbelt \
+    rbenv ruby-build bower \
     nodejs npm yarn \
     `# Services` \
     postgresql libmemcached freetype2 \
+    `# SAAS` \
+    heroku-cli aws-cli \
     `# Editing text` \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
     `# Linting` \
