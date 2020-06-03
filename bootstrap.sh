@@ -14,6 +14,8 @@ yay -Syyuu
 yay -R libreoffice-still --noconfirm
 
 yay -S \
+    `# Build essentials` \
+    base-devel \
     `# Theming` \
     gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
     materia-theme pop-icon-theme xcursor-oxygen \
