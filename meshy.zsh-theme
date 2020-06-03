@@ -142,7 +142,7 @@ prompt_pure_preprompt_render() {
 	preprompt+="%F{yellow}${prompt_pure_cmd_exec_time}%f"
 
 	# zsh key inserted?
-	if [ ! -e ~/.ssh/id_rsa ]; then
+	if [ ! -e ~/.ssh/id_ed25519 ]; then
 		preprompt+="%F{red} SSH/GPG key!%f"
 	fi
 
