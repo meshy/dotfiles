@@ -30,7 +30,7 @@ yay -S \
     bat \
     task \
     `# Languages` \
-    python-pew \
+    python-pipx python-pew \
     clojure leiningen \
     go \
     rust \
@@ -45,7 +45,6 @@ yay -S \
     `# Linting` \
     shellcheck \
     yamllint \
-    python-pre-commit \
     `# Email` \
     neomutt urlview msmtp offlineimap notmuch-runtime elinks \
     `# Virtualisation` \
@@ -56,6 +55,10 @@ yay -S \
     peek \
     bind-tools \
     --noconfirm
+
+pipx install pre-commit
+pipx install pipenv
+pipx install poetry
 
 # Put headers in the right place for `pip install pillow`.
 sudo ln -s /usr/include/freetype2 /usr/include/freetype
