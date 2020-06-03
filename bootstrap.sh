@@ -23,7 +23,7 @@ yay -S \
     `# Terminal` \
     kitty xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
-    git hub-git tig git-extras gitree \
+    git hub tig git-extras gitree \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     bat \
