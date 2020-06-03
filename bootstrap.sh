@@ -14,7 +14,6 @@ yay -Syyuu
 yay -R libreoffice-still --noconfirm
 
 yay -S \
-    libreoffice-fresh libreoffice-fresh-en-GB \
     `# Theming` \
     gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
     materia-theme pop-icon-theme xcursor-oxygen \
@@ -52,6 +51,8 @@ yay -S \
     neomutt urlview msmtp offlineimap notmuch-runtime elinks \
     `# Virtualisation` \
     docker docker-compose \
+    `# Office`
+    libreoffice-fresh libreoffice-fresh-en-gb \
     `# Random tools` \
     peek \
     bind-tools \
