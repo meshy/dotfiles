@@ -44,10 +44,6 @@ yay -S \
     shellcheck \
     yamllint \
     python-pre-commit \
-    `# Passwords` \
-    bitwarden \
-    pv \
-    pass \
     `# Email` \
     neomutt urlview msmtp offlineimap notmuch-runtime elinks \
     `# Virtualisation` \
