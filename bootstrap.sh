@@ -37,7 +37,6 @@ yay -S \
     nodejs npm yarn \
     `# Services` \
     postgresql libmemcached freetype2 \
-    stubby \
     `# Editing text` \
     vim neovim python-neovim editorconfig-core-c ctags xsel \
     `# Linting` \
@@ -67,12 +66,6 @@ sudo ln -s /usr/include/freetype2 /usr/include/freetype
 sudo -u postgres initdb --locale en_GB.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
 systemctl enable postgresql.service
 systemctl start postgresql.service
-
-# Enable DNSSEC in stubby
-sudo sed -i -e "s/^# dnssec_return_status*/dnssec_return_status/" /etc/stubby/stubby.yml
-# Start stubby DNS server
-systemctl enable stubby.service
-systemctl start stubby.service
 
 # Download dotfiles
 DOTFILES_DIR=~/personal/dotfiles
