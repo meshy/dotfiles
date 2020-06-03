@@ -11,11 +11,11 @@ ln -s "$STICK_PATH/.ssh" ~
 ln -s "$STICK_PATH/.gnupg" ~
 git clone "$STICK_PATH/password-store" ~/.password-store
 
-yaourt -Syyuu
+yay -Syyuu
 
-yaourt -R libreoffice-still --noconfirm
+yay -R libreoffice-still --noconfirm
 
-yaourt -S \
+yay -S \
     libreoffice-fresh libreoffice-fresh-en-GB \
     `# Theming` \
     gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
