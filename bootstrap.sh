@@ -3,13 +3,11 @@
 # Dev setup for Arch linux #
 ############################
 
-# Symlink gnupg and ssh
-mv ~/.ssh ~/.ssh.old
-mv ~/.gnupg ~/.gnupg.old
-STICK_PATH=/run/media/$(whoami)/TunnelEncrypted
-ln -s "$STICK_PATH/.ssh" ~
-ln -s "$STICK_PATH/.gnupg" ~
-git clone "$STICK_PATH/password-store" ~/.password-store
+## Move gnupg and ssh aside
+# mv ~/.ssh ~/.ssh.old
+# mv ~/.gnupg ~/.gnupg.old
+## Generate a new key
+# ssh-keygen -t ed25519
 
 yay -Syyuu
 
