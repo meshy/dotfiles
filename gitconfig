@@ -89,3 +89,5 @@
   templatedir = ~/personal/dotfiles/git_template
 [advice]
   statusHints = true
+[pull]
+	rebase = false
