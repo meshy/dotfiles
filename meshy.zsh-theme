@@ -147,17 +147,21 @@ prompt_pure_preprompt_render() {
 	fi
 
 	# time since last updated emails
-	seconds_since_update=$(( $(date +%s) - $(date +%s -r ~/.offlineimap) ))
-	hours_since_update=$(( ${seconds_since_update} / 3600 ))
-	fuzzy_time seconds_since_update "since_email_sync"
-	if (( $hours_since_update > 0 )); then
-		preprompt+=" %F{blue}${since_email_sync}📬%f"
-	fi
+	if [ -e ~/.offlineimap ]; then
+		seconds_since_update=$(( $(date +%s) - $(date +%s -r ~/.offlineimap) ))
+		hours_since_update=$(( ${seconds_since_update} / 3600 ))
+		fuzzy_time seconds_since_update "since_email_sync"
+		if (( $hours_since_update > 0 )); then
+			preprompt+=" %F{blue}${since_email_sync}📬%f"
+		fi
 
-	# unread emails
-	unread_emails=$(notmuch count tag:unread)
-	if [ $unread_emails != 0 ]; then
-		preprompt+="  %F{blue}${unread_emails}📨%f"
+		# unread emails
+		unread_emails=$(notmuch count tag:unread)
+		if [ $unread_emails != 0 ]; then
+			preprompt+="  %F{blue}${unread_emails}📨%f"
+		fi
+	else
+		preprompt+=" %F{red}bad-email%f"
 	fi
 
 	local venvprompt=
