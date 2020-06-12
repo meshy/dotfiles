@@ -165,6 +165,11 @@ prompt_pure_preprompt_render() {
 		venvprompt="$((SHLVL - 1)) %F{cyan}$(basename $VIRTUAL_ENV)%f"
 	fi
 
+	# Help Tilix not complain
+	# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
+	VTE_PWD_THING="$(__vte_osc7)"
+	preprompt+="$VTE_PWD_THING%f"
+
 	# if executing through precmd, do not perform fancy terminal editing
 	if [[ "$1" == "precmd" ]]; then
 		if [ ! -z $venvprompt ]; then
@@ -379,12 +384,8 @@ prompt_pure_setup() {
 	# show username@host if root, with username in white
 	[[ $UID -eq 0 ]] && prompt_pure_username=' %F{white}%n%f%F{242}@%m%f'
 
-	# Help Tilix not complain
-	# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
-	VTE_PWD_THING="$(__vte_osc7)"
-
 	# prompt turns red if the previous command didn't exit with 0
-	PROMPT="%(?.%F{cyan}.%F{red})${PURE_PROMPT_SYMBOL:-❯}%f$VTE_PWD_THING "
+	PROMPT="%(?.%F{cyan}.%F{red})${PURE_PROMPT_SYMBOL:-❯}%f "
 }
 
 prompt_pure_setup "$@"
