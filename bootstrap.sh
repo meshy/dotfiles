@@ -24,7 +24,7 @@ yay -S \
     tilix noto-fonts-emoji \
     xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
-    git hub tig git-extras gitree \
+    git hub tig git-extras \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     bat \
@@ -89,6 +89,9 @@ mkdir -p ~/code
 
 # Install "alex" to lint for considerate writing
 sudo npm install alex --global
+
+# Install gitree for viewing git repos in tree form.
+sudo npm install @jpwilliams/gitree --global
 
 # Install email syncing service
 systemctl enable offlineimap.service --user
