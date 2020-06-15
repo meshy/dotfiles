@@ -183,6 +183,10 @@ function mkmodule {
 }
 
 
+# Use nvm to manage versions of node.
+source /usr/share/nvm/init-nvm.sh
+
+
 # Syntax highlighting needs to be at the end
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
