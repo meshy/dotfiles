@@ -70,6 +70,9 @@ sudo -u postgres initdb --locale en_GB.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
 systemctl enable postgresql.service
 systemctl start postgresql.service
 
+# Add user to docker group
+sudo usermod -aG docker charlie
+
 # Download dotfiles
 DOTFILES_DIR=~/personal/dotfiles
 mkdir -p ~/personal
