@@ -169,18 +169,17 @@ prompt_pure_preprompt_render() {
 		venvprompt="$((SHLVL - 1)) %F{cyan}$(basename $VIRTUAL_ENV)%f"
 	fi
 
-	# Help Tilix not complain
-	# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
-	VTE_PWD_THING="$(__vte_osc7)"
-	preprompt+="$VTE_PWD_THING%f"
-
 	# if executing through precmd, do not perform fancy terminal editing
 	if [[ "$1" == "precmd" ]]; then
 		if [ ! -z $venvprompt ]; then
 			print -Pn "\n${venvprompt}"
 			print -Pn "  %F{green}${$(python --version 2>&1 /dev/null)%.*}%f"
 		fi
-		print -P "\n${preprompt}"
+
+		# Help Tilix not complain
+		# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
+		VTE_PWD_THING="$(__vte_osc7)"
+		print -P "\n${VTE_PWD_THING}${preprompt}"
 	else
 		# only redraw if preprompt has changed
 		[[ "${prompt_pure_last_preprompt}" != "${preprompt}" ]] || return
