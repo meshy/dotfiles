@@ -58,6 +58,7 @@ yay -S \
 
 pipx install black
 pipx install isort
+pipx install mypy
 pipx install pipenv
 pipx install poetry
 pipx install pre-commit
