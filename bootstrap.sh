@@ -48,7 +48,7 @@ yay -S \
     `# Email` \
     neomutt urlview msmtp offlineimap notmuch-runtime elinks \
     `# Virtualisation` \
-    docker docker-compose \
+    docker docker-compose dive \
     `# Office`
     libreoffice-fresh libreoffice-fresh-en-gb \
     `# Random tools` \
