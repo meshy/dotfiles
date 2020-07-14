@@ -7,3 +7,4 @@ au BufNewFile,BufRead *.wsgi set ft=python
 au BufNewFile,BufRead *.wsgi.j2 set ft=python
 au BufNewFile,BufRead *.py.j2 set ft=python
 au BufNewFile,BufRead *.muttrc set ft=muttrc
+au BufNewFile,BufRead Jenkinsfile set ft=groovy
