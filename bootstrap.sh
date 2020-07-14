@@ -42,6 +42,8 @@ yay -S \
     heroku-cli aws-cli \
     `# Editing text` \
     vim neovim editorconfig-core-c ctags xsel \
+    `# Creating or editing images` \
+    peek \
     `# Linting` \
     shellcheck \
     yamllint \
@@ -52,7 +54,6 @@ yay -S \
     `# Office`
     libreoffice-fresh libreoffice-fresh-en-gb \
     `# Random tools` \
-    peek \
     bind-tools \
     --noconfirm
 
