@@ -43,7 +43,7 @@ yay -S \
     `# Editing text` \
     vim neovim editorconfig-core-c ctags xsel \
     `# Creating or editing images` \
-    peek \
+    peek optipng jpegoptim \
     `# Linting` \
     shellcheck \
     yamllint \
