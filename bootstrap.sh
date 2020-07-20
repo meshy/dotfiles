@@ -39,7 +39,7 @@ yay -S \
     `# Services` \
     postgresql libmemcached freetype2 \
     `# SAAS` \
-    heroku-cli aws-cli \
+    heroku-cli aws-cli google-cloud-sdk \
     `# Editing text` \
     vim neovim editorconfig-core-c ctags xsel \
     `# Creating or editing images` \
