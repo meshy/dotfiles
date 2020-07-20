@@ -46,7 +46,7 @@ if [[ "$SHLVL" == "1" ]]; then
     PATH="$PATH:$GOPATH/bin"
 fi
 
-AG_COMMAND='ag --hidden --ignore-dir=".git"'
+AG_COMMAND='ag --hidden --ignore-dir=".git" --ignore-dir=".mypy_cache" --ignore-dir=".tox"'
 # fzf (fuzzy finder)
 # CTRL-R overrides history search.
 # CTRL-T dumps the searched path into the current command
