@@ -15,7 +15,7 @@ let g:ale_linters = {
 let g:neoformat_python_black = {
 \   'exe': 'black',
 \   'stdin': 1,
-\   'args': ['--skip-string-normalization', '-q', '-'],
+\   'args': ['-q', '-'],
 \}
 
 let g:neoformat_enabled_python = ['isort', 'black']
