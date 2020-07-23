@@ -11,13 +11,6 @@ let g:ale_linters = {
 \   'yaml': ['yamllint'],
 \}
 
-"  Black (python formatting)
-let g:neoformat_python_black = {
-\   'exe': 'black',
-\   'stdin': 1,
-\   'args': ['-q', '-'],
-\}
-
 let g:neoformat_enabled_python = ['isort', 'black']
 let g:neoformat_enabled_sql = ['sqlfmt']
 let g:neoformat_sql_sqlfmt = {
