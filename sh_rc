@@ -60,7 +60,7 @@ source /usr/share/fzf/completion.zsh
 ###########
 
 alias ag=${AG_COMMAND}
-alias ig='${AG_COMMAND} --ignore migrations'
+alias ig=${AG_COMMAND} --ignore migrations
 alias b='black'
 alias ccat='bat'
 alias f='flake8 . --exclude=node_modules'
