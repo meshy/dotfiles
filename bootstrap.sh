@@ -22,6 +22,7 @@ yay -S \
     ttf-fantasque-sans noto-fonts-emoji \
     `# Terminal` \
     tilix noto-fonts-emoji \
+    font-victor-mono \
     xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
     git hub tig git-extras \
