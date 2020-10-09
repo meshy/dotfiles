@@ -158,9 +158,11 @@ prompt_pure_preprompt_render() {
 			print -Pn "  %F{green}${$(python --version 2>&1 /dev/null)%.*}%f"
 		fi
 
-		# Help Tilix not complain
-		# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
-		VTE_PWD_THING="$(__vte_osc7)"
+		if [ ! -z "$TILIX_ID" ]; then
+			# Help Tilix not complain
+			# See https://gnunn1.github.io/tilix-web/manual/vteconfig/
+			VTE_PWD_THING="$(__vte_osc7)"
+		fi
 		print -P "\n${VTE_PWD_THING}${preprompt}"
 	else
 		# only redraw if preprompt has changed
