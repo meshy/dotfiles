@@ -65,7 +65,6 @@ alias b='black'
 alias ccat='bat'
 alias f='flake8 . --exclude=node_modules'
 alias fix='stty sane'
-alias e='neomutt && notmuch new'
 alias g='git'
 alias m="make test"
 alias mf="make testfast"

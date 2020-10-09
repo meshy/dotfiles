@@ -1,8 +1,0 @@
-[Unit]
-Description=Offline IMAP syncing
-
-[Service]
-ExecStart=/usr/bin/offlineimap
-
-[Install]
-WantedBy=default.target
