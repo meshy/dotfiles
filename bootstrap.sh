@@ -53,7 +53,7 @@ yay -S \
     `# Office`
     libreoffice-fresh libreoffice-fresh-en-gb \
     `# Random tools` \
-    bind-tools \
+    bind \
     --noconfirm
 
 pipx install black
