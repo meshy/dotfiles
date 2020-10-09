@@ -90,9 +90,6 @@ alias ls='ls --color'
 alias l='ls -lh'
 alias ll='ls -la'
 
-# Taskwarrior
-alias ta='task add'
-
 # Subpixel ordering for rotated monitors
 alias vbgr="gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 'vbgr'"
 alias vrgb="gsettings set org.gnome.settings-daemon.plugins.xsettings rgba-order 'vbgr'"
@@ -193,12 +190,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #######
 # FUN #
 #######
-
-
-if [[ "$SHLVL" == "1" ]]; then
-    echo -n 'Todo: '
-    task next
-fi
 
 # Default to ~/code/ directory
 # Skip if already not in ~

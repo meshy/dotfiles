@@ -29,7 +29,6 @@ yay -S \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     bat \
-    task \
     `# Languages` \
     python-pipx python-pew \
     clojure leiningen \
