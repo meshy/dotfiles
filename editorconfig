@@ -19,7 +19,7 @@ indent_size = 8
 [{Gemfile,Vagrantfile}]
 indent_size = 2
 
-[**.{feature,js,json,yaml,yml,clj,cljs,rb}]
+[**.{feature,js,json,yaml,yml,clj,cljs,rb,kt}]
 indent_size = 2
 
 [*.diff]

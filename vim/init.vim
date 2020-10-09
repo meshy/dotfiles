@@ -20,6 +20,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
+Plug 'udalov/kotlin-vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'rking/ag.vim'
 Plug 'sbdchd/neoformat'
