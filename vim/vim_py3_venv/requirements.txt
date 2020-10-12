@@ -1,3 +1,4 @@
+attrs
 pynvim
 flake8
 isort
