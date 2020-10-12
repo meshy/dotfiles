@@ -2,7 +2,7 @@
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_linters = {
-\   'bash': ['shellcheck'],
+\   'bash': ['shellcheck', 'bashate'],
 \   'javascript': ['eslint'],
 \   'html': ['alex'],
 \   'mail': ['alex'],

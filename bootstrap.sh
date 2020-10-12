@@ -47,7 +47,7 @@ yay -S \
     `# Creating or editing images` \
     peek optipng jpegoptim \
     `# Linting` \
-    shellcheck \
+    shellcheck bashate \
     yamllint \
     `# Virtualisation` \
     docker docker-compose dive \
