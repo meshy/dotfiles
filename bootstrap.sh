@@ -21,7 +21,7 @@ yay -S \
     materia-theme pop-icon-theme xcursor-oxygen \
     ttf-fantasque-sans noto-fonts-emoji \
     `# Terminal` \
-    tilix noto-fonts-emoji \
+    kitty noto-fonts-emoji \
     font-victor-mono \
     xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
