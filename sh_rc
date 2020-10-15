@@ -119,6 +119,10 @@ alias ksh="kitty +kitten ssh"
 # Open a file in vim with CTRL-P
 bindkey -s ^p '^Uvim $(fzf)^M'
 
+# work on a project with CTRL-O
+alias wordPerLine="tr ' ' '\n'"
+bindkey -s ^o '^Upew workon $( pew ls | wordPerLine | fzf)^M'
+
 #############
 # FUNCTIONS #
 #############
