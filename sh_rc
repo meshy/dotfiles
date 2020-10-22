@@ -117,11 +117,22 @@ alias img="kitty icat"
 alias ksh="kitty +kitten ssh"
 
 # Open a file in vim with CTRL-P
-bindkey -s ^p '^Uvim $(fzf)^M'
+function vimon {
+    local file
+    file=$( fzf )
+    if [[ $? != 0 ]]; then; return 1; fi
+    vim ${file}
+}
+bindkey -s ^p '^Uvimon^M'
 
 # work on a project with CTRL-O
-alias wordPerLine="tr ' ' '\n'"
-bindkey -s ^o '^Upew workon $( pew ls | wordPerLine | fzf)^M'
+function workon {
+    local file
+    file=$( pew ls | tr ' ' '\n' | fzf )
+    if [[ $? != 0 ]]; then; return 1; fi
+    pew workon ${file}
+}
+bindkey -s ^o '^Uworkon^M'
 
 #############
 # FUNCTIONS #
