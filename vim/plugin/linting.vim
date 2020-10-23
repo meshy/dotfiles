@@ -11,6 +11,7 @@ let g:ale_linters = {
 \   'yaml': ['yamllint'],
 \}
 
+let g:neoformat_enabled_rust = ['rustfmt']
 let g:neoformat_enabled_python = ['isort', 'black']
 let g:neoformat_enabled_sql = ['sqlfmt']
 let g:neoformat_sql_sqlfmt = {
