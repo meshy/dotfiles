@@ -35,7 +35,7 @@ yay -S \
     go \
     rust \
     rbenv ruby-build bower \
-    nodejs npm nvm yarn jq \
+    nodejs npm yarn jq \
     `# Services` \
     postgresql libmemcached freetype2 \
     `# SAAS` \
