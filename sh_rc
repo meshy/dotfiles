@@ -128,7 +128,7 @@ bindkey -s ^p '^Uvimon^M'
 # work on a project with CTRL-O
 function workon {
     local file
-    file=$( pew ls | tr ' ' '\n' | fzf )
+    file=$( pew ls | tr ' ' '\n' | fzf --layout=reverse --height=20)
     if [[ $? != 0 ]]; then; return 1; fi
     pew workon ${file}
 }
