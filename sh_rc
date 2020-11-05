@@ -46,7 +46,7 @@ if [[ "$SHLVL" == "1" ]]; then
     PATH="$PATH:$GOPATH/bin"
 fi
 
-AG_COMMAND='ag --hidden --ignore-dir=".git" --ignore-dir=".mypy_cache" --ignore-dir=".tox"'
+AG_COMMAND='ag --hidden --ignore-dir=".git" --ignore-dir=".mypy_cache" --ignore-dir=".tox" --ignore-dir="node_modules"'
 # fzf (fuzzy finder)
 # CTRL-R overrides history search.
 # CTRL-T dumps the searched path into the current command
@@ -140,7 +140,7 @@ bindkey -s ^o '^Uworkon^M'
 
 function af {
     defaultpath=.
-    find ${2:-$defaultpath} ! -iwholename '*.git*' | grep -v "./.mypy_cache" | grep ${1}
+    find ${2:-$defaultpath} ! -iwholename '*.git*' | grep -v "./.mypy_cache/" | grep -v "/node_modules/" | grep ${1}
 }
 
 # Open search results in vim
