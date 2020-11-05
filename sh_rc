@@ -140,7 +140,7 @@ bindkey -s ^o '^Uworkon^M'
 
 function af {
     defaultpath=.
-    find ${2:-$defaultpath} ! -iwholename '*.git*' | grep -v "./.mypy_cache/" | grep -v "/node_modules/" | grep ${1}
+    find ${2:-$defaultpath} ! -iwholename '*.git*' | grep -v "/.mypy_cache/" | grep -v "/node_modules/" | grep ${1}
 }
 
 # Open search results in vim
