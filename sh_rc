@@ -121,6 +121,7 @@ function vimon {
     local file
     file=$( fzf )
     if [[ $? != 0 ]]; then; return 1; fi
+    echo "vim $file"
     vim ${file}
 }
 bindkey -s ^p '^Uvimon^M'
