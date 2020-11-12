@@ -121,8 +121,8 @@ function vimon {
     local file
     file=$( fzf )
     if [[ $? != 0 ]]; then; return 1; fi
-    echo "vim $file"
-    vim ${file}
+    echo 'vim "$file"'
+    vim "${file}"
 }
 bindkey -s ^p '^Uvimon^M'
 
@@ -131,7 +131,7 @@ function workon {
     local file
     file=$( pew ls | tr ' ' '\n' | fzf --layout=reverse --height=20)
     if [[ $? != 0 ]]; then; return 1; fi
-    pew workon ${file}
+    pew workon "${file}"
 }
 bindkey -s ^o '^Uworkon^M'
 
