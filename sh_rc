@@ -122,7 +122,7 @@ function vimon {
     file=$( fzf )
     if [[ $? != 0 ]]; then; return 1; fi
     # Add executed command to history
-    print -s 'vim "${file}"'
+    print -s "vim \"${file}\""
     vim "${file}"
 }
 bindkey -s ^p '^Uvimon^M'
@@ -132,7 +132,7 @@ function workon {
     local file
     file=$( pew ls | tr ' ' '\n' | fzf --layout=reverse --height=20)
     if [[ $? != 0 ]]; then; return 1; fi
-    print -s 'pew workon "${file}"'
+    print -s "pew workon \"${file}\""
     pew workon "${file}"
 }
 bindkey -s ^o '^Uworkon^M'
