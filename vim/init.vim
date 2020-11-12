@@ -25,6 +25,7 @@ Plug 'mhinz/vim-startify'
 Plug 'udalov/kotlin-vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'rking/ag.vim'
+Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github
 Plug 'sbdchd/neoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
