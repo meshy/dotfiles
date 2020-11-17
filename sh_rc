@@ -28,6 +28,11 @@ export GOPATH=~/code/go
 # Python (avoid pyc files)
 export PYTHONDONTWRITEBYTECODE=1
 
+# Docker (and docker-compose)
+# Use new build system:
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+
 # PATH
 if [[ "$SHLVL" == "1" ]]; then
     # Python (pip install --user)
