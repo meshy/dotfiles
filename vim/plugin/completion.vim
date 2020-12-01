@@ -6,3 +6,14 @@ let g:jedi#completions_enabled = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
 " Avoid jedi's annoying popup at the top of the screen.
 autocmd FileType python setlocal completeopt-=preview
+
+" Required for operations modifying multiple buffers like rename.
+set hidden
+
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['pyls'],
+    \ }
+
+nmap <F5> <Plug>(lcn-menu)
+nmap <silent> gd <Plug>(lcn-definition)
+nmap <silent> <F2> <Plug>(lcn-rename)

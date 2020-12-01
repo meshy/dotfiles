@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 Plug '13k/vim-nginx'
 Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
 Plug 'davidhalter/jedi-vim'

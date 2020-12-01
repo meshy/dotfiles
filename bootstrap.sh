@@ -64,6 +64,7 @@ pipx install mypy
 pipx install pipenv
 pipx install poetry
 pipx install pre-commit
+pipx install python-language-server
 
 # Put headers in the right place for `pip install pillow`.
 sudo ln -s /usr/include/freetype2 /usr/include/freetype
