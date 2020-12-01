@@ -1,6 +1,0 @@
-#!/bin/bash
-if [ ! -e ~/.ssh/id_ed25519 ]
-  then
-    echo "Plug in your GPG key"
-    exit 1
-fi

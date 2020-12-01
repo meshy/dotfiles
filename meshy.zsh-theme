@@ -141,11 +141,6 @@ prompt_pure_preprompt_render() {
 	# execution time
 	preprompt+="%F{yellow}${prompt_pure_cmd_exec_time}%f"
 
-	# zsh key inserted?
-	if [ ! -e ~/.ssh/id_ed25519 ]; then
-		preprompt+="%F{red} SSH/GPG key!%f"
-	fi
-
 	local venvprompt=
 	if [ ! -z $VIRTUAL_ENV ]; then
 		venvprompt="$((SHLVL - 1)) %F{cyan}$(basename $VIRTUAL_ENV)%f"
