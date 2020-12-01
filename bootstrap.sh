@@ -43,7 +43,7 @@ yay -S \
     `# AWS` \
     aws-cli amazon-ecr-credential-helper \
     `# Editing text` \
-    vim neovim editorconfig-core-c ctags xsel \
+    vim neovim editorconfig-core-c xsel \
     `# Creating or editing images` \
     peek optipng jpegoptim \
     `# Linting` \
