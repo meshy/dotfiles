@@ -124,7 +124,7 @@ alias ksh="kitty +kitten ssh"
 # Open a file in vim with CTRL-P
 function fzf_to_vim {
     local file
-    file=$( fzf )
+    file=$( fzf --no-mouse )
     if [[ $? != 0 ]]; then; return 1; fi
     # Add executed command to history
     print -s "vim \"${file}\""
@@ -135,7 +135,7 @@ bindkey -s ^p '^Ufzf_to_vim^M'
 # work on a project with CTRL-O
 function workon {
     local file
-    file=$( pew ls | tr ' ' '\n' | fzf --layout=reverse --height=20)
+    file=$( pew ls | tr ' ' '\n' | fzf --no-mouse --layout=reverse --height=20)
     if [[ $? != 0 ]]; then; return 1; fi
     print -s "pew workon \"${file}\""
     pew workon "${file}"
