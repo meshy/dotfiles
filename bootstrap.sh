@@ -44,6 +44,7 @@ yay -S \
     aws-cli amazon-ecr-credential-helper \
     `# Editing text` \
     vim neovim editorconfig-core-c xsel \
+    typescript-language-server-bin \
     `# Creating or editing images` \
     peek optipng jpegoptim \
     `# Linting` \

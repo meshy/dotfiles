@@ -12,6 +12,9 @@ set hidden
 
 let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
+    "\ 'javascript': ['tsserver'],
+    "\ 'typescript': ['typescript-language-server --stdio'],
+    "\ 'typescriptreact': ['typescript-language-server --stdio'],
     \ }
 
 nmap <F5> <Plug>(lcn-menu)
