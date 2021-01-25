@@ -55,6 +55,7 @@ yay -S \
     libreoffice-fresh libreoffice-fresh-en-gb \
     `# Random tools` \
     strace bind net-tools \
+    cups-xerox-b2xx \
     --noconfirm
 
 pipx install black
