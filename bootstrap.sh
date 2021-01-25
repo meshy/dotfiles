@@ -61,6 +61,7 @@ yay -S \
 pipx install black
 pipx install isort
 pipx install grip
+pipx install httpie
 pipx install mypy
 pipx install pipenv
 pipx install poetry
