@@ -125,3 +125,6 @@ gsettings set $KEY_BINDING:$CUSTOM_1 binding '<Primary><Alt>i'
 
 
 echo "Don't forget to install the gTile extension https://github.com/gTile/gTile"
+
+# Make alt-tab work across workspaces.
+gsettings set org.gnome.shell.window-switcher current-workspace-only true
