@@ -86,7 +86,6 @@
   gpgsign = true
 
 [init]
-  templatedir = ~/personal/dotfiles/git_template
   defaultBranch = main
 [advice]
   statusHints = true
