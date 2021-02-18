@@ -9,3 +9,4 @@ au BufNewFile,BufRead *.py.j2 set ft=python
 au BufRead,BufNewFile *.tf set filetype=terraform
 au BufNewFile,BufRead *.muttrc set ft=muttrc
 au BufNewFile,BufRead Jenkinsfile set ft=groovy
+au BufNewFile,BufRead .coveragerc set ft=dosini
