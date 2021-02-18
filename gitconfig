@@ -90,4 +90,4 @@
 [advice]
   statusHints = true
 [pull]
-	rebase = false
+  rebase = false
