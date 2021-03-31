@@ -25,6 +25,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
 Plug 'udalov/kotlin-vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'raimon49/requirements.txt.vim'
 Plug 'rking/ag.vim'
 Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github
 Plug 'sbdchd/neoformat'
