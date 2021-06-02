@@ -42,6 +42,8 @@ yay -S \
     heroku-cli google-cloud-sdk \
     `# AWS` \
     aws-cli amazon-ecr-credential-helper \
+    `# Kubernetes` \
+    kubectx kubectl \
     `# Editing text` \
     vim neovim editorconfig-core-c xsel \
     typescript-language-server-bin \
