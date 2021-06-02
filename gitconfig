@@ -26,6 +26,7 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
+  m = checkout main
   merged = branch --merged
   pl = pull
   plp = pull --prune
