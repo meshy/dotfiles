@@ -5,8 +5,8 @@
 " Materia scheme by Defman21
 
 " GUI color definitions
-let s:gui00        = "272822"
-let g:base16_gui00 = "272822"
+let s:gui00        = "141411"
+let g:base16_gui00 = "141411"
 let s:gui01        = "2f2f20"
 let g:base16_gui01 = "2f2f20"
 let s:gui02        = "49483e"
