@@ -57,8 +57,8 @@
   old = red bold
   whitespace = red reverse
   newMoved = green dim
-  oldMoved = yellow dim
-  newMovedAlternative = blue dim
+  oldMoved = red dim
+  newMovedAlternative = green dim
   oldMovedAlternative = red dim
 
 [color "status"]
@@ -103,3 +103,6 @@
   fsckObjects = true
 [receive]
   fsckObjects = true
+
+[delta]
+  line-numbers = true
