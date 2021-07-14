@@ -20,7 +20,7 @@
   d = diff
   dc = diff --cached
   df = diff --function-context
-  ds = !git diff && git status
+  ds = -c delta.side-by-side=true diff
   dw = diff --color-words
   ld = log ORIG_HEAD.. --stat --no-merges
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
