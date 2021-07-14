@@ -7,6 +7,7 @@ setopt INTERACTIVECOMMENTS
 
 export EDITOR="nvim"
 export MANPAGER="most"
+export DELTA_PAGER="cat"
 
 # Disable zsh autocorrect
 unsetopt correct_all
