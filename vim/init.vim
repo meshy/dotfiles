@@ -4,7 +4,6 @@ set encoding=utf-8
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug '13k/vim-nginx'
-Plug 'airblade/vim-gitgutter'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
@@ -19,9 +18,11 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'kalekundert/vim-coiled-snake'
 Plug 'kshenoy/vim-signature'
+Plug 'lewis6991/gitsigns.nvim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'udalov/kotlin-vim'
