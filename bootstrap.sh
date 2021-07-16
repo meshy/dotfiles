@@ -62,6 +62,7 @@ yay -S \
     --noconfirm
 
 pipx install black
+pipx install flake8
 pipx install isort
 pipx install grip
 pipx install httpie
@@ -69,7 +70,7 @@ pipx install mypy
 pipx install pipenv
 pipx install poetry
 pipx install pre-commit
-pipx install python-language-server
+pipx install python-lsp-server
 
 # Put headers in the right place for `pip install pillow`.
 sudo ln -s /usr/include/freetype2 /usr/include/freetype

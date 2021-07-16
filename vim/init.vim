@@ -22,6 +22,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
+Plug 'neovim/nvim-lspconfig'
 Plug 'udalov/kotlin-vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'raimon49/requirements.txt.vim'
