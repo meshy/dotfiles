@@ -1,5 +1,6 @@
 lua << EOF
-require("lspconfig").pylsp.setup({
+nvim_lsp = require("lspconfig")
+nvim_lsp.pylsp.setup({
   enable = true,
   settings = {
     pylsp = {
