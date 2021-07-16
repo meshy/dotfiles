@@ -8,7 +8,7 @@ let g:ale_linters = {
 \   'html': ['alex'],
 \   'mail': ['alex'],
 \   'markdown': ['alex'],
-\   'python': ['isort', 'mypy'],
+\   'python': ['isort'],
 \   'yaml': ['yamllint'],
 \}
 

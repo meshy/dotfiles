@@ -71,6 +71,7 @@ pipx install pipenv
 pipx install poetry
 pipx install pre-commit
 pipx install python-lsp-server
+pipx inject python-lsp-server pylsp-mypy
 
 # Put headers in the right place for `pip install pillow`.
 sudo ln -s /usr/include/freetype2 /usr/include/freetype
