@@ -266,11 +266,11 @@ call <sid>hi("gitcommitUnmergedFile",   s:gui08, "", s:cterm08, "", "bold", "")
 call <sid>hi("gitcommitDiscardedFile",  s:gui08, "", s:cterm08, "", "bold", "")
 call <sid>hi("gitcommitSelectedFile",   s:gui0B, "", s:cterm0B, "", "bold", "")
 
-" GitGutter highlighting
-call <sid>hi("GitGutterAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
-call <sid>hi("GitGutterChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
-call <sid>hi("GitGutterDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
-call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "", "")
+" LSP sidebar highlighting
+call <sid>hi("LspDiagnosticsSignHint",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
+call <sid>hi("LspDiagnosticsSignInformation",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+call <sid>hi("LspDiagnosticsSignError",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("LspDiagnosticsSignWarning",  s:gui0A, s:gui01, s:cterm0E, s:cterm01, "", "")
 
 " HTML highlighting
 call <sid>hi("htmlBold",    s:gui0A, "", s:cterm0A, "", "", "")

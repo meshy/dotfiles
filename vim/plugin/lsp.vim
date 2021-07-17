@@ -12,6 +12,14 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
   buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
   buf_set_keymap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+
+
+  local signs = { Error = " ", Warning = " ", Hint = " ", Information = " " }
+
+  for type, icon in pairs(signs) do
+    local hl = "LspDiagnosticsSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+   end
 end
 
 
