@@ -36,6 +36,9 @@ set colorcolumn=80,88,100
 " Visual feedback on autocompleted commands
 set wmnu
 
+" Show colour codes as the colour.
+lua require'colorizer'.setup()
+
 " Don't let semshi complain about syntax errors
 let g:semshi#error_sign=v:false
 
