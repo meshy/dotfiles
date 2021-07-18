@@ -16,10 +16,14 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
 
 
-  local signs = { Error = " ", Warning = " ", Hint = " ", Information = " " }
+  local signs = {
+    LspDiagnosticsSignError = " ",
+    LspDiagnosticsSignWarning = " ",
+    LspDiagnosticsSignHint = " ",
+    LspDiagnosticsSignInformation = " "
+  }
 
-  for type, icon in pairs(signs) do
-    local hl = "LspDiagnosticsSign" .. type
+  for hl, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
    end
 end
