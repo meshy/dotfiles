@@ -23,4 +23,4 @@ let g:neoformat_sql_sqlfmt = {
 let g:neoformat_enabled_html = ['html-beautify']
 let g:neoformat_run_all_formatters = 1
 let g:neoformat_enabled_terraform = ['terraform']
-command F :Neoformat
+command F :Neoformat <bar> :Semshi highlight
