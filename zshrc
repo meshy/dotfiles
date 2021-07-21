@@ -1,3 +1,4 @@
+source ~/.aliases.zsh
 source ~/.completion.zsh
 source ~/.keybindings.zsh
 eval "$(starship init zsh)"
