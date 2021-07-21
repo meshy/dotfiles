@@ -70,6 +70,9 @@ threshold = 60
 [gcloud]
 disabled = true
 
+[git_branch]
+format = "[$symbol$branch]($style) "
+
 [nodejs]
 format = "[$symbol($version )]($style)"
 symbol = " "
