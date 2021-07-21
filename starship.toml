@@ -1,7 +1,8 @@
 format = """
 
 ╮$shlvl\
-$directory
+$directory\
+$status
 │$username\
 $hostname\
 $kubernetes\
@@ -57,7 +58,6 @@ $lua\
 $jobs\
 $battery\
 $time\
-$status\
 $shell\
 $character"""
 
@@ -98,3 +98,6 @@ version_format = "${major}.${minor}"
 [shlvl]
 disabled = false
 symbol = ""
+
+[status]
+disabled = false
