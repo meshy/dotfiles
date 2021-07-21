@@ -20,12 +20,6 @@
     ~/.lein/profiles.clj:
       create: true
       path: lein_profiles.clj
-    ~/.oh-my-zsh/custom/meshy.zsh-theme:
-      create: true
-      path: meshy.zsh-theme
-    ~/.oh-my-zsh/custom/async.zsh:
-      create: true
-      path: async.zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
