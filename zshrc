@@ -1,0 +1,1 @@
+source ~/.keybindings.zsh

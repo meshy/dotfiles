@@ -16,6 +16,8 @@
     ~/.vimrc: vim/init.vim
     ~/.config/kitty: kitty
     ~/.config/nvim: vim
+    ~/.zshrc: zshrc
+    ~/.keybindings.zsh: keybindings.zsh
     ~/.editorconfig: editorconfig
     ~/.lein/profiles.clj:
       create: true
