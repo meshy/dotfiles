@@ -1,0 +1,20 @@
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[java]
+disabled = true
+
+[package]
+disabled = true
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(‹$virtualenv› )]($style)'
+symbol = " "
+version_format = "${major}.${minor}"

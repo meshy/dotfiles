@@ -16,6 +16,7 @@
     ~/.vimrc: vim/init.vim
     ~/.config/kitty: kitty
     ~/.config/nvim: vim
+    ~/.config/starship.toml: starship.toml
     ~/.zshrc: zshrc
     ~/.keybindings.zsh: keybindings.zsh
     ~/.editorconfig: editorconfig
