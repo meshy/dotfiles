@@ -72,6 +72,7 @@ disabled = true
 
 [git_branch]
 format = "[$symbol$branch]($style) "
+symbol = " "
 
 [nodejs]
 format = "[$symbol($version )]($style)"
