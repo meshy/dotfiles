@@ -28,6 +28,21 @@ local on_attach = function(client, bufnr)
    end
 end
 
+local util = require('lspconfig/util')
+
+local path = util.path
+
+-- From https://github.com/neovim/nvim-lspconfig/issues/500#issuecomment-876700701
+-- Used with https://github.com/python-lsp/python-lsp-server/issues/29#issuecomment-882161177
+local function get_python_path()
+  -- Use activated virtualenv.
+  if vim.env.VIRTUAL_ENV then
+    return path.join(vim.env.VIRTUAL_ENV, 'bin', 'python')
+  end
+
+  -- Fallback to system Python.
+  return vim.fn.exepath('python3') or vim.fn.exepath('python') or 'python'
+end
 
 
 nvim_lsp.pylsp.setup({
@@ -39,6 +54,7 @@ nvim_lsp.pylsp.setup({
       plugins = {
         flake8 = {enabled = true},
         pyls_flake8 = {enabled = true},
+        jedi = {environment = get_python_path()},
         jedi_completion = {fuzzy = true}
       }
     }

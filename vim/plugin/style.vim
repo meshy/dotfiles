@@ -23,8 +23,8 @@ set list listchars=tab:→\ ,trail:·
 
 " Glorious technicolour!
 set termguicolors
-"colorscheme base16-materia-meshy
-colorscheme base16-github
+colorscheme base16-materia-meshy
+" colorscheme base16-mexico-light
 syntax on
 let g:SignatureMarkTextHLDynamic = 1
 let g:rainbow_active = 1
