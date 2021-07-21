@@ -22,6 +22,7 @@ yay -S \
     ttf-fantasque-sans \
     `# Terminal` \
     kitty noto-fonts-emoji \
+    starship \
     font-victor-mono \
     xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
