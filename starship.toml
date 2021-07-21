@@ -1,9 +1,9 @@
 format = """
+$directory
 $username\
 $hostname\
 $shlvl\
 $kubernetes\
-$directory\
 $vcsh\
 $git_branch\
 $git_commit\
