@@ -59,7 +59,7 @@ $jobs\
 $battery\
 $time\
 $shell\
-$character"""
+└$character"""
 
 
 [aws]
@@ -67,11 +67,6 @@ disabled = true
 
 [[battery.display]]
 threshold = 60
-
-[character]
-success_symbol = "└[❯](bold green)"
-error_symbol = "└[❯](bold red)"
-vicmd_symbol = "└[❮](bold green)"
 
 [gcloud]
 disabled = true
