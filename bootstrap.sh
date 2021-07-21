@@ -56,6 +56,8 @@ yay -S \
     docker docker-compose dive \
     `# Office`
     libreoffice-fresh libreoffice-fresh-en-gb \
+    `# Keeping notes` \
+    obsidian \
     `# Random tools` \
     strace bind net-tools \
     cups-xerox-b2xx \
