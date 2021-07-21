@@ -64,6 +64,9 @@ $character"""
 [aws]
 disabled = true
 
+[[battery.display]]
+threshold = 60
+
 [gcloud]
 disabled = true
 
