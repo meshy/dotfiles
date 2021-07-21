@@ -1,8 +1,8 @@
 format = """
+$shlvl\
 $directory
 $username\
 $hostname\
-$shlvl\
 $kubernetes\
 $vcsh\
 $git_branch\
