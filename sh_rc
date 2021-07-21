@@ -12,13 +12,6 @@ export DELTA_PAGER="cat"
 # Disable zsh autocorrect
 unsetopt correct_all
 
-# Enable timestamps in history
-SAVEHIST=1000000
-HISTSIZE=1000000
-HISTFILE=${HOME}/.zsh_history
-setopt extendedhistory
-setopt share_history
-
 # Back and forward through commands with CTRL-left/right
 bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
