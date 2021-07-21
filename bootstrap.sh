@@ -19,7 +19,7 @@ yay -S \
     `# Theming` \
     gnome-shell-extension-topicons-plus chrome-gnome-shell-git \
     materia-theme pop-icon-theme xcursor-oxygen \
-    ttf-fantasque-sans noto-fonts-emoji \
+    ttf-fantasque-sans \
     `# Terminal` \
     kitty noto-fonts-emoji \
     font-victor-mono \
