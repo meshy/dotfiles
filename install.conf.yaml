@@ -2,7 +2,6 @@
 - clean: ['~']
 
 - link:
-    ~/.sh_rc: sh_rc
     ~/.isort.cfg: isort.cfg
     ~/.docker/config.json: docker-config.json
     ~/.config/pip/pip.conf:
@@ -17,15 +16,17 @@
     ~/.config/kitty: kitty
     ~/.config/nvim: vim
     ~/.config/starship.toml: starship.toml
-    ~/.zshrc: zshrc
-    ~/.keybindings.zsh: keybindings.zsh
-    ~/.aliases.zsh: aliases.zsh
-    ~/.completion.zsh: completion.zsh
-    ~/.history.zsh: history.zsh
     ~/.editorconfig: editorconfig
     ~/.lein/profiles.clj:
       create: true
       path: lein_profiles.clj
+
+    ~/.aliases.zsh: zsh/aliases.zsh
+    ~/.completion.zsh: zsh/completion.zsh
+    ~/.history.zsh: zsh/history.zsh
+    ~/.keybindings.zsh: zsh/keybindings.zsh
+    ~/.sh_rc: zsh/sh_rc
+    ~/.zshrc: zsh/zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
