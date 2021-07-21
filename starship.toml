@@ -1,8 +1,8 @@
 format = """
 
-$shlvl\
+╮$shlvl\
 $directory
-$username\
+│$username\
 $hostname\
 $kubernetes\
 $vcsh\
@@ -67,6 +67,11 @@ disabled = true
 
 [[battery.display]]
 threshold = 60
+
+[character]
+success_symbol = "└[❯](bold green)"
+error_symbol = "└[❯](bold red)"
+vicmd_symbol = "└[❮](bold green)"
 
 [gcloud]
 disabled = true
