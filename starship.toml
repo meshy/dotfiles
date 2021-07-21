@@ -81,3 +81,7 @@ disabled = true
 format = '[${symbol}${pyenv_prefix}(${version} )(‹$virtualenv› )]($style)'
 symbol = " "
 version_format = "${major}.${minor}"
+
+[shlvl]
+disabled = false
+symbol = ""
