@@ -19,6 +19,7 @@
     ~/.config/starship.toml: starship.toml
     ~/.zshrc: zshrc
     ~/.keybindings.zsh: keybindings.zsh
+    ~/.completion.zsh: completion.zsh
     ~/.editorconfig: editorconfig
     ~/.lein/profiles.clj:
       create: true
