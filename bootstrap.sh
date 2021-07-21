@@ -84,6 +84,7 @@ systemctl enable postgresql.service
 systemctl start postgresql.service
 
 # Add user to docker group
+# YOU MUST REBOOT FOR THIS TO TAKE EFFECT.
 sudo usermod -aG docker charlie
 
 # Download dotfiles
