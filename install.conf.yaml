@@ -26,6 +26,7 @@
     ~/.history.zsh: zsh/history.zsh
     ~/.keybindings.zsh: zsh/keybindings.zsh
     ~/.sh_rc: zsh/sh_rc
+    ~/.zshenv: zsh/zshenv
     ~/.zshrc: zsh/zshrc
 
 - shell:

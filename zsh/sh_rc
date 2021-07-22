@@ -5,10 +5,6 @@ setopt INTERACTIVECOMMENTS
 # SETTINGS #
 ############
 
-export EDITOR="nvim"
-export MANPAGER="most"
-export DELTA_PAGER="cat"
-
 # Disable zsh autocorrect
 unsetopt correct_all
 
@@ -16,20 +12,6 @@ unsetopt correct_all
 bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
 export WORDCHARS=''
-
-# Pew (replaces virtualenvwrapper)
-export WORKON_HOME=~/venvs
-
-# Go
-export GOPATH=~/code/go
-
-# Python (avoid pyc files)
-export PYTHONDONTWRITEBYTECODE=1
-
-# Docker (and docker-compose)
-# Use new build system:
-export DOCKER_BUILDKIT=1
-export COMPOSE_DOCKER_CLI_BUILD=1
 
 # PATH
 if [[ "$SHLVL" == "1" ]]; then
@@ -49,7 +31,6 @@ if [[ "$SHLVL" == "1" ]]; then
     PATH="$PATH:$GOPATH/bin"
 fi
 
-AG_COMMAND='ag --hidden --ignore-dir=".git" --ignore-dir=".mypy_cache" --ignore-dir=".tox" --ignore-dir="node_modules"'
 # fzf (fuzzy finder)
 # CTRL-R overrides history search.
 # CTRL-T dumps the searched path into the current command
