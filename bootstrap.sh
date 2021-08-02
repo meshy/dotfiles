@@ -134,3 +134,7 @@ echo "Don't forget to install the gTile extension https://github.com/gTile/gTile
 
 # Make alt-tab work across workspaces.
 gsettings set org.gnome.shell.window-switcher current-workspace-only true
+
+# Get rid of login lock after 3 failed attempts:
+# in /etc/security/faillock.conf, set `deny = 0` to disable the lockout.
+# See https://wiki.archlinux.org/title/Security#Lock_out_user_after_three_failed_login_attempts
