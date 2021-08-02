@@ -90,6 +90,10 @@ format = '[${symbol}${pyenv_prefix}(${version} )(‹$virtualenv› )]($style)'
 symbol = " "
 version_format = "${major}.${minor}"
 
+[ruby]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
 [shlvl]
 disabled = false
 symbol = ""

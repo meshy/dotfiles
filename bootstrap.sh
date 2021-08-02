@@ -35,7 +35,7 @@ yay -S \
     clojure leiningen \
     go \
     rust \
-    rbenv ruby-build bower \
+    ruby rbenv ruby-build bower \
     nodejs npm yarn jq \
     `# Services` \
     postgresql libmemcached freetype2 \
