@@ -92,6 +92,7 @@ version_format = "${major}.${minor}"
 
 [ruby]
 format = "[$symbol($version )]($style)"
+version_format = "${raw}"
 symbol = " "
 
 [shlvl]
