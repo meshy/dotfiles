@@ -71,7 +71,8 @@ threshold = 60
 # Custom shlvl script to make value zero-indexed.
 [custom.shlvl]
 # We subtract 2 instead of 1 because this command is run in a subshell of the current shell.
-command = "echo $((SHLVL - 2))"
+# Perl is used to convert the number into a superscript value.
+command = "echo $((SHLVL - 2))  | perl -CS -pe 'use utf8;tr/0123456789/⁰¹²³⁴⁵⁶⁷⁸⁹/' "
 when = """ test "$SHLVL" -gt 2 """
 format = "[$output]($style) "
 style = "cyan"
