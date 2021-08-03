@@ -1,6 +1,7 @@
 format = """
 
-╮$shlvl\
+╮$custom\
+$shlvl\
 $directory\
 $git_branch\
 $git_commit\
@@ -51,7 +52,6 @@ $gcloud\
 $openstack\
 $env_var\
 $crystal\
-$custom\
 $cmd_duration\
 $lua\
 $jobs\
@@ -67,6 +67,14 @@ disabled = true
 
 [[battery.display]]
 threshold = 60
+
+# Custom shlvl script to make value zero-indexed.
+[custom.shlvl]
+# We subtract 2 instead of 1 because this command is run in a subshell of the current shell.
+command = "echo $((SHLVL - 2))"
+when = """ test "$SHLVL" -gt 2 """
+format = "[$output]($style) "
+style = "cyan"
 
 [gcloud]
 disabled = true
@@ -94,10 +102,6 @@ version_format = "${major}.${minor}"
 format = "[$symbol($version )]($style)"
 version_format = "${raw}"
 symbol = " "
-
-[shlvl]
-disabled = false
-symbol = ""
 
 [status]
 disabled = false
