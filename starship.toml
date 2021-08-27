@@ -106,3 +106,7 @@ symbol = " "
 
 [status]
 disabled = false
+
+[terraform]
+format = "[$symbol $workspace]($style) "
+symbol = "☁️"
