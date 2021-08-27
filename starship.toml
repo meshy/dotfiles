@@ -84,6 +84,11 @@ disabled = true
 format = "[$symbol$branch]($style) "
 symbol = " "
 
+[golang]
+format = "[$symbol($version )]($style)"
+symbol = " "
+version_format = "${raw}"
+
 [nodejs]
 format = "[$symbol($version )]($style)"
 symbol = " "
