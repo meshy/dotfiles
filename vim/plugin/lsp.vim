@@ -25,7 +25,7 @@ local on_attach = function(client, bufnr)
 
   for hl, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-   end
+  end
 end
 
 
