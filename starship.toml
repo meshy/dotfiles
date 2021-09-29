@@ -89,6 +89,12 @@ format = "[$symbol($version )]($style)"
 symbol = " "
 version_format = "${raw}"
 
+[memory_usage]
+threshold = 85
+format = "RAM [${ram_pct}]($style) (SWAP [${swap_pct}]($style))"
+style = "bold red"
+disabled = false
+
 [nodejs]
 format = "[$symbol($version )]($style)"
 symbol = " "
