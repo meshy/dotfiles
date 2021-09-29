@@ -138,3 +138,11 @@ gsettings set org.gnome.shell.window-switcher current-workspace-only true
 # Get rid of login lock after 3 failed attempts:
 # in /etc/security/faillock.conf, set `deny = 0` to disable the lockout.
 # See https://wiki.archlinux.org/title/Security#Lock_out_user_after_three_failed_login_attempts
+
+# Fix X apps unable to open firefox when in wayland:
+# sudo nvim /usr/share/applications/firefox.desktop
+# Change this:
+# Exec=/usr/lib/firefox/firefox
+# To this:
+# Exec=env MOZ_DBUS_REMOTE=1 /usr/lib/firefox/firefox
+# https://bugzilla.mozilla.org/show_bug.cgi?id=1508803
