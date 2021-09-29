@@ -32,7 +32,8 @@ Plug 'rking/ag.vim'
 Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github
 Plug 'sbdchd/neoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+" Memory usage is just too much.
+" Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
