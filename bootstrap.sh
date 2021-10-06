@@ -30,6 +30,7 @@ yay -S \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     bat \
+    colordiff \
     `# Languages` \
     python-pipx python-pew \
     clojure leiningen \
