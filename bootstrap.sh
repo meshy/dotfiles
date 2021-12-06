@@ -55,7 +55,7 @@ yay -S \
     shellcheck bashate \
     yamllint \
     `# Virtualisation` \
-    docker docker-compose dive \
+    docker docker-compose-cli dive lazy-docker \
     `# Office`
     libreoffice-fresh libreoffice-fresh-en-gb \
     `# Keeping notes` \
