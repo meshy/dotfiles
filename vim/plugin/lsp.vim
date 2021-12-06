@@ -30,15 +30,16 @@ local on_attach = function(client, bufnr)
 end
 
 
-
 nvim_lsp.pylsp.setup({
   enable = true,
   on_attach = on_attach,
   settings = {
     pylsp = {
-      configurationSources = {"pyls-flake8"},
+      configurationSources = {"flake8"},
       plugins = {
-        pyls_flake8 = {enabled = true},
+        flake8 = {enabled = true},
+        -- pyls_flake8 = {enabled = true},
+        -- jedi = {environment = get_python_path()},
         jedi_completion = {fuzzy = true}
       }
     }
