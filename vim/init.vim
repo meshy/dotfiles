@@ -23,7 +23,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-startify'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', { 'branch': '0.5-compat', 'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'udalov/kotlin-vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}

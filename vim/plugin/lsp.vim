@@ -18,10 +18,10 @@ local on_attach = function(client, bufnr)
 
 
   local signs = {
-    LspDiagnosticsSignError = " ",
-    LspDiagnosticsSignWarning = " ",
-    LspDiagnosticsSignHint = " ",
-    LspDiagnosticsSignInformation = " "
+    DiagnosticSignError = " ",
+    DiagnosticSignWarning = " ",
+    DiagnosticSignHint = " ",
+    DiagnosticSignInformation = " "
   }
 
   for hl, icon in pairs(signs) do
