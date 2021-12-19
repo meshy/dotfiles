@@ -64,6 +64,7 @@ yay -S \
     paman \
     `# Random tools` \
     strace bind net-tools \
+    `# Printer. Set up via CUPS http://localhost:631` \
     cups-xerox-b2xx \
     --noconfirm
 
