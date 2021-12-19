@@ -77,6 +77,7 @@ pipx install mypy
 pipx install pipenv
 pipx install poetry
 pipx install pre-commit
+pipx install pylint
 pipx install python-lsp-server
 pipx inject python-lsp-server pylsp-mypy
 
