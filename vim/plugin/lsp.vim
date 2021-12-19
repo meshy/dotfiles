@@ -53,4 +53,10 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
     prefix = '●',
   }
 })
+
+-- Display source of diagnostics.
+vim.diagnostic.config({
+  virtual_text = { source = "always" },
+  float = { source = "always" },
+})
 EOF
