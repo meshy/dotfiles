@@ -19,7 +19,7 @@ set number
 
 " Complain about trailing whitespace
 set list
-set list listchars=tab:→\ ,trail:·
+set list listchars=tab:→\ ,trail:·,nbsp:⌴
 
 " Glorious technicolour!
 set termguicolors
