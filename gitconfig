@@ -81,7 +81,7 @@
   default = current
 
 [merge]
-  conflictstyle = diff3
+  conflictstyle = zdiff3
 
 [commit]
   gpgsign = true
