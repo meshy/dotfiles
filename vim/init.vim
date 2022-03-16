@@ -15,7 +15,6 @@ Plug 'hashivim/vim-terraform'
 Plug 'jeetsukumaran/vim-indentwise'
 Plug 'ibhagwan/fzf-lua'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'kalekundert/vim-coiled-snake'
 Plug 'kshenoy/vim-signature'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lewis6991/gitsigns.nvim'
