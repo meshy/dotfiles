@@ -26,7 +26,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'udalov/kotlin-vim'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'raimon49/requirements.txt.vim'
 Plug 'rking/ag.vim'
 Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github

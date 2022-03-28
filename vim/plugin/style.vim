@@ -39,9 +39,6 @@ set wmnu
 " Show colour codes as the colour.
 lua require'colorizer'.setup()
 
-" Don't let semshi complain about syntax errors
-let g:semshi#error_sign=v:false
-
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
