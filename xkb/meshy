@@ -7,6 +7,9 @@
 // /usr/share/X11/xkb/symbols/us.
 //
 // I might have had to reboot to get the changes. I can't remember.
+//
+// There is information about vim remapping here, as well as info about changing the base config:
+// https://nic-west.com/posts/workman-layout/
 
 partial alphanumeric_keys
 xkb_symbols "workman" {
