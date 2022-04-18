@@ -12,6 +12,11 @@ let g:ale_linters = {
 \   'yaml': ['yamllint'],
 \}
 
+let g:neoformat_python_black= {
+\ 'exe': 'black',
+\ 'stdin': 1,
+\ 'args': ['--fast', '-q', '-'],
+\ }
 let g:neoformat_enabled_rust = ['rustfmt']
 let g:neoformat_enabled_python = ['isort', 'black']
 let g:neoformat_enabled_sql = ['sqlfmt']
