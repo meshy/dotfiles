@@ -12,7 +12,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'hashivim/vim-terraform'
-Plug 'jeetsukumaran/vim-indentwise'
 Plug 'ibhagwan/fzf-lua'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'kalekundert/vim-coiled-snake'  " see https://github.com/kalekundert/vim-coiled-snake/issues/34
@@ -43,7 +42,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vimjas/vim-python-pep8-indent'
 Plug 'w0rp/ale'
 call plug#end()
 
