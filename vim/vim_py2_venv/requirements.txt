@@ -1,4 +1,0 @@
-pynvim
-flake8
-isort
-ipython<6
