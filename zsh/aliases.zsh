@@ -8,6 +8,7 @@ alias b='black'
 alias ccat='bat'
 alias f='flake8 . --exclude=node_modules'
 alias fix='stty sane'
+alias e='neomutt && notmuch new'
 alias g='git'
 alias kc='kubectl'
 alias m="make test"

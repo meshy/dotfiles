@@ -17,6 +17,15 @@
     ~/.config/nvim: vim
     ~/.config/starship.toml: starship.toml
     ~/.editorconfig: editorconfig
+    ~/.mailcap: email/mailcap
+    ~/.msmtprc: email/msmtprc
+    ~/.offlineimaprc: email/offlineimaprc
+    ~/.notmuch-config: email/notmuch-config
+    ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
+    ~/.config/systemd/user/offlineimap.service:
+      create: true
+      path: email/offlineimap.service
+    ~/.mutt: email/mutt
     ~/.lein/profiles.clj:
       create: true
       path: lein_profiles.clj

@@ -1,0 +1,5 @@
+# Don't confirm sender / subject when replying.
+set fast_reply=yes
+
+# Include original email in reply.
+set include=yes

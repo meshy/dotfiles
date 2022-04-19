@@ -1,7 +1,6 @@
 format = """
 
-╮$custom\
-$shlvl\
+╮$shlvl\
 $directory\
 $git_branch\
 $git_commit\
@@ -11,6 +10,7 @@ $git_status\
 $status
 │$username\
 $hostname\
+$custom\
 $kubernetes\
 $vcsh\
 $hg_branch\
@@ -124,3 +124,8 @@ disabled = false
 [terraform]
 format = "[$symbol $workspace]($style) "
 symbol = "☁️"
+
+[custom.email]
+command = "notmuch count tag:unread"
+when = "true"
+symbol = "📨"
