@@ -17,6 +17,7 @@
     ~/.config/nvim: vim
     ~/.config/starship.toml: starship.toml
     ~/.editorconfig: editorconfig
+
     ~/.mailcap: email/mailcap
     ~/.msmtprc: email/msmtprc
     ~/.offlineimaprc: email/offlineimaprc
@@ -26,6 +27,8 @@
       create: true
       path: email/offlineimap.service
     ~/.mutt: email/mutt
+    ~/.urlview: email/urlview
+
     ~/.lein/profiles.clj:
       create: true
       path: lein_profiles.clj
