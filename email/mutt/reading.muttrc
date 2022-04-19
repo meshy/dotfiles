@@ -10,3 +10,19 @@ set pager_stop=yes
 # Use j/k for scrolling through the email, not moving to the next one.
 bind pager j next-line
 bind pager k previous-line
+
+# Open list of links in email, ready to open them in a browser.
+# Shortcut CTRL-B
+# See https://www.memoryhole.net/~kyle/extract_url/
+macro index,pager ,b "<enter-command> set my_pdsave=\$pipe_decode<enter>\
+<enter-command> unset pipe_decode<enter>\
+<pipe-message>extract_url<enter>\
+<enter-command> set pipe_decode=\$my_pdsave<enter>" "get URLs"
+
+macro index,pager ,B "<enter-command> set my_pdsave=\$pipe_decode<enter>\
+<enter-command> set pipe_decode<enter>\
+<pipe-message>extract_url<enter>\
+<enter-command> set pipe_decode=\$my_pdsave<enter>" "decrypt message, then get URLs"
+
+message-hook .  'macro index,pager \cb ,b "URL viewer"'
+message-hook ~G 'macro index,pager \cb ,B "URL viewer"'

@@ -55,7 +55,7 @@ yay -S \
     shellcheck bashate \
     yamllint \
     `# Email` \
-    neomutt urlview msmtp offlineimap3-git notmuch-runtime elinks python-keyring \
+    neomutt perl-curses-ui perl-extract-url msmtp offlineimap3-git notmuch-runtime elinks python-keyring \
     `# Virtualisation` \
     docker docker-compose-cli dive lazy-docker \
     `# Office`
