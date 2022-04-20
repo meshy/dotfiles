@@ -127,5 +127,5 @@ symbol = "☁️"
 
 [custom.email]
 command = "notmuch count tag:unread"
-when = "true"
+when = "test `notmuch count tag:unread` -gt 0"
 symbol = "📨"
