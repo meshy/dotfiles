@@ -1,3 +1,6 @@
+# Do not differentiate between "unread" and "new".
+unset mark_old
+
 # Open plain emails before HTML.
 alternative_order text/plain text/html
 
