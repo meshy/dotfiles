@@ -3,3 +3,10 @@ set fast_reply=yes
 
 # Include original email in reply.
 set include=yes
+
+# Ensure encoding is reasonable
+#   "The first compatible charset starting from the left will be used. Since
+#       UTF-8 is a superset of US-ASCII it does not harm to leave it in front of
+#       UTF-8, it may ensure old MUA will not get confused when seeing the charset in
+#       the e-mail header." - https://wiki.archlinux.org/title/Mutt#E-mail_character_encoding
+set send_charset="us-ascii:utf-8"
