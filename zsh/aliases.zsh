@@ -15,6 +15,7 @@ alias m="make test"
 alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
 alias open='xdg-open'
+alias op="offlineimap -c ~/.offlineimaprc.personal -o"
 alias pi="pip install"
 alias t='tree -I "__pycache__|*.pyc" -C --dirsfirst'
 alias vim='nvim'
