@@ -19,7 +19,7 @@
     ~/.editorconfig: editorconfig
 
     ~/.mailcap: email/mailcap
-    ~/.msmtprc: email/msmtprc
+    ~/.msmtprc.personal: email/msmtprc.personal
     ~/.offlineimaprc: email/offlineimaprc
     ~/.notmuch-config: email/notmuch-config
     ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
