@@ -2,7 +2,7 @@
 Description=Offline IMAP syncing
 
 [Service]
-ExecStart=/usr/bin/offlineimap -s
+ExecStart=/usr/bin/offlineimap -s -c ~/.offlineimaprc.personal
 
 [Install]
 WantedBy=default.target

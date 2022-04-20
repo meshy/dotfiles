@@ -20,7 +20,7 @@
 
     ~/.mailcap: email/mailcap
     ~/.msmtprc.personal: email/msmtprc.personal
-    ~/.offlineimaprc: email/offlineimaprc
+    ~/.offlineimaprc.personal: email/offlineimaprc.personal
     ~/.notmuch-config.personal: email/notmuch-config.personal
     ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
     ~/.config/systemd/user/offlineimap.service:
