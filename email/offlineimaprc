@@ -11,7 +11,7 @@ synclabels = yes
 labelsheader = X-Keywords
 autorefresh = 1
 quick = 9
-postsynchook = notmuch new
+postsynchook = notmuch --config ~/.notmuch-config.personal new
 
 
 [Repository charleswdenton-gmail.com-remote]
