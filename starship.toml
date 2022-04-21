@@ -126,6 +126,6 @@ format = "[$symbol $workspace]($style) "
 symbol = "☁️"
 
 [custom.email]
-command = "notmuch count tag:unread"
-when = "test `notmuch count tag:unread` -gt 0"
+command = "notmuch --config ~/.notmuch-config.personal count tag:unread"
+when = "test `notmuch --config ~/.notmuch-config.personal count tag:unread` -gt 0"
 symbol = "📨"
