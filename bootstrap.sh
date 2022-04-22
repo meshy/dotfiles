@@ -117,8 +117,8 @@ sudo npm install alex --global
 sudo npm install @jpwilliams/gitree --global
 
 # Install email syncing service
-systemctl enable offlineimap.service --user
-systemctl start offlineimap.service --user
+systemctl enable offlineimap-personal.service --user
+systemctl start offlineimap-personal.service --user
 
 # Configure gnome keyboard shortcuts
 # See http://askubuntu.com/a/597414/30904
