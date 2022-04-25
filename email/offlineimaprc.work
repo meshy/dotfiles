@@ -1,0 +1,36 @@
+[general]
+pythonfile = ~/.offlineimap_helpers.py
+accounts = charliedenton-memrise.com
+fsync = False
+
+
+[Account charliedenton-memrise.com]
+localrepository = charliedenton-memrise.com-local
+remoterepository = charliedenton-memrise.com-remote
+synclabels = yes
+labelsheader = X-Keywords
+autorefresh = 1
+quick = 9
+postsynchook = notmuch --config ~/.notmuch-config.work new
+
+
+[Repository charliedenton-memrise.com-remote]
+#This is the remote repository
+folderfilter = lambda foldername: foldername in [
+        'INBOX',
+        'Sent Mail',
+    ]
+remoteuser = charlie.denton@memrise.com
+remotepasseval = get_password('charliedenton-memrise.com')
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl_version = tls1_2
+type = Gmail
+max_connections = 1
+nametrans = lambda folder: {'Sent Mail': 'Sent'}.get(folder, folder)
+
+
+[Repository charliedenton-memrise.com-local]
+#This is the 'local' repository
+type = GmailMaildir
+localfolders = ~/.mail.work/charliedenton-memrise.com
+nametrans = lambda folder: {'Sent': 'Sent Mail'}.get(folder, folder)

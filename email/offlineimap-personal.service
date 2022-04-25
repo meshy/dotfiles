@@ -1,5 +1,5 @@
 [Unit]
-Description=Offline IMAP syncing
+Description=Offline IMAP syncing for gmail
 
 [Service]
 ExecStart=/usr/bin/offlineimap -s -c ~/.offlineimaprc.personal

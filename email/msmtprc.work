@@ -1,0 +1,19 @@
+defaults
+auth           on
+tls            on
+tls_starttls   on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.work.log
+
+# Gmail
+# To set the password, use:
+#     secret-tool store --label=msmtp host smtp.gmail.com service smtp user charlie.denton@memrise.com
+# See https://support.google.com/accounts/answer/185833?hl=en
+account        memrise
+host           smtp.gmail.com
+port           587
+from           charlie.denton@memrise.com
+user           charlie.denton@memrise.com
+
+# Set a default account
+account default : memrise

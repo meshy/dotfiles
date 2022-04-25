@@ -8,14 +8,12 @@ alias b='black'
 alias ccat='bat'
 alias f='flake8 . --exclude=node_modules'
 alias fix='stty sane'
-alias pe='neomutt -F ~/.mutt/personal.muttrc && notmuch --config ~/.notmuch-config.personal new'
 alias g='git'
 alias kc='kubectl'
 alias m="make test"
 alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
 alias open='xdg-open'
-alias op="offlineimap -c ~/.offlineimaprc.personal -o"
 alias pi="pip install"
 alias t='tree -I "__pycache__|*.pyc" -C --dirsfirst'
 alias vim='nvim'
@@ -24,6 +22,11 @@ alias v='nvim'
 alias wo='pew workon'
 alias fig='docker-compose'
 alias reload='source ~/.zshrc'
+
+alias pe='neomutt -F ~/.mutt/personal.muttrc && notmuch --config ~/.notmuch-config.personal new'
+alias we='neomutt -F ~/.mutt/work.muttrc && notmuch --config ~/.notmuch-config.work new'
+alias op="offlineimap -c ~/.offlineimaprc.personal -o"
+alias ow="offlineimap -c ~/.offlineimaprc.work -o"
 
 # Alias hub to git, passing all args.
 alias git=hub

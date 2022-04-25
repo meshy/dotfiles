@@ -20,12 +20,18 @@
 
     ~/.mailcap: email/mailcap
     ~/.msmtprc.personal: email/msmtprc.personal
+    ~/.msmtprc.work: email/msmtprc.work
     ~/.offlineimaprc.personal: email/offlineimaprc.personal
+    ~/.offlineimaprc.work: email/offlineimaprc.work
     ~/.notmuch-config.personal: email/notmuch-config.personal
+    ~/.notmuch-config.work: email/notmuch-config.work
     ~/.offlineimap_helpers.py: email/offlineimap_helpers.py
     ~/.config/systemd/user/offlineimap-personal.service:
       create: true
       path: email/offlineimap-personal.service
+    ~/.config/systemd/user/offlineimap-work.service:
+      create: true
+      path: email/offlineimap-work.service
     ~/.mutt: email/mutt
     ~/.urlview: email/urlview
 

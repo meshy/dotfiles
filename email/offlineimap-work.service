@@ -1,0 +1,8 @@
+[Unit]
+Description=Offline IMAP syncing for work
+
+[Service]
+ExecStart=/usr/bin/offlineimap -s -c ~/.offlineimaprc.work
+
+[Install]
+WantedBy=default.target
