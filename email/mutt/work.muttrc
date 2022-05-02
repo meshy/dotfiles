@@ -6,6 +6,7 @@ set folder = ~/.mail.work/charliedenton-memrise.com
 set spoolfile = +INBOX
 set record = +Sent
 mailboxes +INBOX +Sent
+set signature = ~/.signature.work
 
 source ~/.mutt/colors.muttrc
 source ~/.mutt/index.muttrc
