@@ -3,7 +3,6 @@ set encoding=utf-8
 " Load package manager
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
-Plug '13k/vim-nginx'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
