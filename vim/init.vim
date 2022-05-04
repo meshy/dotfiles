@@ -4,7 +4,6 @@ set encoding=utf-8
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'cespare/vim-toml'
 Plug 'chriskempson/base16-vim'
 Plug 'deoplete-plugins/deoplete-lsp'
 Plug 'editorconfig/editorconfig-vim'
