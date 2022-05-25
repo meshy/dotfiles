@@ -32,16 +32,16 @@ Plug 'sbdchd/neoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Memory usage is just too much.
 " Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'  " Git integration
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-rhubarb'  " GitHub integration for vim-fugitive
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-unimpaired'  " Navigation with [
+Plug 'tpope/vim-vinegar'  " File navigation with -
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
+Plug 'w0rp/ale'  " Linting
 call plug#end()
 
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
