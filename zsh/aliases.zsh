@@ -10,6 +10,7 @@ alias f='flake8 . --exclude=node_modules'
 alias fix='stty sane'
 alias g='git'
 alias kc='kubectl'
+alias nvm="echo 'Did you mean fnm?'"
 alias m="make test"
 alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
