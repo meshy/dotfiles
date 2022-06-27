@@ -29,6 +29,9 @@ if [[ "$SHLVL" == "1" ]]; then
 
     # Go
     PATH="$PATH:$GOPATH/bin"
+
+    # Haskell
+    PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 fi
 
 # fzf (fuzzy finder)

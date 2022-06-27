@@ -35,6 +35,7 @@ yay -S \
     python-pipx python-pew \
     clojure leiningen \
     go \
+    ghcup-hs-bin \
     rust \
     ruby rbenv ruby-build bower \
     nodejs npm yarn jq fnm \
@@ -115,6 +116,9 @@ sudo npm install alex --global
 
 # Install gitree for viewing git repos in tree form.
 sudo npm install @jpwilliams/gitree --global
+
+# Use ghcup to install Haskell GHC
+ghcup install ghc
 
 # Install email syncing service
 systemctl enable offlineimap-personal.service --user
