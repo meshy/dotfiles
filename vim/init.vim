@@ -29,6 +29,7 @@ Plug 'rking/ag.vim'
 Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github
 Plug 'sbdchd/neoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'simrat39/symbols-outline.nvim'  " Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
 " Memory usage is just too much.
 " Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 Plug 'tpope/vim-fugitive'  " Git integration
