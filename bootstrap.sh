@@ -26,7 +26,7 @@ yay -S \
     font-victor-mono \
     xcalib zsh-syntax-highlighting most \
     openssh tree the_silver_searcher fzf \
-    git hub tig git-toolbelt git-delta git-secret \
+    git tig git-toolbelt git-delta git-secret github-cli \
     sdcv stardict-oald stardict-thesaurus-ee \
     cloc cheat-git \
     bat \

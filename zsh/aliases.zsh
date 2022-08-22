@@ -29,9 +29,6 @@ alias we='neomutt -F ~/.mutt/work.muttrc && notmuch --config ~/.notmuch-config.w
 alias op="offlineimap -c ~/.offlineimaprc.personal -o"
 alias ow="offlineimap -c ~/.offlineimaprc.work -o"
 
-# Alias hub to git, passing all args.
-alias git=hub
-
 # Bash Directory browsing shortcuts
 alias k='tree'
 alias ltr='ls -ltr'
