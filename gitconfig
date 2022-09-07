@@ -106,3 +106,5 @@
 
 [delta]
   line-numbers = true
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
