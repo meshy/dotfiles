@@ -6,7 +6,7 @@ set foldlevel=99
 nnoremap <space> za
 
 " Stop info from vim-coiled-snake from going off-screen
-let g:coiled_snake_explicit_sign_width=2
+" let g:coiled_snake_explicit_sign_width=2
 
 "Use treesitter for code folding
 set foldmethod=expr
