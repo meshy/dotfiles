@@ -31,7 +31,7 @@ let g:rainbow_active = 1
 let g:rainbow_conf = {'separately': {'htmldjango': 0}}
 
 " Add rulers to highlight overly long lines
-set colorcolumn=80,88,100,120
+set colorcolumn=88,100
 
 " Visual feedback on autocompleted commands
 set wmnu
