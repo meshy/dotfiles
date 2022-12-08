@@ -1,3 +1,29 @@
+# PATH
+if [[ "$SHLVL" == "1" ]]; then
+    # PYENV
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init --path)"
+    eval "$(pyenv init -)"
+
+    # Python (pip install --user)
+    PATH="$HOME/.local/bin:$PATH"
+
+    # Ruby
+    eval "$(rbenv init -)"
+
+    # Rust
+    PATH="$HOME/.cargo/bin:$PATH"
+
+    # Heroku
+    PATH="/usr/local/heroku/bin:$PATH"
+
+    # Go
+    PATH="$PATH:$GOPATH/bin"
+
+    # Haskell
+    PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+fi
 
 export EDITOR="nvim"
 export MANPAGER="most"

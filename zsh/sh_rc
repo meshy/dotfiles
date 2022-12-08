@@ -13,27 +13,6 @@ bindkey '5D' emacs-backward-word
 bindkey '5C' emacs-forward-word
 export WORDCHARS=''
 
-# PATH
-if [[ "$SHLVL" == "1" ]]; then
-    # Python (pip install --user)
-    PATH="$HOME/.local/bin:$PATH"
-
-    # Ruby
-    eval "$(rbenv init -)"
-
-    # Rust
-    PATH="$HOME/.cargo/bin:$PATH"
-
-    # Heroku
-    PATH="/usr/local/heroku/bin:$PATH"
-
-    # Go
-    PATH="$PATH:$GOPATH/bin"
-
-    # Haskell
-    PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
-fi
-
 # fzf (fuzzy finder)
 # CTRL-R overrides history search.
 # CTRL-T dumps the searched path into the current command
