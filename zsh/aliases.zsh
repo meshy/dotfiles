@@ -16,6 +16,7 @@ alias mf="make testfast"
 alias m2="make test VERBOSITY=2"
 alias open='xdg-open'
 alias pi="pip install"
+alias psql="echo 'Remember pgcli!' && psql"
 alias t='tree -I "__pycache__|*.pyc" -C --dirsfirst'
 alias vim='nvim'
 alias vi='nvim'

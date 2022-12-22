@@ -77,6 +77,7 @@ pipx install isort
 pipx install grip
 pipx install httpie
 pipx install mypy
+pipx install pgcli
 pipx install pipenv
 pipx install poetry
 pipx install pre-commit
