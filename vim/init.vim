@@ -42,6 +42,11 @@ Plug 'tpope/vim-vinegar'  " File navigation with -
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'  " Linting
+" Semantic Highlighting for Python
+" This is a fork of the main semshi, because the original appears to be unmaintained. See:
+" https://github.com/numirias/semshi/issues/126 and
+" https://github.com/wookayin/semshi/issues/1
+Plug 'wookayin/semshi', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
