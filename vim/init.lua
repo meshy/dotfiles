@@ -12,12 +12,12 @@ Plug 'ibhagwan/fzf-lua'
 " Plug 'kalekundert/vim-coiled-snake'  " see https://github.com/kalekundert/vim-coiled-snake/issues/34
 Plug 'Konfekt/FastFold'  " Stops folding re-calculations from slowing things down. Especially Neoformat.
 Plug 'kshenoy/vim-signature'
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'udalov/kotlin-vim'
