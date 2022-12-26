@@ -45,7 +45,6 @@ require("lazy").setup({
       },
     },
   },
-  'luochen1990/rainbow',
   'mhinz/vim-startify',
   {
     'norcalli/nvim-colorizer.lua',
