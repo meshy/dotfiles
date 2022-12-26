@@ -1,3 +1,4 @@
+vim.cmd([[
 " Load package manager
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
@@ -48,3 +49,4 @@ call plug#end()
 
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
+]])
