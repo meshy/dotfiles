@@ -1,5 +1,3 @@
-vim.opt.termguicolors = true
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -45,6 +43,7 @@ require("lazy").setup({
   {
     'norcalli/nvim-colorizer.lua',
     config = function()
+      vim.opt.termguicolors = true
       require('colorizer').setup()
     end,
   },
