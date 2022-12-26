@@ -36,9 +36,6 @@ set colorcolumn=88,100
 " Visual feedback on autocompleted commands
 set wmnu
 
-" Show colour codes as the colour.
-lua require'colorizer'.setup()
-
 " Set up vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1

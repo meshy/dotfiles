@@ -1,50 +1,87 @@
-vim.cmd([[
-" Load package manager
-call plug#begin('~/.vim/plugged')
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'chriskempson/base16-vim'
-Plug 'deoplete-plugins/deoplete-lsp'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'ervandew/supertab'
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'hashivim/vim-terraform'
-Plug 'ibhagwan/fzf-lua'
-" Plug 'kalekundert/vim-coiled-snake'  " see https://github.com/kalekundert/vim-coiled-snake/issues/34
-Plug 'Konfekt/FastFold'  " Stops folding re-calculations from slowing things down. Especially Neoformat.
-Plug 'kshenoy/vim-signature'
-Plug 'lewis6991/gitsigns.nvim'
-Plug 'luochen1990/rainbow'
-Plug 'mhinz/vim-startify'
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-tree/nvim-web-devicons'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'neovim/nvim-lspconfig'
-Plug 'udalov/kotlin-vim'
-Plug 'raimon49/requirements.txt.vim'
-Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github
-Plug 'sbdchd/neoformat'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'simrat39/symbols-outline.nvim'  " Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
-" Memory usage is just too much.
-" Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-Plug 'tpope/vim-fugitive'  " Git integration
-Plug 'tpope/vim-git'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rhubarb'  " GitHub integration for vim-fugitive
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'  " Navigation with [
-Plug 'tpope/vim-vinegar'  " File navigation with -
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'  " Linting
-" Semantic Highlighting for Python
-" This is a fork of the main semshi, because the original appears to be unmaintained. See:
-" https://github.com/numirias/semshi/issues/126 and
-" https://github.com/wookayin/semshi/issues/1
-Plug 'wookayin/semshi', { 'do': ':UpdateRemotePlugins' }
-call plug#end()
-]])
+vim.opt.termguicolors = true
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "--single-branch",
+    "https://github.com/folke/lazy.nvim.git",
+    lazypath,
+  })
+end
+vim.opt.runtimepath:prepend(lazypath)
+
+require("lazy").setup({
+  'AndrewRadev/splitjoin.vim',
+  'chriskempson/base16-vim',
+  'deoplete-plugins/deoplete-lsp',
+  'editorconfig/editorconfig-vim',
+  'ervandew/supertab',
+  'Glench/Vim-Jinja2-Syntax',
+  'hashivim/vim-terraform',
+  {
+    'ibhagwan/fzf-lua',
+    dependencies = {'nvim-tree/nvim-web-devicons'}
+  },
+  'Konfekt/FastFold',  -- Stops folding re-calculations from slowing things down. Especially Neoformat.
+  'kshenoy/vim-signature',
+  'nvim-tree/nvim-web-devicons',  -- Pretty icons for the fuzzy finder.
+  {
+    'lewis6991/gitsigns.nvim',
+    config = {
+      signs = {
+        add          = {hl = 'GitSignsAdd'   , text = '✚', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
+        change       = {hl = 'GitSignsChange', text = '↻', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+        delete       = {hl = 'GitSignsDelete', text = '▁', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+        topdelete    = {hl = 'GitSignsDelete', text = '▔', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+        changedelete = {hl = 'GitSignsChange', text = '—↻', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+      },
+    },
+  },
+  'luochen1990/rainbow',
+  'mhinz/vim-startify',
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup()
+    end,
+  },
+  'nvim-lua/plenary.nvim',
+  {
+    'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+  },
+  'neovim/nvim-lspconfig',
+  'udalov/kotlin-vim',
+  'raimon49/requirements.txt.vim',
+  'ruanyl/vim-gh-line',  -- Adds <leader>gh to open current line in github
+  'sbdchd/neoformat',
+  {
+    'Shougo/deoplete.nvim',
+    build=':UpdateRemotePlugins',
+  },
+  'simrat39/symbols-outline.nvim',  -- Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
+  'tpope/vim-fugitive',  -- Git integration
+  'tpope/vim-git',
+  'tpope/vim-repeat',
+  'tpope/vim-rhubarb',  -- GitHub integration for vim-fugitive
+  'tpope/vim-surround',
+  'tpope/vim-unimpaired',  -- Navigation with [
+  'tpope/vim-vinegar',  -- File navigation with -
+  'vim-airline/vim-airline',
+  'vim-airline/vim-airline-themes',
+  'w0rp/ale',  -- Linting
+  -- Semantic Highlighting for Python
+  -- This is a fork of the main semshi, because the original appears to be unmaintained. See:
+  -- https://github.com/numirias/semshi/issues/126 and
+  -- https://github.com/wookayin/semshi/issues/1
+  {
+    'wookayin/semshi',
+    build=':UpdateRemotePlugins'
+  },
+})
 
 -- Use semi-colon for vim-commands. This saves pressing shift all the time.
 vim.keymap.set( 'n',   ';', ':', {noremap = true})
