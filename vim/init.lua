@@ -13,6 +13,13 @@ vim.opt.runtimepath:prepend(lazypath)
 
 require("lazy").setup({
   'AndrewRadev/splitjoin.vim',
+  {
+    "anuvyklack/windows.nvim",
+    config = true,
+    dependencies = {
+      "anuvyklack/middleclass"
+    },
+  },
   'chriskempson/base16-vim',
   'deoplete-plugins/deoplete-lsp',
   'editorconfig/editorconfig-vim',
