@@ -1,7 +1,4 @@
-set encoding=utf-8
-
 " Load package manager
-filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'chriskempson/base16-vim'
@@ -51,6 +48,3 @@ call plug#end()
 
 " Use semi-colon for vim-commands. This saves pressing shift all the time.
 nnoremap ; :
-
-" Security. https://securitytracker.com/id/1009014
-set modelines=0
