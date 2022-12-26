@@ -46,7 +46,7 @@ Plug 'w0rp/ale'  " Linting
 " https://github.com/wookayin/semshi/issues/1
 Plug 'wookayin/semshi', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
-
-" Use semi-colon for vim-commands. This saves pressing shift all the time.
-nnoremap ; :
 ]])
+
+-- Use semi-colon for vim-commands. This saves pressing shift all the time.
+vim.keymap.set( 'n',   ';', ':', {noremap = true})
