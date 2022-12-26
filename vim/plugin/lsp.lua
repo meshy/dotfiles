@@ -1,4 +1,3 @@
-lua << EOF
 nvim_lsp = require("lspconfig")
 
 
@@ -59,4 +58,3 @@ vim.diagnostic.config({
   virtual_text = { source = "always" },
   float = { source = "always" },
 })
-EOF

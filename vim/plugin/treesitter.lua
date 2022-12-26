@@ -1,4 +1,3 @@
-lua <<EOF
 require'nvim-treesitter.configs'.setup {
   -- https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
   ensure_installed = {
@@ -28,4 +27,3 @@ require'nvim-treesitter.configs'.setup {
     disable = {"python", },
   },
 }
-EOF
