@@ -23,7 +23,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'udalov/kotlin-vim'
 Plug 'raimon49/requirements.txt.vim'
-Plug 'rking/ag.vim'
 Plug 'ruanyl/vim-gh-line'  " Adds <leader>gh to open current line in github
 Plug 'sbdchd/neoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
