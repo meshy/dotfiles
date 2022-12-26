@@ -78,7 +78,8 @@ require("lazy").setup({
   -- https://github.com/wookayin/semshi/issues/1
   {
     'wookayin/semshi',
-    build=':UpdateRemotePlugins'
+    build = ':UpdateRemotePlugins',
+    ft = 'python',
   },
 })
 
