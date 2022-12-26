@@ -87,7 +87,7 @@ require("lazy").setup({
   'w0rp/ale',  -- Linting
   {
     'windwp/nvim-autopairs',
-    config=true,
+    config={ break_undo = false },
   },
   -- Semantic Highlighting for Python
   -- This is a fork of the main semshi, because the original appears to be unmaintained. See:
