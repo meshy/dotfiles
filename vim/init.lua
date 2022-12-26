@@ -47,13 +47,20 @@ require("lazy").setup({
       require('colorizer').setup()
     end,
   },
-  'nvim-lua/plenary.nvim',
+  {
+    -- Helper functions used by other plugins.
+    'nvim-lua/plenary.nvim',
+    lazy=true,
+  },
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
   },
   'neovim/nvim-lspconfig',
-  'udalov/kotlin-vim',
+  {
+    'udalov/kotlin-vim',
+    ft = 'kotlin',
+  },
   'raimon49/requirements.txt.vim',
   'ruanyl/vim-gh-line',  -- Adds <leader>gh to open current line in github
   'sbdchd/neoformat',
