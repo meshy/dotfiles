@@ -108,3 +108,5 @@
   line-numbers = true
 [blame]
 	ignoreRevsFile = .git-blame-ignore-revs
+[url "git@github.com:"]
+	insteadOf = https://github.com/
