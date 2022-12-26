@@ -86,6 +86,10 @@ require("lazy").setup({
   'vim-airline/vim-airline',
   'vim-airline/vim-airline-themes',
   'w0rp/ale',  -- Linting
+  {
+    'windwp/nvim-autopairs',
+    config=true,
+  },
   -- Semantic Highlighting for Python
   -- This is a fork of the main semshi, because the original appears to be unmaintained. See:
   -- https://github.com/numirias/semshi/issues/126 and
