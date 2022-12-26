@@ -9,7 +9,6 @@ Plug 'ervandew/supertab'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'hashivim/vim-terraform'
 Plug 'ibhagwan/fzf-lua'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'kalekundert/vim-coiled-snake'  " see https://github.com/kalekundert/vim-coiled-snake/issues/34
 Plug 'Konfekt/FastFold'  " Stops folding re-calculations from slowing things down. Especially Neoformat.
 Plug 'kshenoy/vim-signature'
