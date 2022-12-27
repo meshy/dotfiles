@@ -1,23 +1,23 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "--single-branch",
-    "https://github.com/folke/lazy.nvim.git",
+    'git',
+    'clone',
+    '--filter=blob:none',
+    '--single-branch',
+    'https://github.com/folke/lazy.nvim.git',
     lazypath,
   })
 end
 vim.opt.runtimepath:prepend(lazypath)
 
-require("lazy").setup({
+require('lazy').setup({
   'AndrewRadev/splitjoin.vim',
   {
-    "anuvyklack/windows.nvim",
+    'anuvyklack/windows.nvim',
     config = true,
     dependencies = {
-      "anuvyklack/middleclass"
+      'anuvyklack/middleclass'
     },
   },
   'deoplete-plugins/deoplete-lsp',
@@ -33,7 +33,7 @@ require("lazy").setup({
   'kshenoy/vim-signature',
   {
     'nvim-lualine/lualine.nvim',
-    event = "VeryLazy",
+    event = 'VeryLazy',
     config = {
       options = {
         theme = 'material',
@@ -41,9 +41,9 @@ require("lazy").setup({
       sections = {
         lualine_x = {
           {
-            require("lazy.status").updates,
-            cond = require("lazy.status").has_updates,
-            color = { fg = "#ff9e64" },
+            require('lazy.status').updates,
+            cond = require('lazy.status').has_updates,
+            color = { fg = '#ff9e64' },
           },
           'filetype',
         },
