@@ -53,6 +53,7 @@ require("lazy").setup({
   'nvim-tree/nvim-web-devicons',  -- Pretty icons for the fuzzy finder.
   {
     'lewis6991/gitsigns.nvim',
+    event = 'VeryLazy',
     config = {
       signs = {
         add          = {hl = 'GitSignsAdd'   , text = '✚', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
@@ -66,6 +67,7 @@ require("lazy").setup({
   'mhinz/vim-startify',
   {
     'norcalli/nvim-colorizer.lua',
+    event = 'VeryLazy',
     config = function()
       vim.opt.termguicolors = true
       require('colorizer').setup()
@@ -78,6 +80,7 @@ require("lazy").setup({
   },
   {
     'nvim-treesitter/nvim-treesitter',
+    event = 'VeryLazy',
     build = ':TSUpdate',
   },
   'neovim/nvim-lspconfig',
@@ -90,15 +93,28 @@ require("lazy").setup({
   'sbdchd/neoformat',
   {
     'Shougo/deoplete.nvim',
+    event = 'VeryLazy',
     build=':UpdateRemotePlugins',
   },
   'simrat39/symbols-outline.nvim',  -- Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
-  'tpope/vim-fugitive',  -- Git integration
+  {
+    -- Git integration
+    'tpope/vim-fugitive',
+    event = 'VeryLazy',
+  },
   'tpope/vim-git',
   'tpope/vim-repeat',
   'tpope/vim-rhubarb',  -- GitHub integration for vim-fugitive
-  'tpope/vim-surround',
-  'tpope/vim-unimpaired',  -- Navigation with [
+  {
+    -- Surround words with parens using `ysiw`
+    'tpope/vim-surround',
+    event = 'VeryLazy',
+  },
+  {
+    -- Navigation with [
+    'tpope/vim-unimpaired',
+    event = 'VeryLazy',
+  },
   'tpope/vim-vinegar',  -- File navigation with -
   'w0rp/ale',  -- Linting
   {
