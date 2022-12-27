@@ -83,7 +83,6 @@ require('lazy').setup({
     event = 'VeryLazy',
     build = ':TSUpdate',
   },
-  'neovim/nvim-lspconfig',
   {
     'udalov/kotlin-vim',
     ft = 'kotlin',
@@ -117,6 +116,23 @@ require('lazy').setup({
   },
   'tpope/vim-vinegar',  -- File navigation with -
   'w0rp/ale',  -- Linting
+  {
+    'williamboman/mason.nvim',
+    config = {
+      ui = {
+        icons = {
+            package_installed = '✓',
+            package_pending = '➜',
+            package_uninstalled = '✗'
+        }
+      }
+    },
+  },
+  {
+    'williamboman/mason-lspconfig.nvim',
+    config = true,
+  },
+  'neovim/nvim-lspconfig',
   {
     'windwp/nvim-autopairs',
     config={ break_undo = false },
