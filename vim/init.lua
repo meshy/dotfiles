@@ -24,7 +24,10 @@ require('lazy').setup({
   'editorconfig/editorconfig-vim',
   'ervandew/supertab',
   'Glench/Vim-Jinja2-Syntax',
-  'hashivim/vim-terraform',
+  {
+    'hashivim/vim-terraform',
+    ft='terraform',
+  },
   {
     'ibhagwan/fzf-lua',
     dependencies = {'nvim-tree/nvim-web-devicons'}
