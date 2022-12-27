@@ -20,7 +20,6 @@ require("lazy").setup({
       "anuvyklack/middleclass"
     },
   },
-  'chriskempson/base16-vim',
   'deoplete-plugins/deoplete-lsp',
   'editorconfig/editorconfig-vim',
   'ervandew/supertab',
@@ -32,6 +31,15 @@ require("lazy").setup({
   },
   'Konfekt/FastFold',  -- Stops folding re-calculations from slowing things down. Especially Neoformat.
   'kshenoy/vim-signature',
+  {
+    'nvim-lualine/lualine.nvim',
+    event = "VeryLazy",
+    config = {
+      options = {
+        theme = 'material',
+      },
+    },
+  },
   'nvim-tree/nvim-web-devicons',  -- Pretty icons for the fuzzy finder.
   {
     'lewis6991/gitsigns.nvim',
@@ -82,8 +90,6 @@ require("lazy").setup({
   'tpope/vim-surround',
   'tpope/vim-unimpaired',  -- Navigation with [
   'tpope/vim-vinegar',  -- File navigation with -
-  'vim-airline/vim-airline',
-  'vim-airline/vim-airline-themes',
   'w0rp/ale',  -- Linting
   {
     'windwp/nvim-autopairs',

@@ -23,6 +23,7 @@ set list listchars=tab:→\ ,trail:·,nbsp:⌴
 
 " Glorious technicolour!
 set termguicolors
+set background=dark
 colorscheme base16-materia-meshy
 " colorscheme base16-mexico-light
 syntax on
@@ -35,8 +36,3 @@ set colorcolumn=88,100
 
 " Visual feedback on autocompleted commands
 set wmnu
-
-" Set up vim-airline
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline_theme="base16"
