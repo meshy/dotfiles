@@ -152,4 +152,4 @@ require('lazy').setup({
 })
 
 -- Use semi-colon for vim-commands. This saves pressing shift all the time.
-vim.keymap.set( 'n',   ';', ':', {noremap = true})
+vim.keymap.set( 'n', ';', ':', {noremap = true})
