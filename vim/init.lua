@@ -25,6 +25,7 @@ require('lazy').setup({
     dependencies = {
       'anuvyklack/middleclass'
     },
+    event = 'VeryLazy',
   },
   'deoplete-plugins/deoplete-lsp',
   'editorconfig/editorconfig-vim',
