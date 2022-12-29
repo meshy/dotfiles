@@ -15,7 +15,13 @@ require('lazy').setup({
   'AndrewRadev/splitjoin.vim',
   {
     'anuvyklack/windows.nvim',
-    config = true,
+    config = {
+      autowidth = {
+        -- The `textwidth` setting being 0 gives us a default of 80,
+        -- plus 8 to get 88 for Python, plus 7 for the sidebar.
+        winwidth = 8 + 7,
+      },
+    },
     dependencies = {
       'anuvyklack/middleclass'
     },
