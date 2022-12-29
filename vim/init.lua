@@ -12,7 +12,10 @@ end
 vim.opt.runtimepath:prepend(lazypath)
 
 require('lazy').setup({
-  'AndrewRadev/splitjoin.vim',
+  {
+    'AndrewRadev/splitjoin.vim',
+    event = 'VeryLazy',
+  },
   {
     'anuvyklack/windows.nvim',
     config = {
@@ -27,20 +30,33 @@ require('lazy').setup({
     },
     event = 'VeryLazy',
   },
-  'deoplete-plugins/deoplete-lsp',
-  'editorconfig/editorconfig-vim',
-  'ervandew/supertab',
-  'Glench/Vim-Jinja2-Syntax',
+  {
+    'deoplete-plugins/deoplete-lsp',
+  },
+  {
+    'editorconfig/editorconfig-vim',
+  },
+  {
+    'ervandew/supertab',
+  },
+  {
+    'Glench/Vim-Jinja2-Syntax',
+  },
   {
     'hashivim/vim-terraform',
     ft='terraform',
   },
   {
     'ibhagwan/fzf-lua',
-    dependencies = {'nvim-tree/nvim-web-devicons'}
+    dependencies = {'nvim-tree/nvim-web-devicons'},
   },
-  'Konfekt/FastFold',  -- Stops folding re-calculations from slowing things down. Especially Neoformat.
-  'kshenoy/vim-signature',
+  {
+    -- Stops folding re-calculations from slowing things down. Especially Neoformat.
+    'Konfekt/FastFold',
+  },
+  {
+    'kshenoy/vim-signature',
+  },
   {
     'nvim-lualine/lualine.nvim',
     event = 'VeryLazy',
@@ -60,7 +76,10 @@ require('lazy').setup({
       },
     },
   },
-  'nvim-tree/nvim-web-devicons',  -- Pretty icons for the fuzzy finder.
+  {
+    -- Pretty icons for the fuzzy finder.
+    'nvim-tree/nvim-web-devicons',
+  },
   {
     'lewis6991/gitsigns.nvim',
     event = 'VeryLazy',
@@ -74,7 +93,9 @@ require('lazy').setup({
       },
     },
   },
-  'mhinz/vim-startify',
+  {
+    'mhinz/vim-startify',
+  },
   {
     'norcalli/nvim-colorizer.lua',
     event = 'VeryLazy',
@@ -97,23 +118,39 @@ require('lazy').setup({
     'udalov/kotlin-vim',
     ft = 'kotlin',
   },
-  'raimon49/requirements.txt.vim',
-  'ruanyl/vim-gh-line',  -- Adds <leader>gh to open current line in github
-  'sbdchd/neoformat',
+  {
+    'raimon49/requirements.txt.vim',
+  },
+  {
+    -- Adds <leader>gh to open current line in github
+    'ruanyl/vim-gh-line',
+  },
+  {
+    'sbdchd/neoformat',
+  },
   {
     'Shougo/deoplete.nvim',
     event = 'VeryLazy',
     build=':UpdateRemotePlugins',
   },
-  'simrat39/symbols-outline.nvim',  -- Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
+  {
+    'simrat39/symbols-outline.nvim',
+  },  -- Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
   {
     -- Git integration
     'tpope/vim-fugitive',
     event = 'VeryLazy',
   },
-  'tpope/vim-git',
-  'tpope/vim-repeat',
-  'tpope/vim-rhubarb',  -- GitHub integration for vim-fugitive
+  {
+    'tpope/vim-git',
+  },
+  {
+    'tpope/vim-repeat',
+  },
+  {
+    -- GitHub integration for vim-fugitive
+    'tpope/vim-rhubarb',
+  },
   {
     -- Surround words with parens using `ysiw`
     'tpope/vim-surround',
@@ -124,8 +161,14 @@ require('lazy').setup({
     'tpope/vim-unimpaired',
     event = 'VeryLazy',
   },
-  'tpope/vim-vinegar',  -- File navigation with -
-  'w0rp/ale',  -- Linting
+  {
+    -- File navigation with -
+    'tpope/vim-vinegar',
+  },
+  {
+    -- Linting
+    'w0rp/ale',
+  },
   {
     'williamboman/mason.nvim',
     config = {
@@ -142,10 +185,14 @@ require('lazy').setup({
     'williamboman/mason-lspconfig.nvim',
     config = true,
   },
-  'neovim/nvim-lspconfig',
+  {
+    'neovim/nvim-lspconfig',
+  },
   {
     'windwp/nvim-autopairs',
-    config={ break_undo = false },
+    config = {
+      break_undo = false,
+    },
   },
   -- Semantic Highlighting for Python
   -- This is a fork of the main semshi, because the original appears to be unmaintained. See:
