@@ -179,23 +179,25 @@ require('lazy').setup({
     event = 'VeryLazy',
   },
   {
-    'williamboman/mason.nvim',
-    config = {
-      ui = {
-        icons = {
-            package_installed = '✓',
-            package_pending = '➜',
-            package_uninstalled = '✗'
-        }
-      }
-    },
-  },
-  {
-    'williamboman/mason-lspconfig.nvim',
-    config = true,
-  },
-  {
     'neovim/nvim-lspconfig',
+    dependencies = {
+      {
+        'williamboman/mason.nvim',
+        config = {
+          ui = {
+            icons = {
+                package_installed = '✓',
+                package_pending = '➜',
+                package_uninstalled = '✗'
+            }
+          }
+        },
+      },
+      {
+        'williamboman/mason-lspconfig.nvim',
+        config = true,
+      },
+    },
   },
   {
     'windwp/nvim-autopairs',
