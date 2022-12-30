@@ -122,10 +122,6 @@ require('lazy').setup({
     'raimon49/requirements.txt.vim',
   },
   {
-    -- Adds <leader>gh to open current line in github
-    'ruanyl/vim-gh-line',
-  },
-  {
     'sbdchd/neoformat',
   },
   {
@@ -133,9 +129,6 @@ require('lazy').setup({
     event = 'VeryLazy',
     build=':UpdateRemotePlugins',
   },
-  {
-    'simrat39/symbols-outline.nvim',
-  },  -- Indentation issue: https://github.com/simrat39/symbols-outline.nvim/issues/126
   {
     -- Git integration
     'tpope/vim-fugitive',
