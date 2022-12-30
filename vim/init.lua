@@ -32,15 +32,19 @@ require('lazy').setup({
   },
   {
     'deoplete-plugins/deoplete-lsp',
+    event = 'VeryLazy',
   },
   {
     'editorconfig/editorconfig-vim',
+    event = 'VeryLazy',
   },
   {
     'ervandew/supertab',
+    event = 'VeryLazy',
   },
   {
     'Glench/Vim-Jinja2-Syntax',
+    event = 'VeryLazy',
   },
   {
     'hashivim/vim-terraform',
@@ -49,13 +53,16 @@ require('lazy').setup({
   {
     'ibhagwan/fzf-lua',
     dependencies = {'nvim-tree/nvim-web-devicons'},
+    event = 'VeryLazy',
   },
   {
     -- Stops folding re-calculations from slowing things down. Especially Neoformat.
     'Konfekt/FastFold',
+    event = 'VeryLazy',
   },
   {
     'kshenoy/vim-signature',
+    event = 'VeryLazy',
   },
   {
     'nvim-lualine/lualine.nvim',
@@ -79,6 +86,7 @@ require('lazy').setup({
   {
     -- Pretty icons for the fuzzy finder.
     'nvim-tree/nvim-web-devicons',
+    event = 'VeryLazy',
   },
   {
     'lewis6991/gitsigns.nvim',
@@ -119,10 +127,13 @@ require('lazy').setup({
     ft = 'kotlin',
   },
   {
+    -- Syntax highlighting for Python requirements files.
+    -- We can't use lazy-loading on this because its autoload script would fail.
     'raimon49/requirements.txt.vim',
   },
   {
     'sbdchd/neoformat',
+    event = 'VeryLazy',
   },
   {
     'Shougo/deoplete.nvim',
@@ -136,13 +147,16 @@ require('lazy').setup({
   },
   {
     'tpope/vim-git',
+    event = 'VeryLazy',
   },
   {
     'tpope/vim-repeat',
+    event = 'VeryLazy',
   },
   {
     -- GitHub integration for vim-fugitive
     'tpope/vim-rhubarb',
+    event = 'VeryLazy',
   },
   {
     -- Surround words with parens using `ysiw`
@@ -157,10 +171,12 @@ require('lazy').setup({
   {
     -- File navigation with -
     'tpope/vim-vinegar',
+    event = 'VeryLazy',
   },
   {
     -- Linting
     'w0rp/ale',
+    event = 'VeryLazy',
   },
   {
     'williamboman/mason.nvim',
@@ -183,6 +199,7 @@ require('lazy').setup({
   },
   {
     'windwp/nvim-autopairs',
+    event = 'VeryLazy',
     config = {
       break_undo = false,
     },
