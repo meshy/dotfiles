@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "git-toolbelt"]
+	path = git-toolbelt
+	url = https://github.com/nvie/git-toolbelt

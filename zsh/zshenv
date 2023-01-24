@@ -23,6 +23,9 @@ if [[ "$SHLVL" == "1" ]]; then
 
     # Haskell
     PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+
+    # Git-toolbelt
+    PATH="$HOME/personal/dotfiles/git-toolbelt:$PATH"
 fi
 
 export EDITOR="nvim"
