@@ -93,6 +93,12 @@
 [pull]
   rebase = false
 
+[absorb]
+  maxStack=100
+[index]
+  # workaround from tummychow/git-absorb#81 to compensate for libgit2/libgit2#6531
+  skipHash = false
+
 [protocol "http"]
   allow = never
 [protocol "git"]
