@@ -110,3 +110,6 @@
 	ignoreRevsFile = .git-blame-ignore-revs
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+
+[tig]
+  line-graphics = utf-8
