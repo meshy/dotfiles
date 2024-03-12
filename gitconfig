@@ -85,6 +85,7 @@
 
 [commit]
   gpgsign = true
+  template = /home/charlie/.git_commit_msg.txt
 
 [init]
   defaultBranch = main

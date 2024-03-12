@@ -9,6 +9,7 @@
       path: pip/pip.conf
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
+    ~/.git_commit_msg.txt: git_commit_msg.txt
     ~/.gemrc: gemrc
     ~/.hgrc: hgrc
     ~/.vim: vim
