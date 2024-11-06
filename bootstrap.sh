@@ -28,6 +28,7 @@ yay -S \
     openssh tree the_silver_searcher fzf \
     git tig git-toolbelt git-delta git-secret github-cli git-absorb \
     sdcv stardict-oald stardict-thesaurus-ee \
+    libsecret-tools \
     cloc cheat-git \
     bat \
     colordiff \

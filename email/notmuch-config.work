@@ -30,7 +30,7 @@ path=/home/charlie/.mail.work
 #
 [user]
 name=Charlie Denton
-primary_email=charlie.denton@memrise.com
+primary_email=charlie.denton@kraken.tech
 
 # Configuration for "notmuch new"
 #

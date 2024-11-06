@@ -7,13 +7,13 @@ logfile        ~/.msmtp.work.log
 
 # Gmail
 # To set the password, use:
-#     secret-tool store --label=msmtp host smtp.gmail.com service smtp user charlie.denton@memrise.com
+#     secret-tool store --label=msmtp host smtp.gmail.com service smtp user <address@example.com>
 # See https://support.google.com/accounts/answer/185833?hl=en
-account        memrise
+account        work
 host           smtp.gmail.com
 port           587
-from           charlie.denton@memrise.com
-user           charlie.denton@memrise.com
+from           charlie.denton@kraken.tech
+user           charlie.denton@kraken.tech
 
 # Set a default account
-account default : memrise
+account default : work

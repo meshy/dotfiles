@@ -1,8 +1,8 @@
 set realname = 'Charlie Denton'
-set from = 'charlie.denton@memrise.com
+set from = 'charlie.denton@kraken.tech'
 # Unfortunately, ~ doesn't work to indicate "home" in this command.
-set sendmail = "/usr/bin/msmtp --file=/home/charlie/.msmtprc.work"
-set folder = ~/.mail.work/charliedenton-memrise.com
+set sendmail = "/usr/bin/msmtp --file=/home/charlie/.config/msmtp/work"
+set folder = ~/.mail.work/charliedenton-work
 set spoolfile = +INBOX
 set record = +Sent
 mailboxes +INBOX +Sent

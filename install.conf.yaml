@@ -20,8 +20,8 @@
     ~/.editorconfig: editorconfig
 
     ~/.mailcap: email/mailcap
-    ~/.msmtprc.personal: email/msmtprc.personal
-    ~/.msmtprc.work: email/msmtprc.work
+    ~/.config/msmtp/personal: email/msmtprc.personal
+    ~/.config/msmtp/work: email/msmtprc.work
     ~/.offlineimaprc.personal: email/offlineimaprc.personal
     ~/.offlineimaprc.work: email/offlineimaprc.work
     ~/.notmuch-config.personal: email/notmuch-config.personal

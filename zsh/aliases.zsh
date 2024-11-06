@@ -27,8 +27,8 @@ alias reload='source ~/.zshrc'
 
 alias pe='neomutt -F ~/.mutt/personal.muttrc && notmuch --config ~/.notmuch-config.personal new'
 alias we='neomutt -F ~/.mutt/work.muttrc && notmuch --config ~/.notmuch-config.work new'
-alias op="offlineimap -c ~/.offlineimaprc.personal -o"
-alias ow="offlineimap -c ~/.offlineimaprc.work -o"
+alias upe="offlineimap -c ~/.offlineimaprc.personal -o"
+alias uwe="offlineimap -c ~/.offlineimaprc.work -o"
 
 # Bash Directory browsing shortcuts
 alias k='tree'

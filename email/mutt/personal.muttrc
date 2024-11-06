@@ -4,7 +4,7 @@ set reverse_name
 alternates ^charlie@meshy.CO.UK$ ^charleswdenton@gmail.COM$
 set use_envelope_from
 # Unfortunately, ~ doesn't work to indicate "home" in this command.
-set sendmail = "/usr/bin/msmtp --file=/home/charlie/.msmtprc.personal"
+set sendmail = "/usr/bin/msmtp --file=/home/charlie/.config/msmtp/personal"
 set folder = ~/.mail/charleswdenton-gmail.com
 set spoolfile = +INBOX
 set record = +Sent
