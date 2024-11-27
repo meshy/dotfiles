@@ -8,17 +8,18 @@ let g:ale_linters = {
 \   'html': ['alex'],
 \   'mail': ['alex'],
 \   'markdown': ['alex'],
-\   'python': ['isort'],
+\   'python': [],
 \   'yaml': ['yamllint'],
 \}
 
-let g:neoformat_python_black= {
-\ 'exe': 'black',
+let g:neoformat_python_ruffisort = {
+\ 'exe': 'ruff',
 \ 'stdin': 1,
-\ 'args': ['--fast', '-q', '-'],
+\ 'args': ['check', '--select I', '--fix', '-']
 \ }
+
 let g:neoformat_enabled_rust = ['rustfmt']
-let g:neoformat_enabled_python = ['isort', 'black']
+let g:neoformat_enabled_python = ['ruffisort', 'ruff']
 let g:neoformat_enabled_sql = ['sqlfmt']
 let g:neoformat_sql_sqlfmt = {
 \   'exe': 'sqlfmt',
