@@ -16,16 +16,17 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
 
-  local signs = {
-    DiagnosticSignError = " ",
-    DiagnosticSignWarning = " ",
-    DiagnosticSignHint = " ",
-    DiagnosticSignInformation = " "
+  vim.diagnostic.config {
+    virtual_text = { prefix = "" },
+    signs = { text = {
+      [vim.diagnostic.severity.ERROR] = " ",
+      [vim.diagnostic.severity.WARN] = " ",
+      [vim.diagnostic.severity.INFO] = " ",
+      [vim.diagnostic.severity.HINT] = " "
+    } },
+    underline = true,
+    float = { border = "single" },
   }
-
-  for hl, icon in pairs(signs) do
-    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-  end
 end
 
 
