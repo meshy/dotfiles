@@ -35,11 +35,19 @@ require('lazy').setup({
     event = 'VeryLazy',
   },
   {
+    'duane9/nvim-rg',
+    event = 'VeryLazy',
+  },
+  {
     'editorconfig/editorconfig-vim',
     event = 'VeryLazy',
   },
   {
     'ervandew/supertab',
+    event = 'VeryLazy',
+  },
+  {
+    'github/copilot.vim',
     event = 'VeryLazy',
   },
   {
@@ -197,13 +205,6 @@ require('lazy').setup({
         'williamboman/mason-lspconfig.nvim',
         config = true,
       },
-    },
-  },
-  {
-    'windwp/nvim-autopairs',
-    event = 'VeryLazy',
-    config = {
-      break_undo = false,
     },
   },
   -- Semantic Highlighting for Python
