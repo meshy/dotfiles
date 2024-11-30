@@ -33,6 +33,7 @@
       create: true
       path: email/offlineimap-work.service
     ~/.mutt: email/mutt
+    ~/.ripgrep: ripgrep
     ~/.signature.work: email/mutt/signature.work
     ~/.urlview: email/urlview
 

@@ -51,3 +51,5 @@ export COMPOSE_DOCKER_CLI_BUILD=1
 export AG_COMMAND='ag --hidden --ignore-dir=".git" --ignore-dir=".mypy_cache" --ignore-dir=".tox" --ignore-dir="node_modules"'
 
 eval "$(fnm env)"
+
+export RIPGREP_CONFIG_PATH="$HOME/.ripgrep"
