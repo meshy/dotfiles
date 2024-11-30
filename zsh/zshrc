@@ -4,3 +4,7 @@ source ~/.keybindings.zsh
 source ~/.history.zsh
 eval "$(starship init zsh)"
 source ~/.sh_rc
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh --disable-up-arrow)"
