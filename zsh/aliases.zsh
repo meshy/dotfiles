@@ -63,6 +63,19 @@ alias img="kitty icat"
 # Fix consequences of strange TERM when using kitty to ssh.
 alias ksh="kitty +kitten ssh"
 
+# Generate a "Co-authored-by:" entry for authors matching the provided name.
+# Most recent authors appear first in the list.
+function co-author(){
+    git log \
+        --no-merges \
+        --author=$1 \
+        --pretty="Co-authored-by: %an <%aE>" \
+    | cat -n \
+    | sort --key=2 --unique \
+    | sort --numeric-sort \
+    | cut --fields 2-
+}
+
 # Open a file in vim with CTRL-P
 function fzf_to_vim {
     local file
