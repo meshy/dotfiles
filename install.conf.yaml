@@ -13,7 +13,6 @@
     ~/.gemrc: gemrc
     ~/.hgrc: hgrc
     ~/.vim: vim
-    ~/.vimrc: vim/init.vim
     ~/.config/kitty: kitty
     ~/.config/nvim: vim
     ~/.config/starship.toml: starship.toml
