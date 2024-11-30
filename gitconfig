@@ -31,6 +31,7 @@
   pl = pull
   plp = pull --prune
   ps = push
+  psf = push --force-with-lease
   pr = pull-request
   recent = for-each-ref --sort=committerdate --format='%(committerdate:short): %(refname:short)' refs/heads/
   s = status
