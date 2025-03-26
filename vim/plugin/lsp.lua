@@ -30,6 +30,10 @@ local on_attach = function(client, bufnr)
 end
 
 
+nvim_lsp.pyright.setup {
+  on_attach = on_attach,
+}
+
 nvim_lsp.pylsp.setup({
   enable = true,
   on_attach = on_attach,

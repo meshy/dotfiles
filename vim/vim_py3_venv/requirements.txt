@@ -2,3 +2,4 @@ attrs
 pynvim
 isort
 ipython
+pyright
