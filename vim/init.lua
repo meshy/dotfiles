@@ -36,7 +36,32 @@ require('lazy').setup({
   {
     'Saghen/blink.cmp',
     build = 'cargo build --release',
+    dependencies = { "fang2hou/blink-copilot" },
     opts = {
+      -- Bring in completions from GitHub Copilot.
+      sources = {
+        default = {
+          "lsp",
+          "path",
+          "copilot",
+          --"snippets",
+          "buffer",
+        },
+        providers = {
+          copilot = {
+            name = "copilot",
+            module = "blink-copilot",
+
+            -- The documented config suggests:
+            -- score_offset = 100,
+            -- but that puts Copilot above LSP completions.
+            -- I've turned that off because LSP is more likely to be correct,
+            -- but now Copilot completions are less likely to be shown,
+            -- which isn't ideal either.
+            async = true,
+          },
+        },
+      },
       signature = { enabled = true },
       fuzzy = {
         prebuilt_binaries = { download = false },
@@ -72,6 +97,24 @@ require('lazy').setup({
   },
   {
     'github/copilot.vim',
+    -- The config below disables copilot's usual interface, so that we can later
+    -- configure it to work through Blink.
+    cmd = "Copilot",
+    event = "BufWinEnter",
+    init = function()
+      vim.g.copilot_no_maps = true
+    end,
+    config = function()
+      -- Block the normal Copilot suggestions
+      vim.api.nvim_create_augroup("github_copilot", { clear = true })
+      vim.api.nvim_create_autocmd({ "FileType", "BufUnload" }, {
+        group = "github_copilot",
+        callback = function(args)
+          vim.fn["copilot#On" .. args.event]()
+        end,
+      })
+      vim.fn["copilot#OnFileType"]()
+    end,
   },
   {
     'hashivim/vim-terraform',
