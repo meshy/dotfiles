@@ -1,2 +1,5 @@
 --type-add
 pyi:*.pyi
+
+--hyperlink-format
+kitty
