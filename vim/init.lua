@@ -75,10 +75,6 @@ require('lazy').setup({
     event = 'VeryLazy',
   },
   {
-    'Glench/Vim-Jinja2-Syntax',
-    event = 'VeryLazy',
-  },
-  {
     'hashivim/vim-terraform',
     ft='terraform',
   },
