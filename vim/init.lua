@@ -34,8 +34,33 @@ require('lazy').setup({
     event = 'VeryLazy',
   },
   {
-    'deoplete-plugins/deoplete-lsp',
-    event = 'VeryLazy',
+    'Saghen/blink.cmp',
+    build = 'cargo build --release',
+    opts = {
+      signature = { enabled = true },
+      fuzzy = {
+        prebuilt_binaries = { download = false },
+      },
+      completion = {
+        list = {
+          selection = {
+            preselect = false
+          },
+        },
+      },
+      keymap = {
+        preset = "none",
+
+        ['<Tab>'] = { 'select_next', 'fallback' },
+        ['<S-Tab>'] = { 'select_prev', 'fallback' },
+
+        ['<Down>'] = { 'select_next', 'fallback' },
+        ['<Up>'] = { 'select_prev', 'fallback' },
+
+        ['<CR>'] = { 'accept', 'fallback' },
+      },
+    },
+    opts_extend = { "sources.default" },
   },
   {
     'duane9/nvim-rg',
@@ -43,10 +68,6 @@ require('lazy').setup({
   },
   {
     'editorconfig/editorconfig-vim',
-    event = 'VeryLazy',
-  },
-  {
-    'ervandew/supertab',
     event = 'VeryLazy',
   },
   {
@@ -137,11 +158,6 @@ require('lazy').setup({
   {
     'sbdchd/neoformat',
     event = 'VeryLazy',
-  },
-  {
-    'Shougo/deoplete.nvim',
-    event = 'VeryLazy',
-    build=':UpdateRemotePlugins',
   },
   {
     -- Git integration
