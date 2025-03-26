@@ -21,7 +21,7 @@ require('lazy').setup({
   },
   {
     'anuvyklack/windows.nvim',
-    config = {
+    opts = {
       autowidth = {
         -- The `textwidth` setting being 0 gives us a default of 80,
         -- plus 8 to get 88 for Python, plus 7 for the sidebar.
@@ -78,7 +78,7 @@ require('lazy').setup({
   {
     'nvim-lualine/lualine.nvim',
     event = 'VeryLazy',
-    config = {
+    opts = {
       options = {
         theme = 'material',
       },
@@ -102,7 +102,7 @@ require('lazy').setup({
   {
     'lewis6991/gitsigns.nvim',
     event = 'VeryLazy',
-    config = { signs = {} },
+    opts = { signs = {} },
   },
   {
     'mhinz/vim-startify',
@@ -186,7 +186,7 @@ require('lazy').setup({
     dependencies = {
       {
         'williamboman/mason.nvim',
-        config = {
+        opts = {
           ui = {
             icons = {
                 package_installed = '✓',
