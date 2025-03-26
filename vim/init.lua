@@ -72,7 +72,6 @@ require('lazy').setup({
   },
   {
     'github/copilot.vim',
-    event = 'VeryLazy',
   },
   {
     'hashivim/vim-terraform',
