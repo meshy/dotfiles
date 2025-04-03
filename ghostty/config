@@ -1,0 +1,51 @@
+font-size = 9
+font-family = "JetBrains Mono ExtraLight"
+font-family-bold = "JetBrains Mono SemiBold"
+freetype-load-flags=no-monochrome,no-force-autohint
+
+# Four gigs of scroll ought to be enough for now.
+scrollback-limit = 4294967295
+
+gtk-wide-tabs=false
+
+# Instead of theme
+# TODO: Move into a theme
+# Based on Selenized
+
+#: black
+palette = 0=#252525
+palette = 8=#3b3b3b
+
+#: red
+palette = 1=#dd4a46
+palette = 9=#ef5e56
+
+#: green
+palette = 2=#70b433
+palette = 10=#83c746
+
+#: yellow
+palette = 3=#dbb32d
+palette = 11=#efc541
+
+#: blue
+palette = 4=#368aeb
+palette = 12=#4f9cfe
+
+#: magenta
+palette = 5=#eb6eb7
+palette = 13=#ff81ca
+
+#: cyan
+palette = 6=#3fc5b7
+palette = 14=#56d8c9
+
+#: white
+palette = 7=#777777
+palette = 15=#dedede
+
+background = #181818
+foreground = #b9b9b9
+cursor-color =
+selection-background =
+selection-foreground =
