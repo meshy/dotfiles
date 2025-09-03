@@ -7,6 +7,8 @@ To set the password:
 
     >>> import keyring
     >>> keyring.set_password("offlineimap", "charleswdenton-gmail.com", "MYPASSWORD")
+    >>> import readline
+    >>> readline.clear_history()
 """
 import keyring
 

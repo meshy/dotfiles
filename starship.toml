@@ -128,9 +128,9 @@ symbol = "☁️"
 [custom.email]
 command = "notmuch --config ~/.notmuch-config.personal count tag:unread"
 when = "test `notmuch --config ~/.notmuch-config.personal count tag:unread` -gt 0"
-symbol = "📮"
+symbol = "🏠 "
 
 [custom.workemail]
 command = "notmuch --config ~/.notmuch-config.work count tag:unread"
 when = "test `notmuch --config ~/.notmuch-config.work count tag:unread` -gt 0"
-symbol = "📯"
+symbol = "💼 "
