@@ -37,6 +37,7 @@
     ~/.ripgrep: ripgrep
     ~/.signature.work: email/mutt/signature.work
     ~/.urlview: email/urlview
+    ~/.local/bin/copy-out-of-tmp-and-open-in-firefox.sh: email/copy-out-of-tmp-and-open-in-firefox.sh
 
     ~/.lein/profiles.clj:
       create: true

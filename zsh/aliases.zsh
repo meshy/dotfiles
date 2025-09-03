@@ -28,8 +28,8 @@ alias wo='pew workon'
 alias fig='docker-compose'
 alias reload='source ~/.zshrc'
 
-alias pe='neomutt -F ~/.mutt/personal.muttrc && notmuch --config ~/.notmuch-config.personal new'
-alias we='neomutt -F ~/.mutt/work.muttrc && notmuch --config ~/.notmuch-config.work new'
+alias pe='neomutt -F ~/.mutt/personal.muttrc && notmuch --config ~/.notmuch-config.personal new && rm -r ~/tmp/neomutt/*'
+alias we='neomutt -F ~/.mutt/work.muttrc && notmuch --config ~/.notmuch-config.work new && rm -r ~/tmp/neomutt/*'
 alias upe="offlineimap -c ~/.offlineimaprc.personal -o"
 alias uwe="offlineimap -c ~/.offlineimaprc.work -o"
 
