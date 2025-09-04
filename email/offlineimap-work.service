@@ -3,6 +3,8 @@ Description=Offline IMAP syncing for work
 
 [Service]
 ExecStart=/usr/bin/offlineimap -s -c ~/.offlineimaprc.work
+Restart=always
+RestartSec=10
 
 [Install]
 WantedBy=default.target

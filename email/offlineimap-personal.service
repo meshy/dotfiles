@@ -3,6 +3,8 @@ Description=Offline IMAP syncing for gmail
 
 [Service]
 ExecStart=/usr/bin/offlineimap -s -c ~/.offlineimaprc.personal
+Restart=always
+RestartSec=10
 
 [Install]
 WantedBy=default.target
