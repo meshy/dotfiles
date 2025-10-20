@@ -1,6 +1,3 @@
-nvim_lsp = require("lspconfig")
-
-
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 
@@ -29,14 +26,21 @@ local on_attach = function(client, bufnr)
   }
 end
 
+-- Attach to all LSP clients.
+vim.api.nvim_create_autocmd('LspAttach', {
+  group = vim.api.nvim_create_augroup('UserLspConfig', { clear = true }),
+  callback = function(ev)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    local bufnr = ev.buf
+    on_attach(client, bufnr)
+  end,
+})
 
-nvim_lsp.pyright.setup {
-  on_attach = on_attach,
-}
 
-nvim_lsp.pylsp.setup({
-  enable = true,
-  on_attach = on_attach,
+vim.lsp.enable('pyright')
+
+
+vim.lsp.config('pylsp', {
   settings = {
     pylsp = {
       configurationSources = {},
@@ -48,6 +52,12 @@ nvim_lsp.pylsp.setup({
     }
   }
 })
+vim.lsp.enable('pylsp')
+
+vim.lsp.config('*', {
+  root_markers = { '.git' },
+})
+
 
 -- Change symbol in front on inline diagnostics.
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
