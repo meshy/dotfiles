@@ -38,6 +38,7 @@
     ~/.signature.work: email/mutt/signature.work
     ~/.urlview: email/urlview
     ~/.local/bin/copy-out-of-tmp-and-open-in-firefox.sh: email/copy-out-of-tmp-and-open-in-firefox.sh
+    ~/.local/bin/bar: scripts/bar
 
     ~/.lein/profiles.clj:
       create: true
