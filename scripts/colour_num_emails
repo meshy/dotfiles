@@ -1,0 +1,39 @@
+#!/bin/bash
+
+RESET='\e[0m'         # Resets the color back to default
+WHITE='\e[38;5;231m'  # Brightest White
+C1='\e[38;5;226m'     # Bright Yellow
+C2='\e[38;5;220m'     # Yellow
+C3='\e[38;5;214m'     # Orange-Yellow
+C4='\e[38;5;208m'     # Orange
+C5='\e[38;5;202m'     # Orange-Red
+C6='\e[38;5;196m'     # Red
+
+# Read a single line from standard input into `num`.
+read -r num
+
+if ! [[ "$num" =~ ^[0-9]+$ ]]; then
+    # The input is not an integer.
+    echo "$num"
+    exit 0
+fi
+
+if [[ $num -lt 30 ]]; then
+    COLOR=$RESET
+elif [[ $num -lt 50 ]]; then
+    COLOR=$WHITE
+elif [[ $num -lt 60 ]]; then
+    COLOR=$C1
+elif [[ $num -lt 70 ]]; then
+    COLOR=$C2
+elif [[ $num -lt 80 ]]; then
+    COLOR=$C3
+elif [[ $num -lt 90 ]]; then
+    COLOR=$C4
+elif [[ $num -lt 100 ]]; then
+    COLOR=$C5
+else  # greater than or equal to 100
+    COLOR=$C6
+fi
+
+echo -e "${COLOR}${num}${RESET}"

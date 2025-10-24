@@ -39,6 +39,7 @@
     ~/.urlview: email/urlview
     ~/.local/bin/copy-out-of-tmp-and-open-in-firefox.sh: email/copy-out-of-tmp-and-open-in-firefox.sh
     ~/.local/bin/bar: scripts/bar
+    ~/.local/bin/colour_num_emails: scripts/colour_num_emails
 
     ~/.lein/profiles.clj:
       create: true

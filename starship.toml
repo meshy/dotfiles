@@ -126,11 +126,13 @@ format = "[$symbol $workspace]($style) "
 symbol = "☁️"
 
 [custom.email]
-command = "notmuch --config ~/.notmuch-config.personal count tag:unread"
+command = "notmuch --config ~/.notmuch-config.personal count tag:unread | colour_num_emails"
 when = "test `notmuch --config ~/.notmuch-config.personal count tag:unread` -gt 0"
+style = "none"
 symbol = "🏠 "
 
 [custom.workemail]
-command = "notmuch --config ~/.notmuch-config.work count tag:unread"
+command = "notmuch --config ~/.notmuch-config.work count tag:unread | colour_num_emails"
 when = "test `notmuch --config ~/.notmuch-config.work count tag:unread` -gt 0"
+style = "none"
 symbol = "💼 "
