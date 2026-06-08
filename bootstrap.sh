@@ -73,6 +73,7 @@ yay -S \
     --noconfirm
 
 pipx install black
+pipx install codeowners
 pipx install flake8
 pipx install isort
 pipx install grip
