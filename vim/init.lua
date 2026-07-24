@@ -35,8 +35,13 @@ require('lazy').setup({
   },
   {
     'Saghen/blink.cmp',
-    build = 'cargo build --release',
-    dependencies = { "fang2hou/blink-copilot" },
+    build = function()
+      require('blink.cmp').build():pwait()
+    end,
+    dependencies = {
+      'saghen/blink.lib',
+      "fang2hou/blink-copilot",
+    },
     opts = {
       -- Bring in completions from GitHub Copilot.
       sources = {
@@ -63,9 +68,6 @@ require('lazy').setup({
         },
       },
       signature = { enabled = true },
-      fuzzy = {
-        prebuilt_binaries = { download = false },
-      },
       completion = {
         list = {
           selection = {
