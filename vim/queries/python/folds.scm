@@ -44,14 +44,3 @@
             (decorated_definition (function_definition) @fold)
           ])))
   ])
-
-; ---------------------------------------------------------
-; STANDARD BLOCKS: Keep default folding for regular blocks
-; (Remove any of these if you don't want them to fold)
-; ---------------------------------------------------------
-(if_statement) @fold
-(for_statement) @fold
-(while_statement) @fold
-(with_statement) @fold
-(try_statement) @fold
-(match_statement) @fold
