@@ -164,14 +164,6 @@ require('lazy').setup({
     'mhinz/vim-startify',
   },
   {
-    'norcalli/nvim-colorizer.lua',
-    event = 'VeryLazy',
-    config = function()
-      vim.opt.termguicolors = true
-      require('colorizer').setup()
-    end,
-  },
-  {
     -- Helper functions used by other plugins.
     'nvim-lua/plenary.nvim',
     lazy=true,
