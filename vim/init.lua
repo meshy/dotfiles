@@ -282,5 +282,8 @@ require('lazy').setup({
   },
 })
 
+-- Enable the undo-tree. It can be brought up with `:Undotree`.
+vim.api.nvim_command("packadd nvim.undotree")
+
 -- Use semi-colon for vim-commands. This saves pressing shift all the time.
 vim.keymap.set( 'n', ';', ':', {noremap = true})
