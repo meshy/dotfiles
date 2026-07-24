@@ -1,5 +1,6 @@
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
+vim.opt.fillchars:append({ fold = " " })
 
 -- Toggle folding with space (nnoremap <space> za)
 vim.keymap.set('n', '<space>', 'za', { desc = 'Toggle fold under cursor' })
@@ -40,3 +41,16 @@ vim.api.nvim_create_autocmd('FileType', {
     })
   end,
 })
+
+
+_G.custom_foldtext = function()
+  -- Get the raw text of the first folded line
+  local line = vim.fn.getline(vim.v.foldstart)
+
+  -- Calculate the total number of lines in the fold
+  local line_count = vim.v.foldend - vim.v.foldstart + 1
+
+  -- Return the line with the count appended
+  return string.format("%s ⋯ [%d lines]", line, line_count)
+end
+vim.opt.foldtext = 'v:lua.custom_foldtext()'
