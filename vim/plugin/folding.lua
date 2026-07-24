@@ -2,8 +2,26 @@ vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.fillchars:append({ fold = " " })
 
--- Toggle folding with space (nnoremap <space> za)
-vim.keymap.set('n', '<space>', 'za', { desc = 'Toggle fold under cursor' })
+vim.keymap.set('n', '<C-space>', function()
+  if vim.wo.foldlevel == 0 then
+    vim.cmd('normal! zR') -- Open all folds completely
+  else
+    vim.cmd('normal! zM') -- Close all folds completely
+  end
+end, { desc = 'Toggle all folds globally' })
+
+vim.keymap.set('n', '<Space>', function()
+  -- vim.fn.foldclosed('.') returns -1 if the fold is open or doesn't exist
+  if vim.fn.foldclosed('.') ~= -1 then
+    -- State: Fold is closed. Action: Open it fully/recursively (zO)
+    vim.cmd('normal! zO')
+  else
+    -- State: Fold is open. Action: Close it (zc)
+    -- Wrapped in pcall so Neovim doesn't throw an error on a line with no fold
+    pcall(function() vim.cmd('normal! zc') end)
+  end
+end, { desc = 'Toggle current fold fully' })
+
 
 -- Enable Treesitter folding for Python
 vim.api.nvim_create_autocmd('FileType', {
