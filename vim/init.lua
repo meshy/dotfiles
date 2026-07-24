@@ -128,11 +128,6 @@ require('lazy').setup({
     event = 'VeryLazy',
   },
   {
-    -- Stops folding re-calculations from slowing things down. Especially Neoformat.
-    'Konfekt/FastFold',
-    event = 'VeryLazy',
-  },
-  {
     'kshenoy/vim-signature',
     event = 'VeryLazy',
   },
@@ -223,6 +218,7 @@ require('lazy').setup({
   {
     'sbdchd/neoformat',
     event = 'VeryLazy',
+    dependencies = { 'Konfekt/FastFold' },
   },
   {
     -- Git integration
