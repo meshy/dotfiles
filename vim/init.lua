@@ -183,8 +183,33 @@ require('lazy').setup({
   },
   {
     'nvim-treesitter/nvim-treesitter',
-    event = 'VeryLazy',
-    build = ':TSUpdate',
+    lazy = false,
+    branch = 'main',
+    build = function()
+      pcall(vim.cmd, "TSUpdate")
+      local parsers = {
+          "bash",
+          "css",
+          "dockerfile",
+          "go",
+          "html",
+          "javascript",
+          "json",
+          "kotlin",
+          "lua",
+          "make",
+          "python",
+          "query",
+          "rst",
+          "rust",
+          "scss",
+          "toml",
+          "typescript",
+          "vim",
+          "vue",
+      }
+      require('nvim-treesitter').install(parsers)
+    end,
   },
   {
     'udalov/kotlin-vim',
