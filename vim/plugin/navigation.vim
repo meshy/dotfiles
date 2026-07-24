@@ -7,3 +7,6 @@ nnoremap <C-p> :FzfLua files<CR>
 
 " Add a shortcut for tagbar (now symbols-outline)
 nmap <F8> :SymbolsOutline<CR>
+
+" Ensure there is always a gap at the bottom of the screen.
+set scrolloff=3
