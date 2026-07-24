@@ -25,7 +25,10 @@ end, { desc = 'Toggle current fold fully' })
 
 -- Enable Treesitter folding for Python
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'python',
+  pattern = {
+    'lua',
+    'python',
+  },
   callback = function(args)
     -- Ensure the parser is running.
     pcall(vim.treesitter.start)
