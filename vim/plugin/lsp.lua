@@ -37,9 +37,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 
-vim.lsp.enable('pyright')
-
-
 vim.lsp.config('pylsp', {
   settings = {
     pylsp = {
@@ -47,6 +44,7 @@ vim.lsp.config('pylsp', {
       plugins = {
         pylint = {enabled = true},
         -- jedi = {environment = get_python_path()},
+        pyright = {enabled = true},
         jedi_completion = {fuzzy = true}
       }
     }
