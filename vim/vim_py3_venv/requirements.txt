@@ -3,3 +3,4 @@ pynvim
 isort
 ipython
 pyright
+python-lsp-ruff

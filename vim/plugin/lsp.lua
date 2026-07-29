@@ -42,8 +42,8 @@ vim.lsp.config('pylsp', {
     pylsp = {
       configurationSources = {},
       plugins = {
-        pylint = {enabled = true},
         -- jedi = {environment = get_python_path()},
+        ruff = {enabled = true},
         pyright = {enabled = true},
         jedi_completion = {fuzzy = true}
       }
